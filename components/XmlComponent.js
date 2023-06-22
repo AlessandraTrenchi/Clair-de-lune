@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { create } from 'xmlbuilder2';
-import { XmlWriter } from 'cetei';
 
 const XmlComponent = () => {
   useEffect(() => {
