@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ArsEmotica-core="http://130.192.212.225/fuseki/ArsEmotica-core#">
+
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Clair de Lune</title>
+            <author>Guy de Maupassant</author>
+         </titleStmt>
+         <editionStmt>
+            <edition>Editions Gallimard, 1998</edition>
+            <respStmt>
+               <resp>Encoding</resp>
+               <persName>Chloe Papadopoulou</persName>
+               <persName>Alessandra Trenchi</persName>
+               <orgName>Alma Mater Studiorum - University of Bologna</orgName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Our project name</authority>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Guy De Maupassant</author>, <title>Clair de lune et autres nouvelles</title>.
+               <publisher>Editions Gallimard</publisher>
+               <date>1998</date>.
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+
+    <profileDesc>
+
+      <particDesc>
+          <listPerson xml:id="les-bijoux-characters">
+
+            <!-- is there a way to differentiate people lists for each story? or do we need different xml pages? -->
+              <person xml:id="M-Lantin">
+                  <persName type="main-character">Monsieur Lantin</persName>
+              </person>
+              <person xml:id="Madame-Lantin">
+                  <persName type="main-character">Madame Lantin</persName>
+              </person>
+        </listPerson>
+        <!-- <listPerson xml:id="clair-de-lune-characters">
+              <person>
+                  <persName xml:id="id"> Name</persName>
+              </person>
+              <person xml:id="id">
+                  <persName>Name</persName>
+              </person>
+              <person xml:id="id">
+                  <persName>Name</persName>
+              </person>
+              <person xml:id="id">
+                  <persName>Name</persName>
+              </person>
+              <person xml:id="id">
+                  <persName>Name</persName>
+              </person>
+        </listPerson> -->
+
+
+      </particDesc>
+  </profileDesc>
+  <xenoData>
+    <rdf:RDF>
+      <rdf:Description tei:ref="#joy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Joy">
+          <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#trust" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Trust">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#anger" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Anger">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#sadness" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Sadness">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#fear"  rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Fear">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#disgust" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Disgust">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#surprise" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Surprise">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#anticipation" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Anticipation">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#love" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Love">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#grief" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Grief">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#envy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Envy">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+
+
+    </rdf:RDF>
+  </xenoData>
+
+</teiHeader>
+<text>
+  <body>
+    <div type="story" xml:id="les-bijoux">
+      <head>LES BIJOUX</head>
+<p>    <persName ref="#M-Lantin" >M. Lantin</persName> ayant rencontré cette jeune <persName ref="#Madame-Lantin">fille</persName>, dans une soirée, chez son sous-chef de bureau, <interp ana="#love #positive-effect">l'amour</interp> l'enveloppa comme un filet.</p>
+<p>     C'était la fille d'un percepteur de province, mort depuis plusieurs années. Elle était venue ensuite à Paris avec sa mère, qui fréquentait quelques familles bourgeoises de son quartier dans l'<interp ana="#positive-effect #anticipation">espoir</interp> de marier la jeune personne. Elles étaient pauvres et honorables, tranquilles et douces. La jeune fille semblait le type absolu de l'honnête femme à laquelle le jeune homme sage rêve de confier sa vie. Sa beauté modeste avait un charme de pudeur angélique, et l'imperceptible sourire qui ne quittait point ses lèvres semblait un reflet de son cœur.</p>
+<p>     Tout le monde chantait ses louanges ; tous ceux qui la connaissaient répétaient sans fin : « Heureux celui qui la prendra. On ne pourrait trouver mieux. »</p>
+<p>     <persName ref="#M-Lantin" >M. Lantin </persName>, alors commis principal au ministère de l'Intérieur, aux appointements annuels de trois mille cinq cents francs, la demanda en mariage et l'épousa.</p>
+<p>     Il fut avec elle invraisemblablement <interp ana="#positive-effect #joy">heureux</interp>. Elle gouverna sa maison avec une économie si adroite qu'ils semblaient vivre dans le luxe. Il n'était point d'attentions, de délicatesses, de chatteries qu'elle n'eût pour son mari ; et la séduction de sa personne était si grande que, six ans après leur rencontre, il l'<interp ana="#positive-effect #love">aimait</interp> plus encore qu'aux premiers jours.</p>
+<p>     Il ne <interp ana="#anger">blâmait </interp> en elle que deux goûts, celui du théâtre et celui des bijouteries fausses.</p>
+<p>     Ses amies (elle connaissait quelques femmes de modestes fonctionnaires) lui procuraient à tous moments des loges pour les pièces en vogue, même pour les premières représentations ; et elle traînait, bon gré, mal gré, son mari à ces divertissements qui le fatiguaient affreusement après sa journée de travail. Alors il la supplia de consentir à aller au spectacle avec quelque dame de sa connaissance qui la ramènerait ensuite. Elle fut longtemps à céder, trouvant peu convenable cette manière d'agir. Elle s'y décida enfin par complaisance, et il lui en sut un gré infini.</p>
+<p>     Or, ce goût pour le théâtre fit bientôt naître en elle le besoin de se parer. Ses toilettes demeuraient toutes simples, il est vrai, de bon goût toujours, mais modestes ; et sa grâce douce, sa grâce irrésistible, humble et souriante, semblait acquérir une saveur nouvelle de la simplicité de ses robes, mais elle prit l'habitude de pendre à ses oreilles deux gros cailloux du Rhin qui simulaient des diamants, et elle portait des colliers de perles fausses, des bracelets en similor, des peignes agrémentés de verroteries variées jouant les pierres fines.</p>
+<p>     Son mari, que <interp ana="#negative-effect #surprise #cause-character">choquait</interp> un peu cet <interp ana="#positive-effect #love #cause-character">amour</interp> du clinquant, répétait souvent : « Ma chère, quand on n'a pas le moyen de se payer des bijoux véritables, on ne se montre parée que de sa beauté et de sa grâce, voilà encore les plus rares joyaux. »</p>
+<p>     Mais elle <interp ana="#joy">souriait</interp> doucement et répétait : « Que veux-tu ? J'<interp ana="#love">aime</interp> ça. C'est mon vice. Je sais bien que tu as raison ; mais on ne se refait pas. J'aurais adoré les bijoux, moi ! »</p>
+<p>     Et elle faisait rouler dans ses doigts les colliers de perles, miroiter les facettes des cristaux taillés, en répétant : « Mais regarde donc comme c'est bien fait. On jurerait du vrai. »</p>
+<p>     Il souriait en déclarant : « Tu as des goûts de Bohémienne. »</p>
+<p>     Quelquefois, le soir, quand ils demeuraient en tête à tête au coin du feu, elle apportait sur la table où ils prenaient le thé la boîte de maroquin où elle enfermait la « pacotille », selon le mot de <persName ref="#M-Lantin" >M. Lantin </persName>; et elle se mettait à examiner ces bijoux imités avec une attention <interp ana="#love">passionnée</interp>, comme si elle eût savouré quelque jouissance secrète et profonde ; et elle s'obstinait à passer un collier au cou de son mari pour rire ensuite de tout son cœur en s'écriant : « Comme tu es drôle ! » Puis elle se jetait dans ses bras et l'embrassait éperdument.</p>
+<p>     Comme elle avait été à l'Opéra, une nuit d'hiver, elle rentra toute frissonnante de froid. Le lendemain elle toussait. Huit jours plus tard elle mourait d'une fluxion de poitrine.</p>
+<p>     <persName ref="#M-Lantin" >Lantin </persName> faillit la suivre dans la tombe. Son <interp ana="#negative-effect #sadness #cause-event">désespoir</interp> fut si terrible que ses cheveux devinrent blancs en un mois.</p>
+
+
+<p> Il <interp ana="#negative-effect #grief" >pleurait</interp> du matin au soir, l'<interp ana="#negative-effect #grief">âme déchirée</interp> d'une <interp ana="#negative-effect #grief">souffrance intolérable </interp>, hanté par le souvenir, par le sourire, par la voix, par tout le charme de la morte.</p>
+<p>     Le temps napaisa point sa douleur. Souvent pendant les heures du bureau, alors que les collègues s'en venaient causer un peu des choses du jour, on voyait soudain <interp>ses joues se gonfler</interp>, <interp>son nez se plisser</interp>, <interp>ses yeux s'emplir d'eau</interp> ; il faisait une <interp>grimace affreuse</interp> et se mettait à <interp>sangloter</interp>.</p>
+<p>     Il avait gardé intacte la chambre de sa compagne où il s'enfermait tous les jours pour penser à elle ; et tous les meubles, ses vêtements mêmes demeuraient à leur place comme ils se trouvaient au dernier jour.</p>
+<p>     Mais la vie se faisait dure pour lui. Ses appointements, qui, entre les mains de sa femme, suffisaient à tous les besoins du ménage, devenaient, à présent, insuffisants pour lui tout seul. Et il se demandait avec <interp ana="#surprise">stupeur </interp>comment elle avait su s'y prendre pour lui faire boire toujours des vins excellents et manger des nourritures délicates qu'il ne pouvait plus se procurer avec ses modestes ressources.</p>
+<p>     Il fit quelques dettes et courut après l'argent à la façon des gens réduits aux expédients. Un matin enfin, comme il se trouvait sans un sou, une semaine entière avant la fin du mois, il songea à vendre quelque chose ; et tout de suite la pensée lui vint de se défaire de la « pacotille » de sa femme, car il avait gardé au fond du cœur une sorte de <interp ana="#disgust #M. Lantin">rancune</interp> contre ces « trompe-l'œil » qui l'<interp ana="#anger #M-Lantin">irritaient</interp> autrefois. Leur vue même, chaque jour, lui gâtait un peu le souvenir de sa bien-aimée.</p>
+<p>     Il chercha longtemps dans le tas de clinquant qu'elle avait laissé, car jusqu'aux derniers jours de sa vie elle en avait acheté obstinément, rapportant presque chaque soir un objet nouveau, et il se décida pour le grand collier qu'elle semblait préférer, et qui pouvait bien valoir, pensait-il, six ou huit francs, car il était vraiment d'un travail très soigné pour du faux.</p>
+<p>     Il le mit en sa poche et s'en alla vers son ministère en suivant les boulevards, cherchant une boutique de bijoutier qui lui inspirât confiance.</p>
+<p>     Il en vit une enfin et entra, un peu <interp ana="#disgust #M-Lantin">honteux </interp>d'étaler ainsi sa misère et de chercher à vendre une chose de si peu de prix.</p>
+<p>     — Monsieur, dit-il au marchand, je voudrais bien savoir ce que vous estimez ce morceau.</p>
+<p>     L'homme reçut l'objet, l'examina, le retourna, le soupesa, prit une loupe, appela son commis, lui fit tout bas des remarques, reposa le collier sur son comptoir et le regarda de loin pour mieux juger de l'effet.</p>
+<p>     <persName ref="#M-Lantin" >M. Lantin </persName>, gêné par toutes ces cérémonies, ouvrait la bouche pour déclarer : « Oh ! je sais bien que cela n'a aucune valeur », — quand le bijoutier prononça :</p>
+<p>     — Monsieur, cela vaut de douze à quinze mille francs ; mais je ne pourrais l'acheter que si vous m'en faisiez connaître exactement la provenance.</p>
+<p>     Le veuf ouvrit des <interp ana="#surprise #M-Lantin">yeux énormes</interp> et demeura béant, ne comprenant pas. Il balbutia enfin : « Vous dites ?... Vous êtes sûr ? » L'autre se méprit sur son étonnement, et, d'un ton sec : « Vous pouvez chercher ailleurs si on vous en donne davantage. Pour moi cela vaut, au plus, quinze mille. Vous reviendrez me trouver si vous ne trouvez pas mieux. »</p>
+<p>    <persName ref="#M-Lantin" >M. Lantin </persName>, <interp ana="#surprise #M-Lantin">tout à fait idiot</interp>, reprit son collier et s'en alla, obéissant à un confus besoin de se trouver seul et de réfléchir.</p>
+<p>     Mais, dès qu'il fut dans la rue, un besoin de rire le saisit, et il pensa : « L'imbécile ! oh ! l'imbécile ! Si je l'avais pris au mot tout de même ! En voilà un bijoutier qui ne sait pas distinguer le faux du vrai ! »</p>
+<p>     Et il pénétra chez un autre marchand à l'entrée de la rue de la Paix. Dès qu'il eut aperçu le bijou, l'orfèvre s'écria :</p>
+<p>     — Ah ! parbleu ; je le connais bien, ce collier ; il vient de chez moi.</p>
+<p>     <persName ref="#M-Lantin" >M. Lantin </persName>, fort troublé, demanda :</p>
+<p>     — Combien vaut-il ?</p>
+<p>     — Monsieur, je l'ai vendu vingt-cinq mille. Je suis prêt à le reprendre pour dix-huit mille, quand vous m'aurez indiqué, pour obéir aux prescriptions légales, comment vous en êtes détenteur.</p>
+<p>     Cette fois, <persName ref="#M-Lantin" >M. Lantin</persName> s'assit perclus d'<interp ana="#surprise">étonnement</interp>. Il reprit : « Mais... mais, examinez-le bien attentivement, monsieur, j'avais cru jusqu'ici qu'il était en... faux. »</p>
+<p>     Le joaillier reprit : « Voulez-vous me dire votre nom, monsieur ? »</p>
+<p>     — Parfaitement. Je m'appelle <persName ref="#M-Lantin" >Lantin</persName>, je suis employé au ministère de l'Intérieur, je demeure 16, rue des Martyrs.</p>
+<p>     Le marchand ouvrit ses registres, rechercha, et prononça : « Ce collier a été envoyé en effet à l'adresse de <persName ref="#Madame-Lantin">Madame Lantin</persName>, 16, rue des Martyrs, le 20 juillet 1876. »</p>
+<p>     Et les deux hommes se regardèrent dans les yeux, l'employé éperdu de surprise, l'orfèvre flairant un voleur.</p>
+<p>     Celui-ci reprit : « Voulez-vous me laisser cet objet pendant vingt-quatre heures seulement, je vais vous en donner un reçu ? »</p>
+<p>    <persName ref="#M-Lantin" >M. Lantin </persName> balbutia : « Mais oui, certainement. » Et il sortit en pliant le papier qu'il mit dans sa poche.</p>
+<p>     Puis il traversa la rue, la remonta, s'aperçut qu'il se trompait de route, redescendit aux Tuileries, passa la Seine, reconnut encore son erreur, revint aux Champs-Élysées sans une idée nette dans la tête. Il s'efforçait de raisonner, de comprendre. Sa femme n'avait pu acheter un objet d'une pareille valeur. — Non, certes. — Mais alors, c'était un cadeau ! Un cadeau ! Un cadeau de qui ? Pourquoi ?</p>
+<p>     Il s'était arrêté, et il demeurait debout au milieu de l'avenue. Le <interp ana="#anticipation">doute horrible</interp> l'effleura. — Elle ? — Mais alors tous les autres bijoux étaient aussi des cadeaux ! Il lui sembla que la terre remuait ; qu'un arbre, devant lui, s'abattait ; il étendit les bras et s'écroula, privé de sentiment.</p>
+<p>     Il reprit connaissance dans la boutique d'un pharmacien où les passants l'avaient porté. Il se fit reconduire chez lui, et s'enferma.</p>
+<p>     Jusqu'à la nuit il <interp ana="#sadness #cause-character #M-Lantin">pleura</interp> éperdument, mordant un mouchoir pour ne pas crier. Puis il se mit au lit accablé de fatigue et de chagrin, et il dormit d'un pesant sommeil.</p>
+<p>     Un rayon de soleil le réveilla, et il se leva lentement pour aller à son ministère. C'était dur de travailler après de pareilles secousses. Il réfléchit alors qu'il pouvait s'excuser auprès de son chef ; et il lui écrivit. Puis il songea qu'il fallait retourner chez le bijoutier; et une <interp ana="#disgust">honte</interp> l'empourpra. Il demeura longtemps à réfléchir. Il ne pouvait pourtant pas laisser le collier chez cet homme ; il s'habilla et sortit.</p>
+<p>     Il faisait beau, le ciel bleu s'étendait sur la ville qui semblait sourire. Des flâneurs allaient devant eux, les mains dans leurs poches.</p>
+<p>    <persName ref="#M-Lantin" >Lantin </persName> se dit, en les regardant passer : « Comme on est heureux quand on a de la fortune ! Avec de l'argent on peut secouer jusqu'aux chagrins, on va où l'on veut, on voyage, on se distrait ! Oh ! si j'étais riche ! »</p>
+<p>     Il s'aperçut qu'il avait faim, n'ayant pas mangé depuis l'avant-veille. Mais sa poche était vide, et il se ressouvint du collier. Dix-huit mille francs ! Dix-huit mille francs ! c'était une somme, cela !</p>
+<p>     Il gagna la rue de la Paix et commença à se promener de long en large sur le trottoir, en face de la boutique. Dix-huit mille francs ! Vingt fois il faillit entrer ; mais la <interp ana="#disgust #M-Lantin">honte</interp> l'arrêtait toujours.</p>
+<p>     Il avait faim pourtant, grand' faim, et pas un sou. Il se décida brusquement, traversa la rue en courant pour ne pas se laisser le temps de réfléchir, et il se précipita chez l'orfèvre.</p>
+<p>     Dès qu'il l'aperçut, le marchands'empressa, offrit un siège avec une politesse souriante. Les commis eux-mêmes arrivèrent, qui regardaient de côté <persName ref="#M-Lantin" >Lantin </persName>, avec des gaietés dans les yeux et sur les lèvres.</p>
+<p>     Lebijoutier déclara : « Je me suis renseigné, monsieur, et si vous êtes toujours dans les mêmes dispositions, je suis prêt à vous payer la somme que je vous ai proposée. »</p>
+<p>     L'employé balbutia : « Mais certainement. »</p>
+<p>     L'orfèvre tira d'un tiroir dix-huit grands billets, les compta, les tendit à <persName ref="#M-Lantin" > Lantin </persName>, qui signa un petit reçu et mit d'une main frémissante l'argent dans sa poche.</p>
+<p>     Puis, comme il allait sortir, il se tourna vers le marchand qui souriait toujours, et, baissant les yeux : « J'ai... j'ai d'autres bijoux... qui me viennent...de la même succession. Vous conviendrait-il de me les acheter aussi ? »</p>
+<p>     Le marchand s'inclina : « Mais certainement, monsieur. » Un des commis sortit pour rire à son aise ; un autre se mouchait avec force.</p>
+<p>     <persName ref="#M-Lantin" >Lantin</persName> <interp>impassible, rouge et grave</interp>, annonça : « Je vais vous les apporter. »</p>
+<p>     Et il prit un fiacre pour aller chercher les joyaux.</p>
+<p>     Quand il revint chez le marchand, une heure plus tard, il n'avait pas encore déjeuné. Ils se mirent à examiner les objets pièce à pièce, évaluant chacun. Presque tous venaient de la maison.</p>
+<p>     <persName ref="#M-Lantin" >Lantin </persName>, maintenant, discutait les estimations, se fâchait, exigeait qu'on lui montrât les livres de vente, et parlait de plus en plus haut à mesure que s'élevait la somme.</p>
+<p>     Les gros brillants d'oreilles valent vingt mille francs, les bracelets trente-cinq mille, les broches, bagues et médaillons seize mille, une parure d'émeraudes et de saphirs quatorze mille ; un solitaire suspendu à une chaîne d'or formant collier quarante mille ; le tout atteignant le chiffre de cent quatre-vingt-seize mille francs.</p>
+<p>     Le marchand déclara avec une bonhomie railleuse : « Cela vient d'une personne qui mettait toutes ses économies en bijoux. »</p>
+<p>     <persName ref="#M-Lantin" >Lantin </persName> prononça gravement : « C'est une manière comme une autre de placer son argent. » Et il s'en alla après avoir décidé avec l'acquéreur qu'une contre-expertise aurait lieu le lendemain.</p>
+<p>     Quand il se trouva dans la rue, il regarda la colonne Vendôme avec l'<interp ana="#envy">envie</interp> d'y grimper, comme si c'eût été un mât de cocagne. Il se sentait léger à jouer à saute-mouton par-dessus la statue de l'Empereur perché là-haut dans le ciel.</p>
+<p>     Il alla déjeuner chez Voisin et but du vin à vingt francs la bouteille.</p>
+<p>     Puis il prit un fiacre et fit un tour au Bois. Il regardait les équipages avec un certain mépris, <interp>oppressé du désir de crier</interp> aux passants : « Je suis riche aussi, moi. J'ai deux cent mille francs ! »</p>
+<p>     Le souvenir de son ministère lui revint. Il s'y fit conduire, entra délibérément chez son chef et annonça : « Je viens, monsieur, vous donner ma démission. J'ai fait un héritage de trois cent mille francs. » Il alla serrer la main de ses anciens collègues et leur confia ses projets d'existence nouvelle ; puis il dîna au café Anglais.</p>
+<p>     Se trouvant à côté d'un monsieur qui lui parut distingué, il ne put résister à la démangeaison de lui confier, avec une certaine coquetterie, qu'il venait d'hériter de quatre cent mille francs.</p>
+<p>     Pour la première fois de sa vie <interp ana="#joy">il ne s' ennuya pas</interp> au théâtre, et il passa sa nuit avec des filles.</p>
+<p>     Six mois plus tard il se remariait. Sa seconde femme était très honnête, mais d'un caractère difficile. Elle le fit beaucoup <interp ana="#negative-effect #sadness" >souffrir</interp>.</p>
+    </div>
+
+
+
+
+    <div type="story" xml:id="clair-de-lune">
+      <head> CLAIR DE LUNE</head>
+
+<p>Il portait bien son nom de bataille, l’abbé Marignan. C’était un grand prêtre maigre, fanatique, d’âme toujours exaltée, mais droite. Toutes ses croyances étaient fixes, sans jamais d’oscillations (exaggeration). Il s’imaginait sincèrement connaître son Dieu, pénétrer ses desseins, ses volontés, ses intentions.</p>
+<p>Quand il se promenait à grands pas dans l’allée de son petit presbytère de campagne, quelquefois une interrogation se dressait dans son esprit : « Pourquoi Dieu a-t-il fait cela ? » Et il cherchait obstinément, prenant en sa pensée la place de Dieu, et il trouvait presque toujours. Ce n’est pas lui qui eût murmuré dans un élan de pieuse humilité : « Seigneur, vos desseins sont impénétrables ! » Il se disait : « Je suis le serviteur de Dieu, je dois connaître ses raisons d’agir, et les deviner si je ne les connais pas. »</p>
+<p>Tout lui paraissait créé dans la nature avec une <interp ana="#acceptance"> logique absolue et admirable</interp>. Les « Pourquoi » et les « Parce que » se <interp ana="#acceptance">  balançaient toujours</interp>. Les aurores étaient faites pour rendre joyeux les réveils, les jours pour mûrir les moissons, les pluies pour les arroser, les soirs pour préparer au sommeil et les nuits sombres pour dormir.</p>
+<p>Les quatre saisons <interp ana="#positive-effect #acceptance ">correspondaient parfaitement </interp>à tous les besoins de l’agriculture (societal constraints); et jamais le soupçon n’aurait pu venir au prêtre que la nature n’a point d’intentions et que tout ce qui vit s’est plié, au contraire, aux dures nécessités des époques, des climats et de la matière.</p>
+<p>Mais il <interp ana="#negative-effect #disgust">haïssait</interp> la femme, il la haïssait inconsciemment, et la <interp ana="#negative-effect #contempt">méprisait</interp> par instinct. Il répétait souvent la parole du Christ : « Femme, qu’y a-t-il de commun entre vous et moi ? » et il ajoutait : « On dirait que Dieu lui-même se sentait mécontent de cette œuvre-là. » La femme était bien pour lui l’enfant douze fois impure dont parle le poète. Elle était le tentateur qui avait entraîné le premier homme et qui continuait toujours son œuvre de damnation, l’être faible, dangereux, mystérieusement troublant. Et plus encore que leur corps de perdition, il <interp ana="#disgust">haïssait</interp>leur âme aimante.</p>
+<p>entire paragraph - decay/decline!</p>
+<p>Souvent il avait senti leur tendresse attachée à lui et, bien qu’il se sût inattaquable, <interp ana="#negative-effect #contempt">  il s’exaspérait</interp> de ce besoin d’aimer qui frémissait toujours en elles.</p>
+<p>Dieu, à son avis, n’avait créé la femme que pour tenter l’homme et l’éprouver. Il ne fallait approcher d’elle qu’avec des précautions défensives, et les craintes qu’on a des pièges. Elle était, en effet, toute pareille à un piège avec ses bras tendus et ses lèvres ouvertes vers l’homme.</p>
+<p>Il n’avait d’indulgence que pour les religieuses que leur vœu rendait inoffensives ; mais il les traitait durement quand même, parce qu’il la sentait toujours vivante au fond de leur cœur enchaîné, de leur cœur humilié, cette éternelle tendresse qui venait encore à lui, bien qu’il fût un prêtre.</p>
+<p>Il la sentait dans leurs regards plus mouillés de piété que les regards des moines, dans leurs extases où leur sexe se mêlait, dans leurs élans d’amour vers le Christ, qui l’indignaient parce que c’était de l’amour de femme, de l’amour charnel ; il la sentait, cette <interp ana="#contempt #negative-effect"> tendresse maudite</interp>, dans leur docilité même, dans la douceur de leur voix en lui parlant, dans leurs yeux baissés, et dans leurs larmes résignées quand il les reprenait avec rudesse.</p>
+<p>Et il secouait sa soutane en sortant des portes du couvent, et il s’en allait en allongeant les jambes comme s’il avait fui devant un danger.</p>
+<p>Il avait une nièce qui vivait avec sa mère dans une petite maison voisine. Il s’acharnait à en faire une sœur de charité.</p>
+<p>Elle était jolie, écervelée et moqueuse. Quand l’abbé sermonnait, elle<interp ana="#joy #positive-effect #cause-character"> riait</interp> ; et quand il se fâchait contre elle, elle <interp>l’embrassait avec véhémence</interp>, le serrant contre son cœur, tandis qu’il cherchait involontairement à se dégager de cette étreinte qui lui faisait goûter cependant une <interp ana="#positive-effect #joy" >joie</interp> douce, éveillant au fond de lui cette sensation de paternité qui sommeille en tout homme.</p>
+<p>Souvent il lui parlait de Dieu, de son Dieu, en marchant à côté d’elle par les chemins des champs. Elle ne l’écoutait guère et regardait le ciel, les herbes, les fleurs, avec un <interp>bonheur de vivre</interp> qui se voyait dans ses yeux. Quelquefois elle s’élançait pour attraper une bête volante, et s’écriait en la rapportant : « Regarde, mon oncle, comme elle est jolie ; j’ai envie de l’embrasser. » Et ce besoin d’« embrasser des mouches » ou des grains de lilas <interp ana="#fear #negative-effect"> inequiétait</interp>, <interp ana="#anger #negative-effect">irritait</interp>, <interp ana="#anger #negative-effect">soulevait</interp> le prêtre, qui retrouvait encore là cette indéracinable tendresse qui germe toujours au cœur des femmes.</p>
+<p>Puis, voilà qu’un jour l’épouse du sacristain, qui faisait le ménage de l’abbé Marignan, lui apprit avec précaution que sa nièce avait un amoureux.</p>
+<p>Il en ressentit une émotion effroyable, et il demeura <interp>suffoqué</interp>, avec du savon plein la figure, car il était en train de se raser.</p>
+<p>Quand il se retrouva en état de réfléchir et de parler, il s’écria : « Ce n’est pas vrai, vous mentez, Mélanie ! »</p>
+<p>Mais la paysanne posa la main sur son cœur : « Que Notre-Seigneur me juge si je mens, monsieur le curé. J’ vous dis qu’elle y va tous les soirs sitôt qu’ votre sœur est couchée. Ils se r’trouvent le long de la rivière. Vous n’avez qu’à y aller voir entre dix heures et minuit. »</p>
+<p>Il cessa de se gratter le menton, et il se mit à marcher violemment, comme il faisait toujours en ses heures de grave méditation. Quand il voulut recommencer à se barbifier, il se coupa trois fois depuis le nez jusqu’à l’oreille.</p>
+<p>Tout le jour, il demeura muet, gonflé <interp>d’indignation et de colère</interp>. À sa fureur de prêtre, devant l’invincible<interp> amour</interp>, s’ajoutait une exaspération de père moral, de tuteur, de chargé d’âme, trompé, volé, joué par une enfant ; cette suffocation égoïste des parents à qui leur fille annonce qu’elle a fait, sans eux et malgré eux, choix d’un époux.</p>
+<p>Après son dîner, il essaya de lire un peu, mais il ne put y parvenir ; et il <interp>s’exaspérait </interp>de plus en plus. Quand dix heures sonnèrent, il prit sa canne, un formidable bâton de chêne dont il se servait toujours en ses courses nocturnes, quand il allait voir quelque malade. Et il regarda en souriant l’énorme gourdin qu’il faisait tourner, dans sa poigne solide de campagnard, en des moulinets menaçants. Puis, soudain, il le leva et, grinçant des dents, l’abattit sur une chaise dont le dossier fendu tomba sur le plancher.</p>
+<p>Il ouvrit sa porte pour sortir ; mais il s’arrêta sur le seuil, surpris par une splendeur de clair de lune telle qu’on n’en voyait presque jamais.</p>
+<p>Et comme il était doué d’un esprit exalté, un de ces esprits que devaient avoir les Pères de l’Église, ces poètes rêveurs, il se sentit soudain distrait,<interp> ému</interp> par la grandiose et sereine beauté de la nuit pâle.</p>
+<p>Dans son petit jardin, tout baigné de douce lumière, ses arbres fruitiers, rangés en ligne, dessinaient en ombre sur l’allée leurs grêles membres de bois à peine vêtus de verdure ; tandis que le chèvrefeuille géant, grimpé sur le mur de sa maison, exhalait des souffles délicieux et comme sucrés, faisait flotter dans le soir tiède et clair une espèce d’âme parfumée.</p>
+<p>Il se mit à respirer longuement, buvant de l’air comme les ivrognes boivent du vin, et il allait à pas lents, <interp>ravi, émerveillé</interp>, oubliant presque sa nièce.</p>
+<p>Dès qu’il fut dans la campagne, il s’arrêta pour contempler toute la plaine inondée de cette lueur caressante, noyée dans ce charme tendre et languissant des nuits sereines. Les crapauds à tout instant jetaient par l’espace leur note courte et métallique, et des rossignols lointains mêlaient leur musique égrenée qui fait rêver sans faire penser, leur musique légère et vibrante, faite pour les baisers, à la séduction du clair de lune.</p>
+<p>L’abbé se remit à marcher, le cœur défaillant, sans qu’il sût pourquoi. Il se sentait comme affaibli, épuisé tout à coup ; il avait envie de s’asseoir, de rester là, de contempler, d’admirer Dieu dans son œuvre.</p>
+<p>Là-bas, suivant les ondulations de la petite rivière, une grande ligne de peupliers serpentait. Une buée fine, une vapeur blanche que les rayons de lune traversaient, argentaient, rendaient luisante, restait suspendue autour et au-dessus des berges, enveloppait tout le cours tortueux de l’eau d’une sorte de ouate légère et transparente.</p>
+<p>Le prêtre encore une fois s’arrêta, pénétré jusqu’au fond de l’âme par un <interp ana="#admiration">attendrissement</interp> grandissant, irrésistible.</p>
+<p>Et un doute, une <interp ana="#fear">inquiétude vague</interp> l’envahissait ; il sentait naître en lui une de ces interrogations qu’il se posait parfois.</p>
+<p><interp ana="#distraction">Pourquoi Dieu avait-il fait cela ?</interp> Puisque la nuit est destinée au sommeil, à l’inconscience, au repos, à l’oubli de tout, pourquoi la rendre plus charmante que le jour, plus douce que les aurores et que les soirs, et pourquoi cet astre lent et séduisant, plus poétique que le soleil et qui semble destiné, tant il est discret, à éclairer des choses trop délicates et mystérieuses pour la grande lumière, s’en venait-il faire si transparentes les ténèbres ?</p>
+<p>Pourquoi le plus habile des oiseaux chanteurs ne se reposait-il pas comme les autres et se mettait-il à vocaliser dans l’ombre troublante ?</p>
+<p>Pourquoi ce demi-voile jeté sur le monde ? Pourquoi ces frissons de cœur, cette émotion de l’âme, cet alanguissement de la chair ?</p>
+<p>Pourquoi ce déploiement de séductions que les hommes ne voyaient point, puisqu’ils étaient couchés en leurs lits ? À qui étaient destinés ce spectacle sublime, cette abondance de poésie jetée du ciel sur la terre ?</p>
+<p>Et l’abbé <interp ana="#surprise"> ne comprenait point</interp>.</p>
+<p>Mais voilà que là-bas, sur le bord de la prairie, sous la voûte des arbres trempés de brume luisante, deux ombres apparurent qui marchaient côte à côte.</p>
+<p>L’homme était plus grand et tenait par le cou son amie, et, de temps en temps, l’embrassait sur le front. Ils animèrent tout à coup ce paysage immobile qui les enveloppait comme un cadre divin fait pour eux. Ils semblaient, tous deux, un seul être, l’être à qui était destinée cette nuit calme et silencieuse ; et ils s’en venaient vers le prêtre comme une réponse vivante, la réponse que son Maître jetait à son interrogation.</p>
+<p>Il restait debout, le cœur battant,<interp ana="#fear"> bouleversé</interp>, et il croyait voir quelque chose de biblique, comme les amours de Ruth et de Booz, l’accomplissement d’une volonté du Seigneur dans un de ces grands décors dont parlent les livres saints. En sa tête se mirent à bourdonner les versets du Cantique des Cantiques, les cris d’ardeur, les appels des corps, toute la chaude poésie de ce poème brûlant de tendresse.</p>
+<p>Et il se dit : « Dieu peut-être a fait ces nuits-là pour voiler d’idéal les amours des hommes. »</p>
+<p>Il reculait devant ce couple embrassé qui marchait toujours. C’était sa nièce pourtant ; mais il se demandait maintenant s’il n’allait pas désobéir à Dieu. Et Dieu ne permet-il point l’amour, puisqu’il l’entoure visiblement d’une splendeur pareille ?</p>
+<p>Et il s’enfuit, éperdu, presque <interp ana="#shame">honteux</interp>, comme s’il eût pénétré dans un temple où il n’avait pas le droit d’entrer.</p>
+<p>19 octobre 1882</p>
+
+</div>
+
+ </body>
+<back>
+<interpGrp type="emotions">
+        <desc>Emotions encoded in the text</desc>
+        <interp xml:id="joy" type="positive" >Joy</interp>
+        <interp xml:id="trust" type="positive" >Trust </interp>
+        <interp xml:id="anticipation" type="positive" >Anticipation</interp>
+        <interp xml:id="sadness" type="negative">Sadness</interp>
+        <interp xml:id="disgust" type="negative">Disgust</interp>
+        <interp xml:id="anger" type="negative">Anger</interp>
+        <interp xml:id="fear" type="negative">Fear</interp>
+        <interp xml:id="surprise" type="negative">Surprise</interp>
+      </interpGrp>
+
+      <interpGrp type="emotion-causes">
+        <desc>Causes linked to emotions encoded in the text</desc>
+        <interp xml:id="cause-character">A character that can affect the emotional state of another character.</interp>
+        <interp xml:id="cause-event">Event, that can influence a character's state (e.g. someone's death) </interp>
+      </interpGrp>
+
+      <interpGrp type="emotion-effect">
+        <desc>Effects linked to emotions encoded in the text</desc>
+        <interp xml:id="positive-effect" type="positive">A positive effect to a character </interp>
+        <interp xml:id="negative-effect" type="negative">A negative effect to a character</interp>
+
+</interpGrp>
+</back>
+</text>
+</TEI>
