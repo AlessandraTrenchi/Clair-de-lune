@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; //example of routing system
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import HomePage from './component/HomePage';
+import AboutPage from './component/AboutPage';
+import ContactPage from './component/ContactPage';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/contact" component={ContactPage} />
+      </Switch>
+    </Router>
   );
-}
+};
+//each route is associated with a specific component, when the corresponding URL is accessed, the associated component is rendered.
 
 export default App;
