@@ -1,6 +1,10 @@
 import React from 'react'; //example of routing system
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from '../components/Navbar';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Home from './components/Home';
+import Documentation from './components/Documentation';
+import Disclaimer from './components/Disclaimer';
 
 const App = () => {
   return (
@@ -8,8 +12,9 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/contact" component={ContactPage} />
+        <Route path="/documentation" component={Documentation} />
+        <Route path="/disclaimer" component={Disclaimer} />
+        <Route path="/about" component={About} />
       </Switch>
     </Router>
   );
