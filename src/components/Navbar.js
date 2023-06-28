@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link> {/* Use Link instead of <a> */}
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/documentation">Documentation</Link>
@@ -24,5 +24,5 @@ const Navbar = () => {
     </nav>
   );
 };
-//The Link component ensures that the navigation happens within the React application without triggering a full page reload
+
 export default Navbar;
