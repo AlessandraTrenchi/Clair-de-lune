@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import code from '../images/code.jpg';
 const Documentation = () => {
   return (
     <>
@@ -17,7 +17,7 @@ const Documentation = () => {
         stories. As a representative of the Naturalist school, he used the short
         story form in order to depict human lives, their destinies, and social
         influences around them, from a disillusioned and often pessimistic point
-        of view. <Link to="/home">Read more</Link>
+        of view. <Link to="/">Read more</Link>
       </p>
       <h2>Short stories</h2>
       <p>
@@ -63,7 +63,7 @@ const Documentation = () => {
         <u>interp</u> tags, which refer to three categories of interpretative
         annotations throughout the text
       </p>
-      <img src="images/code" alt="Encoding schema" />
+      <img src={code} alt="Documentation code"></img>
       <p>
         For the emotions classification, we have adopted the Plutchik wheel of
         emotions, which is a widely used abstraction of emotional states in the
