@@ -6,8 +6,74 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+@font-face {
+  font-family: 'play';
+  src: url(fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'sml';
+  src: url(fonts/sml.otf);
+}
+@font-face {
+  font-family: 'anavio';
+  src: url(fonts/anavio.ttf);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.cyan
+{
+    background: #00bcd4;
+}
+ul.brackets {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+ul.brackets li {
+  margin-right: 30px;
+  font-size: 2em;
+  font-family: 'play';
+  margin-left: 30px;
+}
+ul.brackets a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+ul.brackets a:before, ul.brackets a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+}
+ul.brackets a:before
+{
+    content: '(';
+    left: -12px;
+    transform: translateX(10px);
+}
+ul.brackets a:after
+{
+    content: ')';
+    right: -12px;
+    transform: translateX(-10px);
+}
+ul.brackets a:hover:before, ul.brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+h2{
+  font-family: 'play';
+  text-align: center;
+}
+p{
+  text-align: center;
+  font-family: 'anavio';
 }

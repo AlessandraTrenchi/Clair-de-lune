@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Home from './Home';
+import '../index.css';
+
 const Navbar = () => {
   return (
     <nav>
-      <ul>
+      <ul className='container cyan brackets'>
         <li>
           <Link to="/">Home</Link>
         </li>
