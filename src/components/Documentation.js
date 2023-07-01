@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import code from '../images/code.jpg';
+import Network from './Network';
+
+
 const Documentation = () => {
   return (
     <>
@@ -31,14 +34,14 @@ const Documentation = () => {
       <p>
         Their purpose is to create a particular emotional or atmospheric impact,
         or, as Edgar Allan Poe puts it, <i>unity of effect</i>, which refers to
-        the story's ability to evoke a specific emotional or psychological
+        the story&apos;s ability to evoke a specific emotional or psychological
         response in the reader. Poe believed that every aspect of a short
         story, whether literal or symbolic, should work together to create and
         maintain this desired effect.
       </p>
       <h2>Project aims</h2>
       <p>
-        Our project aims to provide an alternative close reading to Maupassant's
+        Our project aims to provide an alternative close reading to Maupassant&apos;s
         collection by focusing on how the author delivers the emotional states
         of his characters throughout the text. Our critical contribution to the
         extant document is based on the following questions:
@@ -73,6 +76,7 @@ const Documentation = () => {
       <h2>Ontology</h2>
       <p>Write about the ontology</p>
       <h2>Network analysis</h2>
+      <p><Network/></p>
       <h2>Publication</h2>
     </>
   );

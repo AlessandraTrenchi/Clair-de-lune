@@ -10,17 +10,17 @@ const Home = () => {
         He became a protégé of Gustave Flaubert and developed a keen observational style in his writings.
       </p>
       <p>
-        Maupassant's stories often explored the darker aspects of human nature, delving into themes of morality, psychology, and social satire.
+        Maupassant&apos;s stories often explored the darker aspects of human nature, delving into themes of morality, psychology, and social satire.
         His works are characterized by their concise prose, vivid descriptions, and precise narrative techniques.
-        Maupassant's writing style greatly influenced the development of the modern short story genre.
+        Maupassant&apos;s writing style greatly influenced the development of the modern short story genre.
       </p>
       <h2>Claire de Lune</h2>
       <p>
-        "Claire de Lune" is one of Maupassant's notable works, first published in 1882.
+      &quot;Claire de Lune&quot; is one of Maupassant&apos;s notable works, first published in 1882.
         The story follows the journey of a young woman named Claire, who is trapped in a loveless marriage.
         Seeking solace and a sense of freedom, Claire finds herself drawn to the moonlit nights and the tranquility they offer.
         Through the vivid descriptions of nature and the inner thoughts of the protagonist, Maupassant explores themes of longing, escape, and the limitations imposed by society.
-        "Claire de Lune" is regarded as a poignant and evocative tale that showcases Maupassant's mastery of storytelling.
+        &quot;Claire de Lune&quot; is regarded as a poignant and evocative tale that showcases Maupassant&apos;s mastery of storytelling.
       </p>
     </div>
   );
