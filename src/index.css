@@ -35,7 +35,7 @@ ul.brackets {
 }
 ul.brackets li {
   margin-right: 30px;
-  font-size: 2em;
+  font-size: 3em;
   font-family: 'play';
   margin-left: 30px;
 }
@@ -44,7 +44,7 @@ ul.brackets a {
   color: white;
   text-decoration: none;
 }
-ul.brackets a:before, ul.brackets a:after
+ul.brackets a:before, ul.brackets a:after, h2:before, h2:after
 {
     position: absolute;
     opacity: 0;
@@ -52,19 +52,19 @@ ul.brackets a:before, ul.brackets a:after
     top: 0px;
     transition: all 0.3s;
 }
-ul.brackets a:before
+ul.brackets a:before, h2:before
 {
     content: '(';
     left: -12px;
     transform: translateX(10px);
 }
-ul.brackets a:after
+ul.brackets a:after, h2:after
 {
     content: ')';
     right: -12px;
     transform: translateX(-10px);
 }
-ul.brackets a:hover:before, ul.brackets a:hover:after
+ul.brackets a:hover:before, ul.brackets a:hover:after, h2:hover:after, h2:hover:before
 {
     opacity: 1;
     transform: translateX(0px);
@@ -72,8 +72,10 @@ ul.brackets a:hover:before, ul.brackets a:hover:after
 h2{
   font-family: 'play';
   text-align: center;
+  font-size: 2.5em;
 }
 p{
   text-align: center;
   font-family: 'anavio';
+  font-size: 1.5em;
 }

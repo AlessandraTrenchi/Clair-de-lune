@@ -46,17 +46,15 @@ const Documentation = () => {
         of his characters throughout the text. Our critical contribution to the
         extant document is based on the following questions:
       </p>
-      <ul>
-        <li>
+        <p>
           What are the emotions more strongly present throughout short stories,
           and are there any patterns regarding the way they relate to the
           appearance of other emotions?
-        </li>
-        <li>
+        </p>
+        <p>
           To what extent do they manifest between the characters and external
           events?
-        </li>
-      </ul>
+        </p>
       <h2>Encoding schema</h2>
       <p>
         Our project follows the digital paradigm of digital scholarly editing
@@ -70,9 +68,8 @@ const Documentation = () => {
       <p>
         For the emotions classification, we have adopted the Plutchik wheel of
         emotions, which is a widely used abstraction of emotional states in the
-        field of psychology, but also sentiment analysis in literary texts.
-        <img src="https://public-media.interaction-design.org/images/uploads/70cb81fe1b87d2703d5c2f127841efad.jpg" alt="Plutchik wheel of emotions" />
-      </p>
+        field of psychology, but also sentiment analysis in literary texts.</p>
+      <p><img src="https://public-media.interaction-design.org/images/uploads/70cb81fe1b87d2703d5c2f127841efad.jpg" alt="Plutchik wheel of emotions" /></p>
       <h2>Ontology</h2>
       <p>Write about the ontology</p>
       <h2>Network analysis</h2>
