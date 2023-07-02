@@ -239,3 +239,6 @@ progress::-webkit-progress-value {
 .fino{
   padding-bottom: 2em;
 }
+.mom{
+  background-image: url(../src/images/momo.png);
+}

@@ -9,7 +9,7 @@ const Home = () => {
      <span className='fino'>
      <div className="container1"> 
      <Fluid/>
-     <span>
+     <span className='mom'>
       <h2>Guy de Maupassant</h2>
       <p className='para'>
         Guy de Maupassant (1850-1893) was a renowned French writer known for his influential works in the field of short stories.
@@ -21,7 +21,7 @@ const Home = () => {
         His works are characterized by their concise prose, vivid descriptions, and precise narrative techniques.
         Maupassant&apos;s writing style greatly influenced the development of the modern short story genre.
       </p></span>
-      <span><h2>Claire de Lune</h2>
+      <span className='mom'><h2>Claire de Lune</h2>
       <p className='para'>
       &quot;Claire de Lune&quot; is one of Maupassant&apos;s notable works, first published in 1882.
         The story follows the journey of a young woman named Claire, who is trapped in a loveless marriage.
