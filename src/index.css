@@ -78,4 +78,27 @@ p{
   text-align: center;
   font-family: 'anavio';
   font-size: 1.5em;
+  margin: 0.2em;
+}
+.imm{
+ text-align: center;
+}
+.net{
+  height: 20em;
+}
+.link{
+  font-size: 1em;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
 }

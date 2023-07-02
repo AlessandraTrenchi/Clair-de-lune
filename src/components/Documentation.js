@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import code from '../images/code.jpg';
 import Network from './Network';
-
+import Footer from './Footer';
 
 const Documentation = () => {
   return (
@@ -20,7 +20,8 @@ const Documentation = () => {
         stories. As a representative of the Naturalist school, he used the short
         story form in order to depict human lives, their destinies, and social
         influences around them, from a disillusioned and often pessimistic point
-        of view. <Link to="/">Read more</Link>
+        of view. 
+        <p className="link"><Link to="/">Read more</Link></p>
       </p>
       <h2>Short stories</h2>
       <p>
@@ -64,7 +65,7 @@ const Documentation = () => {
         <u>interp</u> tags, which refer to three categories of interpretative
         annotations throughout the text
       </p>
-      <img src={code} alt="Documentation code"></img>
+      <p><img src={code} alt="Documentation code" className='imm'></img></p>
       <p>
         For the emotions classification, we have adopted the Plutchik wheel of
         emotions, which is a widely used abstraction of emotional states in the
@@ -73,8 +74,9 @@ const Documentation = () => {
       <h2>Ontology</h2>
       <p>Write about the ontology</p>
       <h2>Network analysis</h2>
-      <p><Network/></p>
+      <p><p className='net'><Network/></p></p>
       <h2>Publication</h2>
+      <p><Footer/></p>
     </>
   );
 };

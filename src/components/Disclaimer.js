@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Footer from './Footer';
 const Disclaimer = () => {
   return (
     <div>
@@ -23,6 +23,7 @@ const Disclaimer = () => {
         By accessing and using this text, you agree to acknowledge and abide by the terms and conditions mentioned in this disclaimer.
         If you do not agree with these terms, please refrain from using the text and its annotations.
       </p>
+      <p><Footer/></p>
     </div>
   );
 };

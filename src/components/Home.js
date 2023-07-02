@@ -1,8 +1,9 @@
 import React from 'react';
-
+import Footer from './Footer';
+import '../index.css';
 const Home = () => {
   return (
-    <div>
+    <>
       <h2>Guy de Maupassant</h2>
       <p>
         Guy de Maupassant (1850-1893) was a renowned French writer known for his influential works in the field of short stories.
@@ -22,7 +23,8 @@ const Home = () => {
         Through the vivid descriptions of nature and the inner thoughts of the protagonist, Maupassant explores themes of longing, escape, and the limitations imposed by society.
         &quot;Claire de Lune&quot; is regarded as a poignant and evocative tale that showcases Maupassant&apos;s mastery of storytelling.
       </p>
-    </div>
+      <Footer/>
+    </>
   );
 };
 
