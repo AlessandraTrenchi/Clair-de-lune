@@ -76,7 +76,6 @@ h2{
 }
 p{
   text-align: center;
-  font-family: 'anavio';
   font-size: 1.5em;
   margin: 0.2em;
 }
@@ -89,7 +88,7 @@ p{
 .link{
   font-size: 1em;
 }
-.footer {
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -97,8 +96,8 @@ p{
   background-color: #f8f8f8;
   padding: 20px;
   text-align: center;
+  font-family: 'play'!important;
 }
-
-.hidden{
-  display: none;
+.para{
+  font-family: 'anavio';
 }
