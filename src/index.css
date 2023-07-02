@@ -25,7 +25,7 @@ code {
 
 .cyan
 {
-  background: #11848A;
+  background: #222466;
 }
 ul.brackets {
   display: flex;
@@ -61,16 +61,16 @@ ul.brackets a:before, ul.brackets a:after, h2:before, h2:after
 ul.brackets a:before, h2:before
 {
     content: '(';
-    left: -12px;
+    left: -20px;
     transform: translateX(10px);
-    color: #222466;
+    color: #E5AD4A;
 }
 ul.brackets a:after, h2:after
 {
     content: ')';
-    right: -12px;
+    right: -20px;
     transform: translateX(-10px);
-    color: #222466;
+    color: #E5AD4A;
 }
 ul.brackets a:hover:before, ul.brackets a:hover:after, h2:hover:after, h2:hover:before
 {
@@ -85,7 +85,6 @@ h2{
 }
 p{
   text-align: center;
-  font-size: 1.5em;
   margin: 0.2em;
 }
 .imm{
@@ -107,9 +106,11 @@ footer {
   text-align: center;
   font-family: 'play'!important;
   color: white;
+  font-size: 1.5em;
 }
 .para{
   font-family: 'anavio';
+  font-size: 1.5em;
 }
 Link, a{
   color: white;
@@ -127,4 +128,98 @@ a:hover{
     margin: 10px 0;
     color:#DB7754;
   }
+}
+progress {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border: none;
+  background: transparent;
+}
+
+progress::-webkit-progress-bar {
+  background: #ffffff;
+}
+
+progress::-webkit-progress-value {
+  background-color: #E5AD4A;
+}
+
+.scro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  
+  align-items: center;
+  padding: 0 20px;
+  transition: background-color 0.3s ease;
+}
+
+.scro.scrolled {
+  background-color: #E5AD4A;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.fluid-text {
+  position: relative;
+  font-size: 10rem;
+  font-weight: bold;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.fluid-text span {
+  display: inline-block;
+  color: #E5AD4A;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: fill 5s linear infinite;
+}
+
+@keyframes fill {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+h1{
+  font-family: 'play';
+  color: #E5AD4A;
+  font-size: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+.container1{
+  background-image: url(../src/images/luno.gif);
+  margin-bottom: 0;
 }
