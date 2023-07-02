@@ -25,19 +25,25 @@ code {
 
 .cyan
 {
-    background: #00bcd4;
+  background: #11848A;
 }
 ul.brackets {
   display: flex;
   list-style-type: none;
   padding: 0;
   text-align: center;
+  margin-top: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  align-items: center;
+  justify-content: center;
 }
 ul.brackets li {
   margin-right: 30px;
   font-size: 3em;
   font-family: 'play';
   margin-left: 30px;
+  
 }
 ul.brackets a {
   position: relative;
@@ -48,7 +54,7 @@ ul.brackets a:before, ul.brackets a:after, h2:before, h2:after
 {
     position: absolute;
     opacity: 0;
-    font-size: 35px;
+    font-size: 50px;
     top: 0px;
     transition: all 0.3s;
 }
@@ -57,18 +63,21 @@ ul.brackets a:before, h2:before
     content: '(';
     left: -12px;
     transform: translateX(10px);
+    color: #222466;
 }
 ul.brackets a:after, h2:after
 {
     content: ')';
     right: -12px;
     transform: translateX(-10px);
+    color: #222466;
 }
 ul.brackets a:hover:before, ul.brackets a:hover:after, h2:hover:after, h2:hover:before
 {
     opacity: 1;
     transform: translateX(0px);
 }
+
 h2{
   font-family: 'play';
   text-align: center;
@@ -93,11 +102,29 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #f8f8f8;
+  background-color: #222466;
   padding: 20px;
   text-align: center;
   font-family: 'play'!important;
+  color: white;
 }
 .para{
   font-family: 'anavio';
+}
+Link, a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color:#DB7754;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .brackets li {
+    margin: 10px 0;
+    color:#DB7754;
+  }
 }
