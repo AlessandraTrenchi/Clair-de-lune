@@ -36,6 +36,7 @@ const Network = () => {
       { id: 'annoyance', label: 'annoyance' },
       { id: 'trust', label: 'trust' },
       { id: 'vigilance', label: 'vigilance' },
+      { id: 'added-node', label: 'added-node' }, // Nodo aggiunto
     ],
     edges: [
       { from: 'cause-internal', to: 'love', id: '0' },
@@ -69,6 +70,7 @@ const Network = () => {
       { from: 'cause-internal', to: 'annoyance', id: '28' },
       { from: 'cause-internal', to: 'trust', id: '29' },
       { from: 'cause-internal', to: 'vigilance', id: '30' },
+      { from: 'cause-internal', to: 'added-node', id: '31' }, // Arco aggiunto
     ],
   };
 
