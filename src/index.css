@@ -197,14 +197,18 @@ progress::-webkit-progress-value {
 .container1{
   background-image: url(../src/images/luno.gif);
   margin-bottom: 0;
+  justify-content: center;
+  padding-bottom: 12em;
 }
 .fluid-text {
-  font-size: 3rem;
+  font-size: 8rem;
   font-weight: bold;
+  font-family: 'play';
   text-transform: uppercase;
   position: relative;
   display: inline-block;
   cursor: pointer;
+  align-items: center;
 }
 
 .fluid-text:before,
@@ -225,4 +229,13 @@ progress::-webkit-progress-value {
 .fluid-text.hovered:before,
 .fluid-text.hovered:after {
   transform: translateX(5px) translateY(5px);
+}
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; /* Adjust this value to set the container's height */
+}
+.fino{
+  padding-bottom: 2em;
 }

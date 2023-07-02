@@ -13,14 +13,16 @@ const Fluid = () => {
   };
 
   return (
-    <h1
-      className={`fluid-text ${isHovered ? 'hovered' : ''}`}
-      onMouseEnter={handleHover}
-      onMouseLeave={handleUnhover}
-      data-text="Claire de Lune"
-    >
-      Claire de Lune
-    </h1>
+    <div className="centered-container">
+      <h1
+        className={`fluid-text ${isHovered ? 'hovered' : ''}`}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleUnhover}
+        data-text="Claire de Lune"
+      >
+        Claire de Lune
+      </h1>
+    </div>
   );
 };
 
