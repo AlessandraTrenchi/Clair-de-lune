@@ -182,24 +182,6 @@ progress::-webkit-progress-value {
 
 }
 
-.fluid-text {
-  position: relative;
-  font-size: 10rem;
-  font-weight: bold;
-  color: transparent;
-  text-transform: uppercase;
-}
-
-.fluid-text span {
-  display: inline-block;
-  color: #E5AD4A;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation: fill 5s linear infinite;
-}
-
 @keyframes fill {
   0% {
     background-position: 0% 0%;
@@ -211,15 +193,36 @@ progress::-webkit-progress-value {
     background-position: 0% 0%;
   }
 }
-h1{
-  font-family: 'play';
-  color: #E5AD4A;
-  font-size: 4em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  text-align: center;
-}
+
 .container1{
   background-image: url(../src/images/luno.gif);
   margin-bottom: 0;
+}
+.fluid-text {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.fluid-text:before,
+.fluid-text:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.fluid-text:hover:before,
+.fluid-text:hover:after {
+  transform: translateX(-5px) translateY(-5px);
+}
+
+.fluid-text.hovered:before,
+.fluid-text.hovered:after {
+  transform: translateX(5px) translateY(5px);
 }

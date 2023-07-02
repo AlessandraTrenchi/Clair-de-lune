@@ -1,28 +1,14 @@
 import React from 'react';
 import Footer from './Footer';
 import '../index.css';
+import Fluid from './Fluid';
 
 const Home = () => {
   return (
     <>
      <span>
      <div className="container1"> 
-      <h1 className="fluid-text"> 
-        <span>C</span>
-        <span>L</span>
-        <span>A</span>
-        <span>I</span>
-        <span>R</span>
-        <span>E</span>
-        <span> </span>
-        <span>D</span>
-        <span>E</span>
-        <span> </span>
-        <span>L</span>
-        <span>U</span>
-        <span>N</span>
-        <span>E</span>
-      </h1>
+     <Fluid/>
       <h2>Guy de Maupassant</h2>
       <p className='para'>
         Guy de Maupassant (1850-1893) was a renowned French writer known for his influential works in the field of short stories.
