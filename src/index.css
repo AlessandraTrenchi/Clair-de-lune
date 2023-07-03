@@ -111,6 +111,9 @@ footer {
 .para{
   font-family: 'anavio';
   font-size: 1.5em;
+  color: #222466;
+  position: relative;
+  z-index: 1;
 }
 Link, a{
   color: white;
@@ -212,7 +215,7 @@ progress::-webkit-progress-value {
 }
 
 .fluid-text:before,
-.fluid-text:after {
+.fluid-text:after, h2:before, h2:after {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -222,12 +225,12 @@ progress::-webkit-progress-value {
 }
 
 .fluid-text:hover:before,
-.fluid-text:hover:after {
+.fluid-text:hover:after, h2:hover:before, h2:hover:after {
   transform: translateX(-5px) translateY(-5px);
 }
 
 .fluid-text.hovered:before,
-.fluid-text.hovered:after {
+.fluid-text.hovered:after, h2:hovered:before, h2:hovered:after {
   transform: translateX(5px) translateY(5px);
 }
 .centered-container {
@@ -239,6 +242,32 @@ progress::-webkit-progress-value {
 .fino{
   padding-bottom: 2em;
 }
-.mom{
-  background-image: url(../src/images/momo.png);
+.mom {
+  background-image: url('../src/images/old.jpg'); /* Replace with the path to your background image */
+  opacity: 0.5;
+  filter: blur(1px); 
+  width: 43rem;
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+  border-radius: 12%;
+  margin: 0 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: space-between;
+}
+
+.mom h2,
+.mom .para {
+  position: relative;
+  z-index: 1;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+}
+.para{
+  position: relative;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; 
 }
