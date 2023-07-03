@@ -107,6 +107,7 @@ footer {
   font-family: 'play'!important;
   color: white;
   font-size: 1.5em;
+  z-index: 1;
 }
 .para{
   font-family: 'anavio';
@@ -260,7 +261,7 @@ progress::-webkit-progress-value {
 }
 
 .mom h2,
-.mom .para {
+.mom{
   position: relative;
   z-index: 1;
   font-weight: bolder;
@@ -277,8 +278,10 @@ progress::-webkit-progress-value {
 }
 .journal {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 3em;
   align-items: stretch;
+  margin-bottom: 4em;
 }
