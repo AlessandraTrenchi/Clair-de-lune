@@ -249,12 +249,14 @@ progress::-webkit-progress-value {
   background-image: url('../src/images/old.jpg'); /* Replace with the path to your background image */
   opacity: 0.8;
   filter: blur(1px); 
-  width: 43rem;
+  width: 50rem;
   display: flex;
   flex-direction: row;
   border-radius: 12%;
   justify-content: space-between;
-  margin: 1em;
+  margin: 9em;
+  background-size: cover;
+  background-position: center center;
 }
 
 .mom h2,
@@ -267,9 +269,7 @@ progress::-webkit-progress-value {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.mom > div:first-child {
-  margin-right: 24em; /* Adjust margin-right to increase space between divs */
-}
+
 .para {
   
   max-width: 1000px; /* Adjust the maximum width as needed */
@@ -277,7 +277,8 @@ progress::-webkit-progress-value {
 }
 .journal {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding-top: 8em;
-  margin-right: 3em;
+  padding-top: 3em;
+  align-items: stretch;
 }
