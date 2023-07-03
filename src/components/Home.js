@@ -10,6 +10,7 @@ const Home = () => {
      <span className='fino'>
      <div className="container1"> 
      <Fluid/>
+     <div className='journal'>
      <div className='mom'>
       <h2>Guy de Maupassant</h2>
       <div className='para'>
@@ -29,7 +30,7 @@ const Home = () => {
         Seeking solace and a sense of freedom, Claire finds herself drawn to the moonlit nights and the tranquility they offer.
         Through the vivid descriptions of nature and the inner thoughts of the protagonist, Maupassant explores themes of longing, escape, and the limitations imposed by society.
         &quot;Claire de Lune&quot; is regarded as a poignant and evocative tale that showcases Maupassant&apos;s mastery of storytelling.
-      </div></div></div>
+      </div></div></div></div>
     </span>
       <Footer/>
     </>

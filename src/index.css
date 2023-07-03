@@ -199,9 +199,12 @@ progress::-webkit-progress-value {
 
 .container1{
   background-image: url(../src/images/luno.gif);
+  background-repeat: no-repeat; /* Set the background image to not repeat */
+  background-size: cover;
   margin-bottom: 0;
   justify-content: center;
   padding-bottom: 12em;
+  background-position: center center;
 }
 .fluid-text {
   font-size: 8rem;
@@ -244,18 +247,14 @@ progress::-webkit-progress-value {
 }
 .mom {
   background-image: url('../src/images/old.jpg'); /* Replace with the path to your background image */
-  opacity: 0.5;
+  opacity: 0.8;
   filter: blur(1px); 
   width: 43rem;
-  z-index: -1;
   display: flex;
   flex-direction: row;
   border-radius: 12%;
-  margin: 0 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
   justify-content: space-between;
+  margin: 1em;
 }
 
 .mom h2,
@@ -265,9 +264,20 @@ progress::-webkit-progress-value {
   font-weight: bolder;
   justify-content: center;
   align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
-.para{
-  position: relative;
-  max-width: 800px; /* Adjust the maximum width as needed */
-  margin: 0 auto; 
+.mom > div:first-child {
+  margin-right: 24em; /* Adjust margin-right to increase space between divs */
+}
+.para {
+  
+  max-width: 1000px; /* Adjust the maximum width as needed */
+  margin: 0; 
+}
+.journal {
+  display: flex;
+  justify-content: center;
+  padding-top: 8em;
+  margin-right: 3em;
 }
