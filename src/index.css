@@ -260,7 +260,6 @@ progress::-webkit-progress-value {
   background-position: center center;
 }
 
-.mom h2,
 .mom{
   position: relative;
   z-index: 1;
@@ -270,7 +269,9 @@ progress::-webkit-progress-value {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-
+.mom h2{
+  margin: 1em;
+}
 .para {
   
   max-width: 1000px; /* Adjust the maximum width as needed */
