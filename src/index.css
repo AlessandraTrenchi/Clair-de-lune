@@ -115,7 +115,8 @@ footer {
   font-size: 1.5em;
   color: #222466;
   position: relative;
-  z-index: 1;
+  background-color: #E8DBAC;
+  border-radius: 12%;
 }
 Link, a{
   color: white;
@@ -285,8 +286,15 @@ progress::-webkit-progress-value {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.mom h2, .textlu h2{
+.mom h2{
   margin: 1em;
+  background-color: #E8DBAC;
+  border-radius: 12%;
+}
+.textlu h2{
+  margin: 1em;
+  background-color: #bdb9b7;
+  border-radius: 12%;
 }
 .disco {
   z-index: -1;
