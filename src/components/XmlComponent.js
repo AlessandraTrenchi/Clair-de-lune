@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { CETEI } from 'ceteicean';
-import { CeteiCean } from 'cetei-cean';
-import 'cetei-cean/dist/ceteicean.css';
 import bijouxXML from '../text/bijoux.xml';
 
 const XmlComponent = () => {
@@ -10,30 +8,16 @@ const XmlComponent = () => {
   useEffect(() => {
     const generateXml = async () => {
       const ceteicean = new CETEI();
-      ceteicean.load(bijouxXML); // Load the XML file
-      const generatedXmlString = await ceteicean.saveXML();
+      await ceteicean.getHTML5(bijouxXML);
+      const generatedXmlString = ceteicean.exportHTML5();
       setXmlString(generatedXmlString);
     };
 
     generateXml();
   }, []);
 
-  useEffect(() => {
-    const renderAnnotatedText = () => {
-      const ceteiCean = new CeteiCean();
-      const container = document.getElementById('annotated-text-container');
-      ceteiCean.loadFromString(xmlString, container);
-    };
-
-    if (xmlString) {
-      renderAnnotatedText();
-    }
-  }, [xmlString]);
-
   return (
-    <div>
-      <div id="annotated-text-container" />
-    </div>
+    <div dangerouslySetInnerHTML={{ __html: xmlString }} />
   );
 };
 

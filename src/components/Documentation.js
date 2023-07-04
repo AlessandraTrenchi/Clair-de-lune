@@ -79,7 +79,6 @@ const Documentation = () => {
       <div className='textlu'><h2>Ontology</h2>
       <p className='disco'>Write about the ontology</p></div>
       <div className='textlu'><h2>Network analysis</h2></div>
-     <div className='nett'><Network/></div>
       <div className='textlu'><h2>Publication</h2></div>
       <p><Footer/></p></div>
     </>
