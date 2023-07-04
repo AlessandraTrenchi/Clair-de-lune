@@ -3,18 +3,19 @@ import { Link } from 'react-router-dom';
 import code from '../images/code.jpg';
 import Network from './Network';
 import Footer from './Footer';
-import Scroll from './Scroll';
+
 const Documentation = () => {
   return (
     <>
-    <span></span>
+    <div className='mom'>
       <h2>Introduction</h2>
       <p className='para'>
         “Project name” is a digital edition of the short stories collection
         “Clair de Lune” by Guy de Maupassant, which incorporates digital
         scholarly editions tools in order to shine light on the use of emotions
         in his work.
-      </p>
+      </p></div>
+      <div className='mom'>
       <h2>The Author</h2>
       <p className='para'>
         Guy de Maupassant was a 19th-century French author, famous for his short
@@ -23,7 +24,8 @@ const Documentation = () => {
         influences around them, from a disillusioned and often pessimistic point
         of view. 
         <p className="link"><Link to="/">Read more</Link></p>
-      </p>
+      </p></div>
+      <div className='mom'>
       <h2>Short stories</h2>
       <p className='para'>
         Short stories are designed to be read in one sitting and most often
@@ -40,8 +42,8 @@ const Documentation = () => {
         response in the reader. Poe believed that every aspect of a short
         story, whether literal or symbolic, should work together to create and
         maintain this desired effect.
-      </p>
-      <h2>Project aims</h2>
+      </p></div>
+      <div className='mom'><h2>Project aims</h2>
       <p className='para'>
         Our project aims to provide an alternative close reading to Maupassant&apos;s
         collection by focusing on how the author delivers the emotional states
@@ -56,7 +58,8 @@ const Documentation = () => {
         <p className='para'>
           To what extent do they manifest between the characters and external
           events?
-        </p>
+        </p></div>
+        <div className='mom'>
       <h2>Encoding schema</h2>
       <p className='para'>
         Our project follows the digital paradigm of digital scholarly editing
@@ -65,18 +68,18 @@ const Documentation = () => {
         For encoding the specific instances of emotions, we adopted the{' '}
         <u>interp</u> tags, which refer to three categories of interpretative
         annotations throughout the text
-      </p>
+      </p></div>
       <p><img src={code} alt="Documentation code" className='imm'></img></p>
-      <p className='para'>
+      <div className='mom'><p className='para'>
         For the emotions classification, we have adopted the Plutchik wheel of
         emotions, which is a widely used abstraction of emotional states in the
-        field of psychology, but also sentiment analysis in literary texts.</p>
-      <p><img src="https://public-media.interaction-design.org/images/uploads/70cb81fe1b87d2703d5c2f127841efad.jpg" alt="Plutchik wheel of emotions" /></p>
-      <h2>Ontology</h2>
-      <p className='para'>Write about the ontology</p>
-      <h2>Network analysis</h2>
-      <p><p className='net'><Network/></p></p>
-      <h2>Publication</h2>
+        field of psychology, but also sentiment analysis in literary texts.</p></div>
+      <p><img src="https://public-media.interaction-design.org/images/uploads/70cb81fe1b87d2703d5c2f127841efad.jpg" alt="Plutchik wheel of emotions" className='imm'/></p>
+      <div className='mom'><h2>Ontology</h2>
+      <p className='para'>Write about the ontology</p></div>
+      <div className='mom'><h2>Network analysis</h2></div>
+     <div className='nett'><Network/></div>
+      <div className='mom'><h2>Publication</h2></div>
       <p><Footer/></p>
     </>
   );

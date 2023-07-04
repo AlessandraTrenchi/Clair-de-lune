@@ -75,8 +75,35 @@ const Network = () => {
   };
 
   const options = {
-    // Specify options for the graph visualization
-    // Refer to the react-graph-vis documentation for available options
+    nodes: {
+      shape: 'dot',
+      size: 20,
+      font: {
+        size: 33,
+        color: '#222466',
+      },
+      borderWidth: 2,
+    },
+    edges: {
+      width: 2,
+    },
+    height: '700px',
+    width: '1800px',
+    physics: {
+      forceAtlas2Based: {
+        gravitationalConstant: -80, // Increase this value to make nodes more distant
+        centralGravity: 0.01,
+        springLength: 300, // Increase this value to make nodes more distant
+        springConstant: 0.05,
+        damping: 0.4,
+        avoidOverlap: 0,
+      },
+      maxVelocity: 50,
+      minVelocity: 0.1,
+      solver: 'forceAtlas2Based',
+      timestep: 0.35,
+      stabilization: { iterations: 150 },
+    },
   };
 
   return <Graph graph={graph} options={options} />;

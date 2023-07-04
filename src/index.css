@@ -89,9 +89,8 @@ p{
 }
 .imm{
  text-align: center;
-}
-.net{
-  height: 20em;
+ width: 50rem;
+ height:50rem;
 }
 .link{
   font-size: 1em;
@@ -216,6 +215,7 @@ progress::-webkit-progress-value {
   display: inline-block;
   cursor: pointer;
   align-items: center;
+  padding-top: 3em;
 }
 
 .fluid-text:before,
@@ -226,6 +226,7 @@ progress::-webkit-progress-value {
   left: 0;
   color: #fff;
   transition: transform 0.3s ease;
+  padding-top: 3em;
 }
 
 .fluid-text:hover:before,
@@ -286,3 +287,4 @@ progress::-webkit-progress-value {
   align-items: stretch;
   margin-bottom: 4em;
 }
+
