@@ -24,7 +24,7 @@ const Sidebar = ({ sections, onSectionClick }) => {
                 onClick={() => handleSectionClick(section)}
               >
                 <span className="section-id">{section.id}</span>
-                {section.title}
+                
               </button>
             </li>
           ))}

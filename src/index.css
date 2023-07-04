@@ -335,7 +335,16 @@ progress::-webkit-progress-value {
   padding: 0;
   
 }
-
+.section-id{
+  color:#222466;
+  background-image: url(../src/images/textlu.avif);
+  padding: 2em;
+  border-radius: 12%;
+  color: #222466;
+  font-size: 2em;
+  margin: auto;
+  text-transform: capitalize;
+}
 .sidebar-links .section-list li {
   margin-right: auto;
   margin-left: auto;

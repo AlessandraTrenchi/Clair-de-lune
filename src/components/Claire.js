@@ -10,10 +10,10 @@ const Claire = () => {
   };
   // Define your sections with corresponding XML text
   const sections = [
-    { title: 'Portfolio', text: 'XML text for Portfolio' },
-    { id: 'analytics', title: 'Analytics', text: 'XML text for Analytics' },
-    { id: 'dashboard', title: 'Performance', text: 'XML text for Performance' },
-    { id: 'reports', title: 'Reports', text: 'XML text for Reports' },
+    { id: 'Portfolio', text: 'XML text for Portfolio' },
+    { id: 'analytics', text: 'XML text for Analytics' },
+    { id: 'dashboard', text: 'XML text for Performance' },
+    { id: 'reports', text: 'XML text for Reports' },
   ];
 
   return (
