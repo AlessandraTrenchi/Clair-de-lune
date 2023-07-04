@@ -91,6 +91,8 @@ p{
  text-align: center;
  width: 50rem;
  height:50rem;
+ filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+ filter: sepia(70%);
 }
 .link{
   font-size: 1em;
