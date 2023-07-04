@@ -3,8 +3,7 @@ import XmlComponent from './XmlComponent';
 
 const Claire = () => {
   return (
-    <div>
-      {/* Other content */}
+    <div className='cielo1'>
       <XmlComponent />
     </div>
   );

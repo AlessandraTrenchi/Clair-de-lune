@@ -1,23 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import { CETEI } from 'ceteicean';
+import React, { useEffect, useRef } from 'react';
+import CETEIcean from 'CETEIcean'
 import bijouxXML from '../text/bijoux.xml';
-
+import Footer from './Footer';
+import '../index.css';
 const XmlComponent = () => {
-  const [xmlString, setXmlString] = useState('');
+  const xmlContainerRef = useRef(null);
 
   useEffect(() => {
-    const generateXml = async () => {
-      const ceteicean = new CETEI();
-      await ceteicean.getHTML5(bijouxXML);
-      const generatedXmlString = ceteicean.exportHTML5();
-      setXmlString(generatedXmlString);
-    };
+    const ceteicean = new CETEIcean({
+      ignoreFragmentId: true
+    });
 
-    generateXml();
+    ceteicean.getHTML5(bijouxXML, (data) => {
+      xmlContainerRef.current.appendChild(data);
+    });
   }, []);
 
   return (
-    <div dangerouslySetInnerHTML={{ __html: xmlString }} />
+    <div>
+      <div id="TEI" ref={xmlContainerRef} />
+      <Footer />
+    </div>
   );
 };
 

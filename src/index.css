@@ -324,3 +324,6 @@ progress::-webkit-progress-value {
   padding-top: 5em;
   background-image: url(../src/images/cielo.gif);
 }
+#TEI{
+  color: #ffffff;
+}
