@@ -1,5 +1,6 @@
 import React from 'react';
 import Graph from 'react-graph-vis';
+import Footer from './Footer';
 
 const Network = () => {
   const graph = {
@@ -111,7 +112,9 @@ const Network = () => {
   return (
     <div className='nett'>
       <Graph graph={graph} options={options} />
+      <div><Footer/></div>
     </div>
+   
   );
   };
 

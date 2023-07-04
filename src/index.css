@@ -320,5 +320,7 @@ progress::-webkit-progress-value {
   padding-bottom: 40em;
 }
 .nett{
-  padding-bottom: 5em;
+  padding-bottom: 1em;
+  padding-top: 5em;
+  background-image: url(../src/images/cielo.gif);
 }
