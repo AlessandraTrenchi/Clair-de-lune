@@ -325,5 +325,24 @@ progress::-webkit-progress-value {
   background-image: url(../src/images/cielo.gif);
 }
 #TEI{
-  color: #ffffff;
+  color: #E5AD4A;
+  font-family: 'play';
+  font-size: 2em;
 }
+.sidebar-links .section-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.sidebar-links .section-list li {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sidebar-links .section-list li:last-child {
+  margin-right: 0;
+}
+
+
