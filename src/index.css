@@ -294,7 +294,7 @@ progress::-webkit-progress-value {
   margin: 0; 
   filter:saturate(100%);
   border-radius: 12%;
-  background-color: rgba(255, 0, 0, 0);
+  background-color: #bdb9b7;
   backdrop-filter: blur(5px); 
 }
 .journal {
@@ -336,7 +336,6 @@ progress::-webkit-progress-value {
   
 }
 .section-id{
-  color:#222466;
   background-image: url(../src/images/textlu.avif);
   padding: 2em;
   border-radius: 12%;
