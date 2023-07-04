@@ -78,6 +78,7 @@ const Network = () => {
     nodes: {
       shape: 'dot',
       size: 20,
+      color: '#BDB9B7',
       font: {
         size: 33,
         color: 'white',
