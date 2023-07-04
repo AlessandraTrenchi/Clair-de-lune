@@ -108,7 +108,7 @@ footer {
   font-size: 1.5em;
   z-index: 1;
 }
-.para{
+.para, .disco{
   font-family: 'anavio';
   font-size: 1.5em;
   color: #222466;
@@ -247,7 +247,7 @@ progress::-webkit-progress-value {
 .fino{
   padding-bottom: 2em;
 }
-.mom {
+.mom{
   background-image: url('../src/images/old.jpg'); /* Replace with the path to your background image */
   opacity: 0.8;
   filter: blur(1px); 
@@ -260,8 +260,18 @@ progress::-webkit-progress-value {
   background-size: cover;
   background-position: center center;
 }
-
-.mom{
+.textlu {
+  background-image: url('../src/images/textlu.avif');
+  opacity: 1;
+  backdrop-filter: blur(5px);  
+  width: 50rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 12%;
+  margin: auto;
+  justify-content: center;
+}
+.mom, .textlu{
   position: relative;
   z-index: 1;
   font-weight: bolder;
@@ -270,13 +280,16 @@ progress::-webkit-progress-value {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.mom h2{
+.mom h2, .textlu h2{
   margin: 1em;
 }
-.para {
-  
+.disco {
+  z-index: -1;
   max-width: 1000px; /* Adjust the maximum width as needed */
   margin: 0; 
+  filter:saturate(100%);
+  border-radius: 12%;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .journal {
   display: flex;
@@ -287,4 +300,11 @@ progress::-webkit-progress-value {
   align-items: stretch;
   margin-bottom: 4em;
 }
-
+.cielo{
+  background-image: url(../src/images/terra.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-top: 8em;
+  padding-bottom: 15em;
+}
