@@ -108,7 +108,11 @@ const Network = () => {
     },
   };
 
-  return <Graph graph={graph} options={options} />;
-};
+  return (
+    <div className='nett'>
+      <Graph graph={graph} options={options} />
+    </div>
+  );
+  };
 
 export default Network;
