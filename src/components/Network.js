@@ -80,12 +80,13 @@ const Network = () => {
       size: 20,
       font: {
         size: 33,
-        color: '#222466',
+        color: 'white',
       },
       borderWidth: 2,
     },
     edges: {
       width: 2,
+      color: 'white',
     },
     height: '700px',
     width: '1800px',
