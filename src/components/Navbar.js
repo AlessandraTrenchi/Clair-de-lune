@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav>
       <ul className='container cyan brackets'>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/Home">Home</Link>
         </li>
         <li>
           <Link to="/documentation">Documentation</Link>

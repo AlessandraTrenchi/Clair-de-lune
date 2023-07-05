@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import code from '../images/code.jpg';
 import Network from './Network';
 import Footer from './Footer';
+import EncodingSchema from './EncodingSchema';
+import { CodeBlock } from "react-code-blocks";
+
 
 const Documentation = () => {
   return (
@@ -68,8 +71,11 @@ const Documentation = () => {
         for conducting textual analysis for answering our research questions.
         For encoding the specific instances of emotions, we adopted the{' '}
         <u>interp</u> tags, which refer to three categories of interpretative
-        annotations throughout the text
-      </p></div>
+        annotations throughout the text.
+      </p>
+
+  </div>
+      <div className='code'><EncodingSchema/></div>
       <p><img src={code} alt="Documentation code" className='imm'></img></p>
       <div className='textlu'><p className='disco'>
         For the emotions classification, we have adopted the Plutchik wheel of
@@ -80,7 +86,7 @@ const Documentation = () => {
       <p className='disco'>Write about the ontology</p></div>
 
       <div className='textlu'><h2>Network analysis</h2>
-      <Network/>
+      <p className='disco'>Network analysis documentation</p>
       </div>
       <div className='textlu'><h2>Publication</h2></div>
       <p><Footer/></p></div>

@@ -43,7 +43,7 @@ ul.brackets li {
   font-size: 2.5em;
   font-family: 'play';
   margin-left: 30px;
-  
+
 }
 ul.brackets a {
   position: relative;
@@ -86,6 +86,7 @@ h2{
 p{
   text-align: center;
   margin: 0.2em;
+  font-size:0.8em;
 }
 .imm{
  text-align: center;
@@ -98,21 +99,22 @@ p{
   font-size: 1em;
 }
 footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
+  height:5em;
   background-color: #222466;
   padding: 20px;
   text-align: center;
   font-family: 'play'!important;
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   z-index: 1;
 }
 .para, .disco{
   font-family: 'anavio';
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #222466;
   position: relative;
   background-color: #E8DBAC;
@@ -162,7 +164,7 @@ progress::-webkit-progress-value {
   left: 0;
   width: 100%;
   height: 72px;
-  
+
   align-items: center;
   padding: 0 20px;
   transition: background-color 0.3s ease;
@@ -185,6 +187,7 @@ progress::-webkit-progress-value {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size:0.8em;
 
 }
 
@@ -253,7 +256,7 @@ progress::-webkit-progress-value {
 .mom{
   background-image: url('../src/images/old.jpg'); /* Replace with the path to your background image */
   opacity: 0.8;
-  filter: blur(1px); 
+  filter: blur(1px);
   width: 50rem;
   display: flex;
   flex-direction: row;
@@ -266,7 +269,7 @@ progress::-webkit-progress-value {
 .textlu {
   background-image: url('../src/images/textlu.avif');
   opacity: 1;
-  backdrop-filter: blur(5px);  
+  backdrop-filter: blur(5px);
   width: 50rem;
   display: flex;
   flex-direction: row;
@@ -293,17 +296,19 @@ progress::-webkit-progress-value {
 }
 .textlu h2{
   margin: 1em;
-  background-color: #bdb9b7;
+  background-color: #bdb9b78f;
   border-radius: 12%;
+  text-shadow: 1px 2px white, 1px 2px #e8dbac;
+
 }
 .disco {
   z-index: -1;
   max-width: 1000px; /* Adjust the maximum width as needed */
-  margin: 0; 
+  margin: 0;
   filter:saturate(100%);
-  border-radius: 12%;
-  background-color: #bdb9b7;
-  backdrop-filter: blur(5px); 
+  /* border-radius: 12%; */
+  background-color: #bdb9b78f;
+  /* backdrop-filter: blur(2px); */
 }
 .journal {
   display: flex;
@@ -341,7 +346,7 @@ progress::-webkit-progress-value {
   display: flex;
   list-style-type: none;
   padding: 0;
-  
+
 }
 .section-id{
   background-image: url(../src/images/textlu.avif);
@@ -363,4 +368,30 @@ progress::-webkit-progress-value {
 .section-list button{
   background-color: #bdb9b7;
 }
+/*
+#network{
+  background:black;
+  /* opacity:10%; */
 
+
+.graph-view .graph .sigma-container .sigma-mouse {
+    z-index: 101;
+    background-color: black !important;
+    opacity: 10%;
+}
+
+.code{
+
+  padding:1em;
+  color:white;
+  position: relative;
+  width:50rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 12%;
+  justify-content: center;
+  height:300px;
+  align-items: center;
+  font-size:1em;
+  overflow: auto;
+}
