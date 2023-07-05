@@ -23,7 +23,7 @@ const Documentation = () => {
         stories. As a representative of the Naturalist school, he used the short
         story form in order to depict human lives, their destinies, and social
         influences around them, from a disillusioned and often pessimistic point
-        of view. 
+        of view.
         <p className="link"><Link to="/">Read more</Link></p>
       </p></div>
       <div className='textlu'>
@@ -36,7 +36,7 @@ const Documentation = () => {
         and anecdotes in ancient societies worldwide, while the modern short
         story as we know it today emerged during the early 19th century.
       </p>
-      <p className='disco'> 
+      <p className='disco'>
         Their purpose is to create a particular emotional or atmospheric impact,
         or, as Edgar Allan Poe puts it, <i>unity of effect</i>, which refers to
         the story&apos;s ability to evoke a specific emotional or psychological
@@ -78,7 +78,10 @@ const Documentation = () => {
       <p><img src="https://public-media.interaction-design.org/images/uploads/70cb81fe1b87d2703d5c2f127841efad.jpg" alt="Plutchik wheel of emotions" className='imm'/></p>
       <div className='textlu'><h2>Ontology</h2>
       <p className='disco'>Write about the ontology</p></div>
-      <div className='textlu'><h2>Network analysis</h2></div>
+
+      <div className='textlu'><h2>Network analysis</h2>
+      <Network/>
+      </div>
       <div className='textlu'><h2>Publication</h2></div>
       <p><Footer/></p></div>
     </>
