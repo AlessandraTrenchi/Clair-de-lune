@@ -360,5 +360,7 @@ progress::-webkit-progress-value {
 .sidebar-links .section-list li:last-child {
   margin-right: 0;
 }
-
+.section-list button{
+  background-color: #bdb9b7;
+}
 
