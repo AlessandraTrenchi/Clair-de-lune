@@ -6,10 +6,17 @@ import Sidebar from './Sidebar';
 import '../index.css';
 const Claire = () => {
   const images = [
+    { src: '../../images/lune.jpg', xmlId: 'les-bijoux' },
     { src: '../../images/lune.jpg', xmlId: 'clair-de-lune' },
-    { src: '../../images/l', xmlId: 'image2-xml-id' },
-    { src: 'https://example.com/image3.jpg', xmlId: 'image3-xml-id' },
-    { src: 'https://example.com/image4.jpg', xmlId: 'image4-xml-id' },
+    { src: '../../images/l', xmlId: 'le-loup' },
+    { src: 'https://example.com/image3.jpg', xmlId: "un-coup-d'etat" },
+    { src: 'https://example.com/image4.jpg', xmlId: "l'enfant" },
+    { src: 'https://example.com/image4.jpg', xmlId: "conte-de-noel" },
+    { src: 'https://example.com/image4.jpg', xmlId: "reine-hortense" },
+    { src: 'https://example.com/image4.jpg', xmlId: "le-perdon" },
+    { src: 'https://example.com/image4.jpg', xmlId: "legende-mont-saint-michel" },
+    { src: 'https://example.com/image4.jpg', xmlId: "une-veuve" },
+    { src: 'https://example.com/image4.jpg', xmlId: "apparition" }
   ];
   const [currentImage, setCurrentImage] = useState(null);
   const [xmlContent, setXmlContent] = useState('');
@@ -49,14 +56,14 @@ const Claire = () => {
       <div className='nett'>
         <h1>Select the text</h1>
         <Carousel images={images} onImageClick={handleImageClick} />
-      </div>
+     
       <div className='sidebar-top'>
         <Sidebar sections={[]} />
         <div className="main-content">
           {/* Render the XML content for the selected image */}
           {xmlContent && <XmlComponent xmlText={xmlContent} />}
         </div>
-      </div>
+      </div></div>
       <Footer/>
     </>
   );
