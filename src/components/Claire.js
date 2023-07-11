@@ -1,10 +1,17 @@
+import Carousel from './Carousel';
+import Footer from './Footer';
 import React, { useState } from 'react';
 import XmlComponent from './XmlComponent';
 import Sidebar from './Sidebar';
 
 const Claire = () => {
-    const [currentSection, setCurrentSection] = useState('');
-
+  const images = [
+    '/src/images/lune.jpg',
+    'https://example.com/image2.jpg',
+    'https://example.com/image3.jpg',
+    'https://example.com/image4.jpg',
+  ];
+  const [currentSection, setCurrentSection] = useState('');
   const handleSectionClick = (sectionId) => {
     setCurrentSection(sectionId);
   };
@@ -17,8 +24,12 @@ const Claire = () => {
   ];
 
   return (
-    <div className='cielo1'>
-        <div className='sidebar-top'>
+    <>
+    <div className='nett'>
+      <h1>Select the text</h1>
+      <Carousel images={images} />
+    </div>
+    <div className='sidebar-top'>
         <Sidebar sections={sections} onSectionClick={handleSectionClick} />
       <div className="main-content">
         {/* Render the text of the current section */}
@@ -26,7 +37,8 @@ const Claire = () => {
       </div>
         </div>
       <XmlComponent />
-    </div>
+    <Footer/>
+    </>
   );
 };
 

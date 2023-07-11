@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { nightOwl } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 
-
 class EncodingSchema extends Component {
   render() {
     const xmlCode = `
