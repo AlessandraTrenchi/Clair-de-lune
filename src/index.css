@@ -39,10 +39,10 @@ ul.brackets {
   justify-content: center;
 }
 ul.brackets li {
-  margin-right: 30px;
+  margin-right:14px;
   font-size: 2.5em;
   font-family: 'play';
-  margin-left: 30px;
+  margin-left:14px;
 
 }
 ul.brackets a {
@@ -61,7 +61,7 @@ ul.brackets a:before, ul.brackets a:after, h2:before, h2:after
 ul.brackets a:before, h2:before
 {
     content: '(';
-    left: -20px;
+    left: -10px;
     transform: translateX(10px);
     color: #E5AD4A;
 }
@@ -69,7 +69,7 @@ ul.brackets a:after, h2:after
 {
     content: ')';
     right: -20px;
-    transform: translateX(-10px);
+    transform: translateX(-20px);
     color: #E5AD4A;
 }
 ul.brackets a:hover:before, ul.brackets a:hover:after, h2:hover:after, h2:hover:before

@@ -1,6 +1,6 @@
 import Carousel from './Carousel';
 import Footer from './Footer';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import XmlComponent from './XmlComponent';
 import Sidebar from './Sidebar';
 
@@ -12,32 +12,55 @@ const Claire = () => {
     'https://example.com/image4.jpg',
   ];
   const [currentSection, setCurrentSection] = useState('');
+  const [sections, setSections] = useState([]);
+
+  useEffect(() => {
+    // Load the XML content from bijoux.xml
+    const loadXmlContent = async () => {
+      try {
+        const response = await fetch('bijoux.xml');
+        const xmlText = await response.text();
+        // Process the XML text and extract the IDs
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
+        const xmlIds = Array.from(xmlDoc.getElementsByTagName('id')).map(
+          (node) => node.textContent
+        );
+        // Create section objects using the XML IDs
+        const newSections = xmlIds.map((id) => ({ id, text: '' }));
+        setSections(newSections);
+      } catch (error) {
+        console.error('Error loading XML content:', error);
+      }
+    };
+
+    loadXmlContent();
+  }, []);
+
   const handleSectionClick = (sectionId) => {
-    setCurrentSection(sectionId);
+    try {
+      const section = sections.find((section) => section.id === sectionId);
+      if (section) {
+        setCurrentSection(sectionId);
+      } else {
+        throw new Error('Section not found');
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
-  // Define your sections with corresponding XML text
-  const sections = [
-    { id: 'Portfolio', text: 'XML text for Portfolio' },
-    { id: 'analytics', text: 'XML text for Analytics' },
-    { id: 'dashboard', text: 'XML text for Performance' },
-    { id: 'reports', text: 'XML text for Reports' },
-  ];
 
   return (
     <>
-    <div className='nett'>
-      <h1>Select the text</h1>
-      <Carousel images={images} />
-    </div>
-    <div className='sidebar-top'>
-        <Sidebar sections={sections} onSectionClick={handleSectionClick} />
-      <div className="main-content">
-        {/* Render the text of the current section */}
-        {sections.find((section) => section.id === currentSection)?.text}
+      <div className='nett'>
+        <h1>Select the text</h1>
+        <Carousel images={images} />
       </div>
-        </div>
+      <div className='sidebar-top'>
+        <Sidebar sections={sections} onSectionClick={handleSectionClick} />
+      </div>
+      <Footer />
       <XmlComponent />
-    <Footer/>
     </>
   );
 };
