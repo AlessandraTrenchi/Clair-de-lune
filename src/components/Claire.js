@@ -1,13 +1,15 @@
+
 import Carousel from './Carousel';
 import Footer from './Footer';
 import React, { useState, useEffect } from 'react';
 import XmlComponent from './XmlComponent';
 import Sidebar from './Sidebar';
 import '../index.css';
+
 const Claire = () => {
   const images = [
     { src: '../../images/lune.jpg', xmlId: 'les-bijoux' },
-    { src: '../../images/lune.jpg', xmlId: 'clair-de-lune' },
+    { src: 'https://it.m.wikipedia.org/wiki/File:Guy_de_Maupassant_-_Clair_de_lune.djvu#/media/File%3AGuy_de_Maupassant_-_Clair_de_lune.djvu', xmlId: 'clair-de-lune' },
     { src: '../../images/l', xmlId: 'le-loup' },
     { src: 'https://example.com/image3.jpg', xmlId: "un-coup-d'etat" },
     { src: 'https://example.com/image4.jpg', xmlId: "l'enfant" },
@@ -20,6 +22,7 @@ const Claire = () => {
   ];
   const [currentImage, setCurrentImage] = useState(null);
   const [xmlContent, setXmlContent] = useState('');
+  const [xmlIds, setXmlIds] = useState([]);
 
   const handleImageClick = (image) => {
     setCurrentImage(image);
@@ -31,7 +34,27 @@ const Claire = () => {
     }
   }, [currentImage]);
 
-  // Load the XML content for the selected image
+  useEffect(() => {
+    loadXmlIds();
+  }, []);
+
+  const loadXmlIds = async () => {
+    try {
+      const response = await fetch('bijoux.xml');
+      const xmlText = await response.text();
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+
+      const ids = Array.from(xmlDoc.querySelectorAll('[xml\\:id]')).map((element) =>
+        element.getAttribute('xml:id')
+      );
+
+      setXmlIds(ids);
+    } catch (error) {
+      console.error('Error loading XML IDs:', error);
+    }
+  };
+
   const loadXmlContent = async (xmlId) => {
     try {
       const response = await fetch('bijoux.xml');
@@ -39,7 +62,6 @@ const Claire = () => {
       const parser = new DOMParser();
       const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
 
-      // Find the XML fragment with the corresponding ID
       const fragment = xmlDoc.getElementById(xmlId);
       if (fragment) {
         setXmlContent(fragment.outerHTML);
@@ -51,14 +73,18 @@ const Claire = () => {
     }
   };
 
+  const handleSectionClick = (sectionId) => {
+    // Handle the section click event
+  };
+
   return (
     <>
       <div className='nett'>
+        <div className='carr'>
         <h1>Select the text</h1>
-        <Carousel images={images} onImageClick={handleImageClick} />
-     
+        <Carousel images={images} onImageClick={handleImageClick} /></div>
       <div className='sidebar-top'>
-        <Sidebar sections={[]} />
+        <Sidebar sections={xmlIds} onSectionClick={handleSectionClick} />
         <div className="main-content">
           {/* Render the XML content for the selected image */}
           {xmlContent && <XmlComponent xmlText={xmlContent} />}

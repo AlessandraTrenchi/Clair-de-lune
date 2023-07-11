@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const Carousel = ({ images, className }) => {
+const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -13,11 +13,9 @@ const Carousel = ({ images, className }) => {
   };
 
   return (
-    <div className={`carousel ${className}`}>
+    <div className="carousel">
       <button onClick={prevSlide}>Previous</button>
-      {images.length > 0 && (
-        <img src={images[currentIndex].src} alt="carousel" />
-      )}
+      <img src={images[currentIndex].src} alt="carousel" />
       <button onClick={nextSlide}>Next</button>
     </div>
   );
@@ -30,7 +28,6 @@ Carousel.propTypes = {
       xmlId: PropTypes.string.isRequired,
     })
   ).isRequired,
-  className: PropTypes.string,
 };
 
 export default Carousel;

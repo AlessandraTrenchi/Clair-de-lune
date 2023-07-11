@@ -1,12 +1,13 @@
 import React from 'react';
-import Graph from 'react-graph-vis';
 import Footer from './Footer';
 
 const Network = () => {
   return (
     <div>
       <div className='nett'>
-      <div className='tit'><h2>Network of Emotions</h2></div>
+        <div className='tit'>
+          <h2>Network of Emotions</h2>
+        </div>
         <iframe
           width="800"
           height="600"
@@ -17,7 +18,7 @@ const Network = () => {
         ></iframe>
       </div>
       <div>
-        <p><Footer/></p>
+        <Footer />
       </div>
     </div>
   );
