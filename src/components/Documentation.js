@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import code from '../images/code.jpg';
 import Network from './Network';
 import Footer from './Footer';
 import EncodingSchema from './EncodingSchema';
@@ -75,8 +74,7 @@ const Documentation = () => {
       </p>
 
   </div>
-      <div className='code'><EncodingSchema/></div>
-      <p><img src={code} alt="Documentation code" className='imm'></img></p>
+      <div className='code-cont'><div className='code'><EncodingSchema/></div></div>
       <div className='textlu'><p className='disco'>
         For the emotions classification, we have adopted the Plutchik wheel of
         emotions, which is a widely used abstraction of emotional states in the
@@ -86,7 +84,7 @@ const Documentation = () => {
       <p className='disco'>Write about the ontology</p></div>
 
       <div className='textlu'><h2>Network analysis</h2>
-      <p className='disco'>Network analysis documentation</p>
+      <p className="link"><Link to="/Network">Read more</Link></p>
       </div>
       <div className='textlu'><h2>Publication</h2></div>
       <p><Footer/></p></div>

@@ -6,6 +6,7 @@ const Network = () => {
   return (
     <div>
       <div className='nett'>
+      <div className='tit'><h2>Network of Emotions</h2></div>
         <iframe
           width="800"
           height="600"
