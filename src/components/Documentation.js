@@ -26,7 +26,7 @@ const Documentation = () => {
         story form in order to depict human lives, their destinies, and social
         influences around them, from a disillusioned and often pessimistic point
         of view.
-        <p className="link"><Link to="/">Read more</Link></p>
+        <p className="link"><Link to="/Home">Read more</Link></p>
       </p></div>
       <div className='textlu'>
       <h2>Short stories</h2>
