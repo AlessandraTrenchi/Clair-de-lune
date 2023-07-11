@@ -4,8 +4,7 @@ import Network from './Network';
 import Footer from './Footer';
 import EncodingSchema from './EncodingSchema';
 import { CodeBlock } from "react-code-blocks";
-
-
+import App from '../App';
 const Documentation = () => {
   return (
     <>
@@ -26,7 +25,7 @@ const Documentation = () => {
         story form in order to depict human lives, their destinies, and social
         influences around them, from a disillusioned and often pessimistic point
         of view.
-        <p className="link"><Link to="/Home">Read more</Link></p>
+        <div className="link"><Link to="/">Read more</Link></div>
       </p></div>
       <div className='textlu'>
       <h2>Short stories</h2>
@@ -82,10 +81,6 @@ const Documentation = () => {
       <p><img src="https://public-media.interaction-design.org/images/uploads/70cb81fe1b87d2703d5c2f127841efad.jpg" alt="Plutchik wheel of emotions" className='imm'/></p>
       <div className='textlu'><h2>Ontology</h2>
       <p className='disco'>Write about the ontology</p></div>
-
-      <div className='textlu'><h2>Network analysis</h2>
-      <p className="link"><Link to="/Network">Read more</Link></p>
-      </div>
       <div className='textlu'><h2>Publication</h2></div>
       <p><Footer/></p></div>
     </>
