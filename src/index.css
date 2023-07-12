@@ -224,7 +224,11 @@ progress::-webkit-progress-value {
   align-items: center;
   padding-top: 3em;
 }
-
+.carr h1{
+  font-size: 6em;
+  font-family: 'play';
+  color:#bdb9b7;
+}
 .fluid-text:before,
 .fluid-text:after, h2:before, h2:after {
   content: attr(data-text);
@@ -315,7 +319,7 @@ progress::-webkit-progress-value {
   background-color: #E8DBAC;
   border-radius: 12%;
 }
-.textlu h2{
+.textlu h2, .carr h2{
   margin: 1em;
   background-color: #bdb9b78f;
   border-radius: 12%;

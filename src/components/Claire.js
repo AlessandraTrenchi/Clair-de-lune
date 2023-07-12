@@ -9,7 +9,7 @@ import '../index.css';
 const Claire = () => {
   const images = [
     { src: '../../images/lune.jpg', xmlId: 'les-bijoux' },
-    { src: 'https://it.m.wikipedia.org/wiki/File:Guy_de_Maupassant_-_Clair_de_lune.djvu#/media/File%3AGuy_de_Maupassant_-_Clair_de_lune.djvu', xmlId: 'clair-de-lune' },
+    { src: 'https://tse4.mm.bing.net/th?id=OIP.WGmeEqa7K2GeibODRKcrKQAAAA&pid=Api&P=0&h=180', xmlId: 'clair-de-lune' },
     { src: '../../images/l', xmlId: 'le-loup' },
     { src: 'https://example.com/image3.jpg', xmlId: "un-coup-d'etat" },
     { src: 'https://example.com/image4.jpg', xmlId: "l'enfant" },
@@ -81,7 +81,7 @@ const Claire = () => {
     <>
       <div className='nett'>
         <div className='carr'>
-          <h1>Claire de Lune Digital Edition</h1>
+          <h1>Clair de Lune Digital Edition</h1>
         <h2>Select the text</h2>
         <Carousel images={images} onImageClick={handleImageClick} /></div>
       <div className='sidebar-top'>
