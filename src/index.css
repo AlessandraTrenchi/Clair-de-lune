@@ -88,6 +88,13 @@ p{
   margin: 0.2em;
   font-size:0.8em;
 }
+img{
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  width: 20em;
+  height:20em;
+}
 .imm{
  text-align: center;
  align-items: center;

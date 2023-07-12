@@ -8,17 +8,18 @@ import '../index.css';
 
 const Claire = () => {
   const images = [
-    { src: '../../images/lune.jpg', xmlId: 'les-bijoux' },
-    { src: 'https://tse4.mm.bing.net/th?id=OIP.WGmeEqa7K2GeibODRKcrKQAAAA&pid=Api&P=0&h=180', xmlId: 'clair-de-lune' },
-    { src: '../../images/l', xmlId: 'le-loup' },
-    { src: 'https://example.com/image3.jpg', xmlId: "un-coup-d'etat" },
-    { src: 'https://example.com/image4.jpg', xmlId: "l'enfant" },
-    { src: 'https://example.com/image4.jpg', xmlId: "conte-de-noel" },
-    { src: 'https://example.com/image4.jpg', xmlId: "reine-hortense" },
-    { src: 'https://example.com/image4.jpg', xmlId: "le-perdon" },
-    { src: 'https://example.com/image4.jpg', xmlId: "legende-mont-saint-michel" },
-    { src: 'https://example.com/image4.jpg', xmlId: "une-veuve" },
-    { src: 'https://example.com/image4.jpg', xmlId: "apparition" }
+    { src: 'https://tse2.mm.bing.net/th?id=OIP.hlxUa6fXKdaqVuBLuNq4vQHaHa&pid=Api&P=0&h=180', xmlId: 'les-bijoux', className:'bijoux' },
+    { src: 'https://tse2.explicit.bing.net/th?id=OIP.DYpK6ZOo9s5VcwyaGg_mGAHaKh&pid=Api&P=0&h=180', xmlId: 'clair-de-lune', className:'bijoux' },
+    { src: ' https://tse4.mm.bing.net/th?id=OIP.CCexfoRMYzSZayzxyb1BvAHaH8&pid=Api&P=0&h=180', xmlId: 'le-loup', className:'bijoux' },
+    { src: 'https://tse2.mm.bing.net/th?id=OIP.nw7zC5s6Vc8cEAWGLYBX-gHaFv&pid=Api&P=0&h=180', xmlId: "un-coup-d'etat", className:'bijoux' },
+    { src: 'https://tse4.mm.bing.net/th?id=OIP.tNEBQlE-37Ss4zJ2wwGivAHaHa&pid=Api&P=0&h=180', xmlId: "l'enfant", className:'bijoux' },
+    { src: 'https://tse4.mm.bing.net/th?id=OIP.uE_U5iEmjltNrkHc85u-tgHaKe&pid=Api&P=0&h=180', xmlId: "conte-de-noel", className:'bijoux' },
+    { src: 'https://tse1.mm.bing.net/th?id=OIP.uFSlYyB7TRlLAEFIpr5_UwHaIP&pid=Api&P=0&h=180', xmlId: "reine-hortense", className:'bijoux' },
+    { src: 'https://tse2.mm.bing.net/th?id=OIP.K66ExGCP31eHF6fLttISDwHaFj&pid=Api&P=0&h=180', xmlId: "le-perdon", className:'bijoux' },
+    { src: 'https://tse2.mm.bing.net/th?id=OIP.t2edsMn7aFTIVav8TsZWBwHaEK&pid=Api&P=0&h=180', xmlId: "legende-mont-saint-michel", className:'bijoux' },
+    { src: 'https://tse3.explicit.bing.net/th?id=OIP.6MNYlEeLqrv60hn445EPOQHaKy&pid=Api&P=0&h=180', xmlId: "une-veuve", className:'bijoux' },
+    { src: 'https://tse3.mm.bing.net/th?id=OIP.gX8fs1mLVA0BMnkQpCBm-QHaIr&pid=Api&P=0&h=180', xmlId: "mlle-cocotte", className:'bijoux' },
+    { src: ' https://tse2.mm.bing.net/th?id=OIP.D9VmXZhVZ-gJ4DH6TWcPKwHaEK&pid=Api&P=0&h=180', xmlId: "apparition", className:'bijoux' }
   ];
   const [currentImage, setCurrentImage] = useState(null);
   const [xmlContent, setXmlContent] = useState('');
