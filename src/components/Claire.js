@@ -84,7 +84,8 @@ const Claire = () => {
         <div className='carr'>
           <h1>Clair de Lune Digital Edition</h1>
         <h2>Select the text</h2>
-        <Carousel images={images} onImageClick={handleImageClick} /></div>
+        <div className='centered-carousel'>
+        <Carousel images={images} onImageClick={handleImageClick} /></div></div>
       <div className='sidebar-top'>
         <Sidebar sections={xmlIds} onSectionClick={handleSectionClick} />
         <div className="main-content">
