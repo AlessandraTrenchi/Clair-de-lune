@@ -453,3 +453,10 @@ iframe{
 .sidebar-top{
   padding-bottom: 40em;
 }
+carousel-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+  color:#bdb9b7;
+}

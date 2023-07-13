@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images, onImageChange }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    const newIndex = (currentIndex + 1) % images.length;
+    setCurrentIndex(newIndex);
+    onImageChange(images[newIndex].name);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    const newIndex = (currentIndex - 1 + images.length) % images.length;
+    setCurrentIndex(newIndex);
+    onImageChange(images[newIndex].name);
   };
 
   return (
@@ -26,8 +30,10 @@ Carousel.propTypes = {
     PropTypes.shape({
       src: PropTypes.string.isRequired,
       xmlId: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
     })
   ).isRequired,
+  onImageChange: PropTypes.func.isRequired,
 };
 
 export default Carousel;

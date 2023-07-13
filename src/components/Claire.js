@@ -20,54 +20,29 @@ const Claire = () => {
     { src: 'https://tse3.mm.bing.net/th?id=OIP.gX8fs1mLVA0BMnkQpCBm-QHaIr&pid=Api&P=0&h=180', xmlId: "mlle-cocotte", className:'bijoux' },
     { src: ' https://tse2.mm.bing.net/th?id=OIP.D9VmXZhVZ-gJ4DH6TWcPKwHaEK&pid=Api&P=0&h=180', xmlId: "apparition", className:'bijoux' }
   ];
-  const [currentImage, setCurrentImage] = useState(null);
   const [xmlContent, setXmlContent] = useState('');
-  const [xmlIds, setXmlIds] = useState([]);
+  const [imageName, setImageName] = useState(images[0].name);
+  const [isEditable, setIsEditable] = useState(false);
 
-  const handleImageClick = async (image) => {
-    setCurrentImage(image);
+  const handleImageChange = (name) => {
+    setImageName(name);
+  };
 
-    try {
-      const response = await fetch('bijoux.xml');
-      const xmlText = await response.text();
-      const parser = new DOMParser();
-      const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
-
-      const fragment = xmlDoc.getElementById(image.xmlId);
-      if (fragment) {
-        setXmlContent(fragment.textContent);
-      } else {
-        throw new Error('XML fragment not found');
-      }
-    } catch (error) {
-      console.error('Error loading XML content:', error);
-    }
+  const handleToggleEdit = () => {
+    setIsEditable(!isEditable);
   };
 
   useEffect(() => {
-    loadXmlIds();
-  }, []);
+    // Update XML content based on the selected image
+    // Replace this with your own logic to fetch XML content
+    const fetchXmlContent = async () => {
+      // Simulating an asynchronous API call
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      setXmlContent(`XML content for ${imageName}`);
+    };
 
-  const loadXmlIds = async () => {
-    try {
-      const response = await fetch('bijoux.xml');
-      const xmlText = await response.text();
-      const parser = new DOMParser();
-      const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
-
-      const ids = Array.from(xmlDoc.querySelectorAll('[xml\\:id]')).map((element) =>
-        element.getAttribute('xml:id')
-      );
-
-      setXmlIds(ids);
-    } catch (error) {
-      console.error('Error loading XML IDs:', error);
-    }
-  };
-
-  const handleSectionClick = (sectionId) => {
-    // Handle the section click event
-  };
+    fetchXmlContent();
+  }, [imageName]);
 
   return (
     <>
@@ -76,11 +51,20 @@ const Claire = () => {
           <h1>Clair de Lune Digital Edition</h1>
           <h2>Select the text</h2>
           <div className='centered-carousel'>
-            <Carousel images={images} onImageClick={handleImageClick} />
+            <Carousel images={images} onImageChange={handleImageChange} />
+          </div>
+          <div className="carousel-text">
+            <h3
+              contentEditable={isEditable}
+              onDoubleClick={handleToggleEdit}
+              onBlur={handleToggleEdit}
+            >
+              {imageName}
+            </h3>
           </div>
         </div>
         <div className='sidebar-top'>
-          <Sidebar sections={xmlIds} onSectionClick={handleSectionClick} />
+          <Sidebar sections={[]} />
           <div className="main-content">
             {/* Render the XML content for the selected image */}
             {xmlContent && <XmlComponent xmlText={xmlContent} />}
