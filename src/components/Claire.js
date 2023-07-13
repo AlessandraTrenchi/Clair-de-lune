@@ -1,4 +1,3 @@
-
 import Carousel from './Carousel';
 import Footer from './Footer';
 import React, { useState, useEffect } from 'react';
@@ -25,15 +24,25 @@ const Claire = () => {
   const [xmlContent, setXmlContent] = useState('');
   const [xmlIds, setXmlIds] = useState([]);
 
-  const handleImageClick = (image) => {
+  const handleImageClick = async (image) => {
     setCurrentImage(image);
-  };
 
-  useEffect(() => {
-    if (currentImage) {
-      loadXmlContent(currentImage.xmlId);
+    try {
+      const response = await fetch('bijoux.xml');
+      const xmlText = await response.text();
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+
+      const fragment = xmlDoc.getElementById(image.xmlId);
+      if (fragment) {
+        setXmlContent(fragment.textContent);
+      } else {
+        throw new Error('XML fragment not found');
+      }
+    } catch (error) {
+      console.error('Error loading XML content:', error);
     }
-  }, [currentImage]);
+  };
 
   useEffect(() => {
     loadXmlIds();
@@ -56,24 +65,6 @@ const Claire = () => {
     }
   };
 
-  const loadXmlContent = async (xmlId) => {
-    try {
-      const response = await fetch('bijoux.xml');
-      const xmlText = await response.text();
-      const parser = new DOMParser();
-      const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
-
-      const fragment = xmlDoc.getElementById(xmlId);
-      if (fragment) {
-        setXmlContent(fragment.outerHTML);
-      } else {
-        throw new Error('XML fragment not found');
-      }
-    } catch (error) {
-      console.error('Error loading XML content:', error);
-    }
-  };
-
   const handleSectionClick = (sectionId) => {
     // Handle the section click event
   };
@@ -83,16 +74,19 @@ const Claire = () => {
       <div className='nett'>
         <div className='carr'>
           <h1>Clair de Lune Digital Edition</h1>
-        <h2>Select the text</h2>
-        <div className='centered-carousel'>
-        <Carousel images={images} onImageClick={handleImageClick} /></div></div>
-      <div className='sidebar-top'>
-        <Sidebar sections={xmlIds} onSectionClick={handleSectionClick} />
-        <div className="main-content">
-          {/* Render the XML content for the selected image */}
-          {xmlContent && <XmlComponent xmlText={xmlContent} />}
+          <h2>Select the text</h2>
+          <div className='centered-carousel'>
+            <Carousel images={images} onImageClick={handleImageClick} />
+          </div>
         </div>
-      </div></div>
+        <div className='sidebar-top'>
+          <Sidebar sections={xmlIds} onSectionClick={handleSectionClick} />
+          <div className="main-content">
+            {/* Render the XML content for the selected image */}
+            {xmlContent && <XmlComponent xmlText={xmlContent} />}
+          </div>
+        </div>
+      </div>
       <Footer/>
     </>
   );
