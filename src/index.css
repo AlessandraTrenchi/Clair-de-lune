@@ -460,3 +460,8 @@ carousel-text {
   padding: 10px;
   color:#bdb9b7;
 }
+.image-container h3{
+  color: #bdb9b7;
+  font-family: 'anavio';
+  font-size: 1.4em;
+}

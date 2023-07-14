@@ -1,26 +1,33 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const Carousel = ({ images, onImageChange }) => {
+const Carousel = ({ images, onImageClick }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
-    const newIndex = (currentIndex + 1) % images.length;
-    setCurrentIndex(newIndex);
-    onImageChange(images[newIndex].name);
+  const handleNextClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  const prevSlide = () => {
-    const newIndex = (currentIndex - 1 + images.length) % images.length;
-    setCurrentIndex(newIndex);
-    onImageChange(images[newIndex].name);
+  const handlePrevClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
+  const handleImageClick = (xmlId) => {
+    onImageClick(xmlId);
   };
 
   return (
     <div className="carousel">
-      <button onClick={prevSlide}>Previous</button>
-      <img src={images[currentIndex].src} alt="carousel" />
-      <button onClick={nextSlide}>Next</button>
+      <button onClick={handlePrevClick}>Previous</button>
+      <div className="image-container">
+        <img
+          src={images[currentIndex].src}
+          alt={images[currentIndex].title}
+          onClick={() => handleImageClick(images[currentIndex].xmlId)}
+        />
+        <h3>{images[currentIndex].title}</h3>
+      </div>
+      <button onClick={handleNextClick}>Next</button>
     </div>
   );
 };
@@ -30,10 +37,10 @@ Carousel.propTypes = {
     PropTypes.shape({
       src: PropTypes.string.isRequired,
       xmlId: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
     })
   ).isRequired,
-  onImageChange: PropTypes.func.isRequired,
+  onImageClick: PropTypes.func.isRequired,
 };
 
 export default Carousel;
