@@ -93,10 +93,15 @@ const Documentation = () => {
         <h2>Text encoding</h2>
         <p className='disco'>
 
-        The Text Encoding Initiative is a valuable tool as it defines not so much a standard, rigid model  but more of an architecture that allows for interchangeable encoding schemas. Its structure facilitates diversity of theory which is key in the field of digital literature.  Although the TEI vocabulary has not expanded enough to include all forms of interpretation, its customisable nature allows one to form an encoding schema based on one’s goal, as long as they adhere to the guidelines, using a standard set of properties: a name or canonical identifier; a description of its intended meaning (supplied in one or several natural languages); where possible, an indication of equivalent objects in other systems;<br /><br />
-        For encoding the specific instances of emotions, we adopted the{' '}
-        <u>interp</u> tags, which refer to three categories of interpretative
-        annotations throughout the text.
+        The Text Encoding Initiative is a valuable tool as it defines not so much a fixed model but more of an
+        <b>architecture</b> that allows the creation of interchangeable encoding schemas, facilitating the <b>diversity of theory</b>
+        which is key in the field of digital literature.  Although the TEI vocabulary has not expanded enough to include
+        all forms of interpretation, we used its customisable standard accordingly in order to realise the our project's goals.
+        <br /><br />
+        For encoding the specific instances of emotional concepts, we adopted the {'<interpGrp<> '}
+        tags, which refer to three categories of interpretative
+        annotations throughout the text. The first interpretative group refers to the emotions taxonomy according to our model and the ontology.
+        ......  tags, canonical identifiers, an indication of equivalent objects in other systems;
       </p>
 
   </div>
