@@ -96,7 +96,7 @@ const Documentation = () => {
         The Text Encoding Initiative is a valuable tool as it defines not so much a fixed model but more of an
         <b>architecture</b> that allows the creation of interchangeable encoding schemas, facilitating the <b>diversity of theory</b>
         which is key in the field of digital literature.  Although the TEI vocabulary has not expanded enough to include
-        all forms of interpretation, we used its customisable standard accordingly in order to realise the our project's goals.
+        all forms of interpretation, we used its customisable standard accordingly in order to realise the our project&apos;s goals.
         <br /><br />
         For encoding the specific instances of emotional concepts, we adopted the {'<interpGrp<> '}
         tags, which refer to three categories of interpretative
