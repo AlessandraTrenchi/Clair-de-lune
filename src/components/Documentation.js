@@ -81,9 +81,20 @@ const Documentation = () => {
 
         To create an unambiguous model that entails the necessary subjectivity and scholarly nature, the following choices were made:<br /><br />
 <ul>
-        <li>Adoption of an existing schema: The Plutchik wheel of emotions has been widely adopted… psychology and sentiment analysis… Arsemotica which has been enriched.</li>
-        <li>To this ordeal, although it was alluring to adopt the most complex emotions (e.g. remorse and regret) we chose to stick to the basic and complex emotions, otherwise annotations would be subject to different interpretations. A few emotions were kept however, based on both 1. their more or less understandable definition, e.g. shame and contempt and 2. their occurrence in the text.</li>
-        <li>Sticking to the emotions of the main character as their thoughts and actions belong to the foundation to the short story, serving towards achieving unity of effect; as often the narrator takes their point of view - and for providing a more concise visualisation.</li>
+        <li>Regarding the nature of emotions to be included in the annotation, we opted to implement to the widely accepted model by Robert Plutchik, whose emotion taxonomy
+        has been adopted to the existing ontology of OntoEmotion and the ArsEmotica software.</li>
+        <li>Even though our reference ontology includes multiple layers of emotions, we chose to stick to the most basic and straightforward
+        categories (basic and...). This was done to keep the annotated instances as unambiguous as possible, otherwise the text denoting more complex emotions would
+        be inadvertedly more prone to different interpretations.
+        A few emotions were kept however, based on:
+        <ul>
+        <li> 1. their more or less understandable definition, e.g. shame and contempt</li>
+        <li> 2. their frequency in the texts.</li>
+        </ul>
+        </li>
+        <li>Sticking to the emotions of the main character as their thoughts and actions belong to the foundation to the short story,
+        serving towards achieving unity of effect; as often the narrator takes their point of view - and for providing a more concise
+        visualisation.</li>
 </ul>
 </p>
 
