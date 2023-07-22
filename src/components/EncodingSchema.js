@@ -6,6 +6,65 @@ import { nightOwl } from 'react-syntax-highlighter/dist/esm/styles/prism';
 class EncodingSchema extends Component {
   render() {
     const xmlCode = `
+    <xenoData>
+    <rdf:RDF>
+      <rdf:Description tei:ref="#joy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Joy">
+          <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#trust" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Trust">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#anger" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Anger">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#sadness" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Sadness">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#fear"  rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Fear">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#disgust" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Disgust">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#surprise" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Surprise">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#anticipation" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Anticipation">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#love" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Love">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#grief" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Grief">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#envy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Envy">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#admiration" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Admiration">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#shame" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Shame">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#ecstasy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Ecstasy">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#distraction" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Distraction">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#despair" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Despair">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+
+      <rdf:Description tei:ref="#despair" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Despair">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+    </rdf:RDF>
+  </xenoData>
+
+[Annotated text]
+
   <back>
   <interpGrp type="emotions">
           <desc>Emotions encoded in the text</desc>
@@ -64,11 +123,12 @@ class EncodingSchema extends Component {
 
 
   return (
-       <div>
-         <SyntaxHighlighter language="xml" style={nightOwl} wrapLongLines='true'>
+
+
+         <SyntaxHighlighter language="xml" style={nightOwl} >
            {xmlCode}
          </SyntaxHighlighter>
-       </div>
+
      );
    }
  }

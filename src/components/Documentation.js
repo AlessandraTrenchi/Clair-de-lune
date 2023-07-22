@@ -86,49 +86,51 @@ const Documentation = () => {
         <li>Even though our reference ontology includes multiple layers of emotions, we chose to stick to the most basic and straightforward
         categories (basic and...). This was done to keep the annotated instances as unambiguous as possible, otherwise the text denoting more complex emotions would
         be inadvertedly more prone to different interpretations.
-        A few emotions were kept however, based on:
+        A few emotions were kept however, according to
         <ul>
-        <li> 1. their more or less understandable definition, e.g. shame and contempt</li>
-        <li> 2. their frequency in the texts.</li>
+        <li>a. the extent to which they have a fixed, unambiguous definition, and</li>
+        <li>b. their frequency in the texts.</li>
         </ul>
         </li>
-        <li>Sticking to the emotions of the main character as their thoughts and actions belong to the foundation to the short story,
-        serving towards achieving unity of effect; as often the narrator takes their point of view - and for providing a more concise
-        visualisation.</li>
+        <br />
+        For example, we included complex emotions such as <i>shame, envy, cynicism and contempt</i>, given both their frequent occurence and their more individual meaning, compared to
+        emotions that are often just layers of their predecessor, as is the case with <i>fury</i> and <i>rage/anger</i>, for example.
+        <li>Lastly, we chose to restrict the annotation to only include the emotions of the main character, as their thoughts, actions and conversations
+        are often the foundation of the narrative and the point of view of the narrator(not only in Guy de Maupassant&apos;s work but according to the canon of short stories
+        in general). We consider this approach another important element towards achieving unity of effect, and for the demands of our project,
+        focusing on one character also provides a more complete image of how emotions evolve throughout the story and furthemore, a
+        a more concise visualisation.</li>
 </ul>
 </p>
 
 </div>
 
-        <div className='textlu'>
-        <h2>Text encoding</h2>
-        <p className='disco'>
 
-        The Text Encoding Initiative is a valuable tool as it defines not so much a fixed model but more of an
-        <b>architecture</b> that allows the creation of interchangeable encoding schemas, facilitating the <b>diversity of theory</b>
-        which is key in the field of digital literature.  Although the TEI vocabulary has not expanded enough to include
-        all forms of interpretation, we used its customisable standard accordingly in order to realise the our project&apos;s goals.
-        <br /><br />
-        For encoding the specific instances of emotional concepts, we adopted the {'<interpGrp<> '}
-        tags, which refer to three categories of interpretative
-        annotations throughout the text. The first interpretative group refers to the emotions taxonomy according to our model and the ontology.
-        ......  tags, canonical identifiers, an indication of equivalent objects in other systems;
-      </p>
-
-  </div>
-      <div className='code-cont'><div className='code'>
-      <EncodingSchema/>
-      </div>
-      </div>
       <div className='textlu'>
+      <h2>Emotional framework</h2>
+
       <p className='disco'>
-        For the emotions classification, we have adopted the Plutchik <a href="https://link.springer.com/referenceworkentry/10.1007/978-3-319-28099-8_547-1">
+For the emotions classification, we have adopted the schema inspired by Robert Plutchik&apos;s <a href="https://link.springer.com/referenceworkentry/10.1007/978-3-319-28099-8_547-1">
         Psycho-Evolutionary Theory of
         Emotions</a>, that aims to categorise emotional reactions to stimuli. The theory was first applied in
         linguistic studies, resulting to a structural model of eight basic levels of emotions,
         and the taxonomy of the relationship between both the basic and deriving complex emotional states.
+        The eight primary emotions in Plutchik&apos;s theory are:
 
-        The model has been widely used in the field of psychology, but also sentiment analysis in literary texts.</p>
+<li>Joy: happiness and pleasure.</li>
+<li>Sadness: unhappiness or sorrow.</li>
+<li>Anger: a strong feeling of displeasure or hostility.</li>
+<li>Fear: an emotion triggered by a perceived threat or danger.</li>
+<li>Surprise: a sudden and unexpected reaction to a stimulus.</li>
+<li>Disgust: a feeling of aversion towards something unpleasant.</li>
+<li>Anticipation: the expectation or excitement about an incoming event or possibility.</li>
+<li>Trust: a belief in the reliability or goodness of someone or something.</li>
+The Emotion
+Wheel diagram demonstrates the relationships between primary and secondary emotions, where similar emotions are adjacent, and opposites are located across from each other.
+Furthermore, each primary emotion can be intensified or weakened, leading to a total of 24 secondary emotions. For example, combining joy
+and trust might result in feelings like optimism or love, while combining fear and surprise could lead to awe or anxiety.
+
+        The model has been widely used in the field of psychology, but also sentiment analysis in text.</p>
         </div>
         <div>
 
@@ -139,19 +141,43 @@ const Documentation = () => {
       <div className='textlu'>
       <h2>Ontology</h2>
       <p className='disco'>
-      The project implements the OntoEmotion ontology, developed at Universidad Complutense de Madrid, which mirrors well founded psychological models -especially that of
-      Plutchik and Parrot - by structuring emotional categories in a taxonomy, including 87 emotional concepts in total.
+      The OntoEmotion ontology was developed at Universidad Complutense de Madrid for categorizing emotion-denoting words in text, implementing well founded psychological models - namely the emotional
+      frameworks Robert Plutchik and W. Gerrod Parrott - by structuring emotional categories in a taxonomy, including 87 emotional concepts in total.
       The <b> first level</b> includes the basic emotions of Sadness, Happiness, Surprise,
       Fear and Anger, which integrate more emotions which appear in
       other well-established models. The number of levels under each basic emotion depends
       on the level of available specification for it; for example, Anger is specialized in Agitation, Annoyance,
       Hate, Fury, Displesure, Sulking, etc. <br /><br />
 
-      The ontology serves for categorizing emotion-denoting words in text; written in OWL, it has two root concepts, Emotion
+      Written in OWL, OntoEmotion has two root concepts, Emotion
       (related to the emotion category) and Word(that denotes the emotion). It was originally populated by about
-      250 word instances in the languages of English and Spanish, and then - thanks to the <a href="http://www.di.unito.it/~patti/pub.html#">ArsEmotica project</a> by the University of Torino - enriched with 450 Italian
-      words referring to the 87 emotional categories of OntoEmotion, along with the OWL object property hasSynonym to define synonymy relations amongst words. </p>
+      250 word instances in the languages of English and Spanish, and then - thanks to the <a href="http://www.di.unito.it/~patti/pub.html#">ArsEmotica project</a> by the University of Torino -
+      enriched with 450 Italian words referring to the 87 emotional categories of OntoEmotion, along with the OWL object property hasSynonym to define synonymy relations amongst words.  <br /><br />
+
+      For the requirements of our project, we implemented ArsEmotica&apos;s extended version of the OntoEmotion ontology, and embedded all basic and a selection of complex emotions within the {'<xenoData>'} tags for
+      RDF in order link our schema within the Semantic Web.</p>
       </div>
+
+      <div className='textlu'>
+      <h2>Text encoding</h2>
+      <p className='disco'>
+
+      The Text Encoding Initiative is a valuable tool as it defines not so much a fixed model but more of an
+      <b>architecture</b> that allows the creation of interchangeable encoding schemas, facilitating the <b>diversity of theory</b>
+      which is key in the field of digital literature.  Although the TEI vocabulary has not expanded enough to include
+      all forms of interpretation, we used its customisable standard accordingly in order to realise the our project&apos;s goals.
+      <br /><br />
+      For encoding the specific instances of emotional concepts, we adopted the {'<interpGrp> '}
+      tags, which refer to three categories of interpretative
+      annotations throughout the text. The first interpretative group refers to the emotions taxonomy according to our model and the ontology.
+      ......  tags, canonical identifiers, an indication of equivalent objects in other systems;
+    </p>
+
+</div>
+    <div className='code-cont'><div className='code'>
+    <EncodingSchema/>
+    </div>
+    </div>
       <div className='textlu'>
       <h2>Publication</h2>
       </div>
@@ -160,14 +186,13 @@ const Documentation = () => {
       <h2>Bibliography</h2>
       <p className='disco'>
       <ul>
-      <li>Virginia Francisco, Pablo Gervás, and Federico Peinado. Ontological reasoning to configure emotional voice synthesis. In
-Proc. of Web Reasoning and Rule Systems, RR 2007, volume
-4524 of LNCS, pages 88–102. Springer, 2007.</li>
-[10] Virginia Francisco, Federico Peinado, Raquel
-    <li>  W. Parrot. Emotions in Social Psychology. Psychology Press,
-     Philadelphia, 2001.</li>
-     <li>Baldoni, Matteo et al. ‘From Tags to Emotions: Ontology-driven Sentiment Analysis in the Social Semantic Web’. 1 Jan. 2012 : 41 – 54.</li>
+    <li>Flanders, Julia, and Fotis Jannidis, editors. The Shape of Data in the Digital Humanities: Modeling Texts and Text-Based Resources. Routledge, Taylor & Francis Group, 2019, pp.120-121. Digital Research in the Arts and Humanities.</li>
 
+    <li>Virginia Francisco, Pablo Gervás, and Federico Peinado. &quot;Ontological reasoning to configure emotional voice synthesis.&quot; Proc. of Web Reasoning and Rule Systems, RR 2007, vol. 4524, LNCS, 2007, pp. 88–102. Springer.</li>
+
+    <li>Parrot, Raquel W. Emotions in Social Psychology. Psychology Press, Philadelphia, 2001.</li>
+
+    <li>Baldoni, Matteo et al. &quot;From Tags to Emotions: Ontology-driven Sentiment Analysis in the Social Semantic Web.&quot; Semantics, Web, and Mining. 1 Jan. 2012, pp. 41-54.</li>
      </ul>
      </p>
      </div>
