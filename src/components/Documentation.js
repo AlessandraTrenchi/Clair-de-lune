@@ -184,7 +184,7 @@ and trust might result in feelings like optimism or love, while combining fear a
 
       <div className='textlu'>
       <h2>Bibliography</h2>
-      <p className='disco'>
+      <p className='disco' id="bibliography">
       <ul>
     <li>Flanders, Julia, and Fotis Jannidis, editors. The Shape of Data in the Digital Humanities: Modeling Texts and Text-Based Resources. Routledge, Taylor & Francis Group, 2019, pp.120-121. Digital Research in the Arts and Humanities.</li>
 
@@ -193,6 +193,9 @@ and trust might result in feelings like optimism or love, while combining fear a
     <li>Parrot, Raquel W. Emotions in Social Psychology. Psychology Press, Philadelphia, 2001.</li>
 
     <li>Baldoni, Matteo et al. &quot;From Tags to Emotions: Ontology-driven Sentiment Analysis in the Social Semantic Web.&quot; Semantics, Web, and Mining. 1 Jan. 2012, pp. 41-54.</li>
+
+    <li> Poe, Edgar Allan. The Philosophy
+of Composition, 1846, p.3, retrieved at {'<https://pdcrodas.webs.ull.es/fundamentos/PoeThePhilosophyOfComposition.pdf>'}.</li>
      </ul>
      </p>
      </div>

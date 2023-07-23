@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
-
+import Centralities from './Centralities';
 const Network = () => {
   return (
     <div>
@@ -8,6 +8,7 @@ const Network = () => {
         <div className='tit'>
           <h2>Network of Emotions</h2>
         </div>
+
         <iframe
           width="800"
           height="600"
@@ -16,11 +17,14 @@ const Network = () => {
           title="Retina"
           allowFullScreen
         ></iframe>
+
+      <div className="textlu">
+<Centralities />
+
       </div>
-      <div>
         <Footer />
       </div>
-    </div>
+      </div>
   );
 };
 
