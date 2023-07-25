@@ -478,3 +478,8 @@ carousel-text {
   font-family: 'anavio';
   font-size: 1.4em;
 }
+
+table {
+display:inline-table;
+padding:2em;
+font-size:0.9em;}
