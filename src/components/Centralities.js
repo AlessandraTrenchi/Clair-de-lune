@@ -3,27 +3,12 @@ import React from 'react';
 const Centralities = () => {
   return (
 
+
+
 <div className="textlu">
-<h2>Network Analysis</h2>
+<h2>Results</h2>
 <p className="disco">
 
-By applying centrality measures, we can also discover emotions that can have more critical roles in character interactions, story events, and the overall tone and atmosphere of the short stories;
- These pivotal sentiments may be associated with key moments of tension, resolution, or emotional climax in the narratives.<br /><br />
-
-In-Degree centrality measures the number of incoming connections to a sentiment, which indicate how often the sentiment appears after other emotions and is influenced by them.
-In the context of our network, sentiments with a high in-degree are influential emotions that commonly appear after many other emotions,
-therefore having a central role in the emotional flow of the narrative.<br /><br />
-
-Out-Degree centrality, on the other hand, measures the number of outgoing emotional connections from a sentiment,
-indicating how frequently the sentiment is expressed and the extent to which it triggers other emotions.<br /><br />
-
-
-Betweenness Centrality quantifies the extent to which a sentiment acts as an intermediary between other emotions.
-Emotions that display a high betweenness centrality indicate they have potential control over the network, by influencing the
-relationships between sentiments, and connecting emotions that might not directly interact with each other.<br /><br />
-
-Lastly, Closeness Centrality measures the efficacy of a sentiment&apos;s influence in the network, by using the average shortest
-distance to all other sentiment pairs.<br /><br />
       <table>
       <thead>
         <tr>
@@ -125,7 +110,7 @@ distance to all other sentiment pairs.<br /><br />
   </tr>
 </tbody>
 </table>
-
+<br></br>
       <table>
         <thead>
           <tr>

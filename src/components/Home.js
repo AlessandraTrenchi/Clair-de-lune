@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <span className='fino'>
-        <div className="container1"> 
+        <div className="container1">
           <Fluid/>
           <div className='journal'>
             <div className='mom'>
