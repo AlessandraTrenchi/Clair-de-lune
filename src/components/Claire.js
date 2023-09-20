@@ -1,4 +1,4 @@
-import Carousel from './Carousel';
+import Final from './Final';
 import Footer from './Footer';
 import React, { useState, useEffect } from 'react';
 import XmlComponent from './XmlComponent';
@@ -33,7 +33,7 @@ const Claire = () => {
           <h1>Clair de Lune Digital Edition</h1>
           <h2>Select the text</h2>
           <div className='centered-carousel'>
-            <Carousel images={images} onImageClick={handleImageClick} />
+            <Final images={images} onImageClick={handleImageClick} />
           </div>
         </div>
         <div className='main-content'>

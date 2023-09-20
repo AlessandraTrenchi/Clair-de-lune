@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Network from './Network';
+//import Network from './Network';
 import Footer from './Footer';
 import EncodingSchema from './EncodingSchema';
-import { CodeBlock } from "react-code-blocks";
-import App from '../App';
+//import { CodeBlock } from "react-code-blocks";
+//import App from '../App';
 const Documentation = () => {
   return (
     <>
