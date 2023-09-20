@@ -85,17 +85,17 @@ const Documentation = () => {
         <li>Regarding the nature of emotions to be included in the annotation, we opted to implement to the widely accepted model by Robert Plutchik, whose emotion taxonomy
         has been adopted to the existing ontology of OntoEmotion and the ArsEmotica software.</li>
         <li>Even though our reference ontology includes multiple layers of emotions, we chose to stick to the most basic and straightforward
-        categories (basic and...). This was done to keep the annotated instances as unambiguous as possible, otherwise the text denoting more complex emotions would
+        categories (namely joy, anger, sadness, fear, disgust and anticipation). This was done to keep the annotated instances as unambiguous as possible, otherwise the text denoting more complex emotions would
         be inadvertedly more prone to different interpretations.
-        A few emotions were kept however, according to
+        A few emotions were kept, however, according to the following criteria:
         <ul>
         <li>a. the extent to which they have a fixed, unambiguous definition, and</li>
-        <li>b. their frequency in the texts.</li>
+        <li>b. their observed frequency in the texts.</li>
         </ul>
         </li>
         <br />
         For example, we included complex emotions such as <i>shame, envy, cynicism and contempt</i>, given both their frequent occurence and their more individual meaning, compared to
-        emotions that are often just layers of their predecessor, as is the case with <i>fury</i> and <i>rage/anger</i>, for example.
+        emotions that are often just layers of their predecessor, as is the case with <i>fury</i> and <i>rage</i> or <i>anger</i>, for example.
         <li>Lastly, we chose to restrict the annotation to only include the emotions of the main character, as their thoughts, actions and conversations
         are often the foundation of the narrative and the point of view of the narrator(not only in Guy de Maupassant&apos;s work but according to the canon of short stories
         in general). We consider this approach another important element towards achieving unity of effect, and for the demands of our project,
