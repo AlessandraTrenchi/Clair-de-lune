@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import XmlComponent from './XmlComponent';
 import '../index.css';
 
-const Claire = () => {
+const Clair = () => {
   const images = [
     { src: 'https://tse2.mm.bing.net/th?id=OIP.hlxUa6fXKdaqVuBLuNq4vQHaHa&pid=Api&P=0&h=180', xmlId: 'les-bijoux', className:'bijoux', title: 'Les Bijoux' },
     { src: 'https://tse2.explicit.bing.net/th?id=OIP.DYpK6ZOo9s5VcwyaGg_mGAHaKh&pid=Api&P=0&h=180', xmlId: 'clair-de-lune', className:'bijoux', title: 'Clair de Lune' },
@@ -46,4 +46,4 @@ const Claire = () => {
   );
 };
 
-export default Claire;
+export default Clair;

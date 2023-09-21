@@ -98,8 +98,8 @@ img{
 .imm, .imma{
  text-align: center;
  align-items: center;
- width: 50rem;
- height:50rem;
+ width: 50%;
+ height:50%;
  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
  filter: sepia(60%);
 }
@@ -295,7 +295,7 @@ progress::-webkit-progress-value {
   background-image: url('../src/images/textlu.avif');
   opacity: 1;
   backdrop-filter: blur(5px);
-  width: 50rem;
+  width: 80%;
   display: flex;
   flex-direction: row;
   border-radius: 12%;
@@ -304,7 +304,9 @@ progress::-webkit-progress-value {
   background-size: cover;
   background-position: center center;
   margin-bottom: 2rem;
+  font-size: 1.4em; /* Default font size for larger screens */
 }
+
 .mom, .textlu{
   position: relative;
   z-index: 1;
@@ -318,7 +320,7 @@ progress::-webkit-progress-value {
   background-image: url('../src/images/textlu.avif');
   opacity: 1;
   backdrop-filter: blur(5px);
-  width: 50rem;
+  width: 60%;
   display: flex;
   flex-direction: row;
   border-radius: 12%;
@@ -344,7 +346,9 @@ progress::-webkit-progress-value {
   background-color: #bdb9b78f;
   border-radius: 12%;
   text-shadow: 1px 2px white, 1px 2px #e8dbac;
-
+  @media (max-width: 600px) {
+    font-size: 1em; /* Further decrease font size for even smaller screens */
+  }
 }
 .disco {
   z-index: -1;
@@ -355,6 +359,14 @@ progress::-webkit-progress-value {
   background-color: #bdb9b78f;
   /* backdrop-filter: blur(2px); */
   padding-bottom: 6em;
+  @media (max-width: 768px) {
+    font-size: 1.2em; /* Decrease font size for smaller screens */
+  }
+
+  /* Media query for screens with a maximum width of 480px */
+  @media (max-width: 600px) {
+    font-size: 1em; /* Further decrease font size for even smaller screens */
+  }
 }
 .journal {
   display: flex;
@@ -372,11 +384,18 @@ progress::-webkit-progress-value {
   height: 100%;
   padding-top: 3em;
   padding-bottom: 40em;
+  
+  @media (max-width: 600px) {
+    font-size: 1em; /* Further decrease font size for even smaller screens */
+  }
 }
 .cielo1{
   background-image: url(../src/images/cielo.gif);
   padding-top: 3em;
   padding-bottom: 40em;
+  @media (max-width: 600px) {
+    font-size: 1em; /* Further decrease font size for even smaller screens */
+  }
 }
 .nett{
   display: flex;
@@ -390,6 +409,8 @@ progress::-webkit-progress-value {
 }
 iframe{
   padding-top: 2em;
+  height: 40em;
+  width: 80%;
 }
 #TEI{
   color: #E5AD4A;
