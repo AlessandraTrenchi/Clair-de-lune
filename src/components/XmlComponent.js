@@ -1,39 +1,32 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import CETEIcean from 'CETEIcean';
 
 const XmlComponent = ({ xmlId }) => {
   const xmlContainerRef = useRef(null);
+  const [xmlContent, setXmlContent] = useState('');
 
   useEffect(() => {
     const loadXmlContent = async () => {
       try {
-        const response = await fetch('bijoux.xml');
+        const response = await fetch('src/text/bijoux.xml');
         const xmlText = await response.text();
-        
-        const ceteicean = new CETEIcean({
-          ignoreFragmentId: true,
-        });
 
-        // Parse the XML text
-        const xmlDoc = new DOMParser().parseFromString(xmlText, 'application/xml');
+        // Create a DOMParser
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
 
-        // Find the div element with the specified xml:id
-        const divElements = xmlDoc.querySelectorAll(`div[xml\\:id="${xmlId}"]`);
-        if (divElements.length > 0) {
-          // Create a new XML document and add the selected div element to it
-          const newDoc = document.implementation.createDocument(null, null, null);
-          const clonedElement = divElements[0].cloneNode(true);
-          newDoc.appendChild(newDoc.importNode(clonedElement, true));
+        // Find the element with the specified xml:id
+        const element = xmlDoc.querySelector(`[xml\\:id="${xmlId}"][type="story"]`);
 
-          ceteicean.getHTML5(newDoc.documentElement.outerHTML, (data) => {
-            // Clear previous XML content
-            xmlContainerRef.current.innerHTML = '';
-            // Append new XML content
-            xmlContainerRef.current.appendChild(data);
-          });
+        if (element) {
+          // Get the outerHTML of the found element
+          const fragmentHtml = element.outerHTML;
+
+          // Update the state with the XML content
+          setXmlContent(fragmentHtml);
         } else {
-          throw new Error(`XML fragment with xml:id "${xmlId}" not found`);
+          throw new Error(`XML fragment with xml:id "${xmlId}" and type="story" not found`);
         }
       } catch (error) {
         console.error('Error loading XML content:', error);
@@ -45,7 +38,7 @@ const XmlComponent = ({ xmlId }) => {
 
   return (
     <div className="xml-component">
-      <div id="TEI" ref={xmlContainerRef} />
+      <div id="TEI" ref={xmlContainerRef} dangerouslySetInnerHTML={{ __html: xmlContent }} />
     </div>
   );
 };
