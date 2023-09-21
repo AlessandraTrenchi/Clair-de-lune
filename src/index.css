@@ -33,14 +33,14 @@ ul.brackets {
   padding: 0;
   text-align: center;
   margin-top: 0;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   align-items: center;
   justify-content: center;
 }
 ul.brackets li {
   margin-right:14px;
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: 'play';
   margin-left:14px;
 
@@ -54,15 +54,15 @@ ul.brackets a:before, ul.brackets a:after, h2:before, h2:after
 {
     position: absolute;
     opacity: 0;
-    font-size: 50px;
+    font-size: 30px;
     top: 0px;
     transition: all 0.3s;
 }
 ul.brackets a:before, h2:before
 {
     content: '(';
-    left: -10px;
-    transform: translateX(10px);
+    left: -15px;
+    transform: translateX(15px);
     color: #E5AD4A;
 }
 ul.brackets a:after, h2:after
@@ -204,7 +204,7 @@ progress::-webkit-progress-value {
   justify-content: center;
   align-items: center;
   font-size:0.8em;
-
+  z-index: 3;
 }
 
 @keyframes fill {
