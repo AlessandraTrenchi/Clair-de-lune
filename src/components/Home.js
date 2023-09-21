@@ -24,13 +24,13 @@ const Home = () => {
               </div>
             </div>
             <div className='mom'>
-              <h2>Claire de Lune</h2>
+              <h2>Clair de Lune</h2>
               <div className='para'>
-              &quot;Claire de Lune&quot; is one of Maupassant&apos;s notable works, first published in 1882.
+              &quot;Clair de Lune&quot; is one of Maupassant&apos;s notable works, first published in 1882.
                 The story follows the journey of a young woman named Claire, who is trapped in a loveless marriage.
                 Seeking solace and a sense of freedom, Claire finds herself drawn to the moonlit nights and the tranquility they offer.
                 Through the vivid descriptions of nature and the inner thoughts of the protagonist, Maupassant explores themes of longing, escape, and the limitations imposed by society.
-                &quot;Claire de Lune&quot; is regarded as a poignant and evocative tale that showcases Maupassant&apos;s mastery of storytelling.
+                &quot;Clair de Lune&quot; is regarded as a poignant and evocative tale that showcases Maupassant&apos;s mastery of storytelling.
               </div>
             </div>
           </div>

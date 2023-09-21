@@ -229,7 +229,7 @@ progress::-webkit-progress-value {
   background-position: center center;
 }
 .fluid-text {
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: bold;
   font-family: 'play';
   text-transform: uppercase;
@@ -237,6 +237,7 @@ progress::-webkit-progress-value {
   display: inline-block;
   cursor: pointer;
   align-items: center;
+  justify-content: center;
   padding-top: 3em;
 }
 .carr h1{
