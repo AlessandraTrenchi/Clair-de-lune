@@ -10,22 +10,19 @@ const XmlComponent = ({ xmlId }) => {
       try {
         const response = await fetch('bijoux.xml');
         const xmlText = await response.text();
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
 
-        const fragment = xmlDoc.querySelector(`[xml\\:id="${xmlId}"]`);
+        const ceteicean = new CETEIcean({
+          ignoreFragmentId: true,
+        });
+
+        const fragment = ceteicean.getHTML5Fragment(xmlText, xmlId);
         if (fragment) {
-          const ceteicean = new CETEIcean({
-            ignoreFragmentId: true,
-          });
-          ceteicean.getHTML5(fragment.outerHTML, (data) => {
-            // Clear previous XML content
-            xmlContainerRef.current.innerHTML = '';
-            // Append new XML content
-            xmlContainerRef.current.appendChild(data);
-          });
+          // Clear previous XML content
+          xmlContainerRef.current.innerHTML = '';
+          // Append new XML fragment
+          xmlContainerRef.current.appendChild(fragment);
         } else {
-          throw new Error('XML fragment not found');
+          throw new Error(`XML fragment with id "${xmlId}" not found`);
         }
       } catch (error) {
         console.error('Error loading XML content:', error);

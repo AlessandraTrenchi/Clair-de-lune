@@ -11,8 +11,10 @@
     "buffer": "^6.0.3",
     "CETEIcean": "^1.8.0",
     "d3": "^7.8.5",
+    "fast-xml-parser": "^4.3.0",
     "gsap": "^3.12.2",
     "hammerjs": "^2.0.8",
+    "he": "^1.2.0",
     "install": "^0.13.0",
     "moveable": "^0.49.1",
     "npm": "^10.1.0",
@@ -30,7 +32,6 @@
     "react-syntax-highlighter": "^15.5.0",
     "scrolltrigger": "^1.0.1",
     "semver": "^7.5.3",
-    "timers-browserify": "^2.0.12",
     "web-vitals": "^2.1.4",
     "word-wrap": "^1.2.3",
     "xml-js": "^1.6.11",
@@ -72,6 +73,9 @@
     "eslint": "^8.43.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "react-app-rewired": "^2.2.1"
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "timers": "^0.1.1",
+    "timers-browserify": "^2.0.12"
   }
 }

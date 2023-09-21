@@ -1,5 +1,5 @@
-import Final from './Final';
 import Footer from './Footer';
+import Final from './Final';
 import React, { useState, useEffect } from 'react';
 import XmlComponent from './XmlComponent';
 import '../index.css';

@@ -1,13 +1,14 @@
-const path = require("path");
+// Import the 'stream' polyfill
+const streamPolyfill = require('stream-browserify');
 
 module.exports = {
-  webpack: {
-    configure: {
-      resolve: {
-        fallback: {
-          timers: require.resolve("timers-browserify"),
-        },
-      },
+  // ... other Webpack configuration options
+
+  resolve: {
+    alias: {
+      stream: streamPolyfill,
     },
   },
+
+  // ... other Webpack configuration options
 };
