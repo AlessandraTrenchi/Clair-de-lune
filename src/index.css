@@ -347,7 +347,7 @@ progress::-webkit-progress-value {
   border-radius: 12%;
   text-shadow: 1px 2px white, 1px 2px #e8dbac;
   @media (max-width: 600px) {
-    font-size: 1em; /* Further decrease font size for even smaller screens */
+    font-size: 0.8em; /* Further decrease font size for even smaller screens */
   }
 }
 .disco {
@@ -360,12 +360,12 @@ progress::-webkit-progress-value {
   /* backdrop-filter: blur(2px); */
   padding-bottom: 6em;
   @media (max-width: 768px) {
-    font-size: 1.2em; /* Decrease font size for smaller screens */
+    font-size: 1em; /* Decrease font size for smaller screens */
   }
 
   /* Media query for screens with a maximum width of 480px */
   @media (max-width: 600px) {
-    font-size: 1em; /* Further decrease font size for even smaller screens */
+    font-size: 0.7em; /* Further decrease font size for even smaller screens */
   }
 }
 .journal {
