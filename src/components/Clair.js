@@ -31,10 +31,6 @@ const Clair = () => {
         <div className='carr'>
           <div className='clair-container'>
           <h1>Clair de Lune Digital Edition</h1>
-          <h2>Select the text</h2>
-          <div className='centered-carousel'>
-            <Final images={images} onImageClick={handleImageClick} />
-          </div>
         </div>
         <div className='main-content'>
           {/* Render the XML content for the selected image */}

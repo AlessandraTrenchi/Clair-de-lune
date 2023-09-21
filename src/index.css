@@ -120,7 +120,7 @@ footer {
   font-size: 1.5em;
   z-index: 1;
 }
-.para, .disco, .carousel button{
+.para, .disco{
   font-family: 'anavio';
   font-size: 1.2em;
   color: #222466;
@@ -128,14 +128,7 @@ footer {
   background-color: #E8DBAC;
   border-radius: 12%;
 }
-.centered-carousel{
-  justify-content: center;
-  margin: auto;
-  max-height: 100%;
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-}
+
 Link, a{
   color: white;
   text-decoration: none;
@@ -244,6 +237,11 @@ progress::-webkit-progress-value {
   font-size: 6em;
   font-family: 'play';
   color:#bdb9b7;
+  text-align: center;
+  justify-content: center;
+  @media (max-width: 600px) {
+    font-size: 3em; /* Further decrease font size for even smaller screens */
+  }
 }
 .carr h2{
   color: #DB7754;
@@ -341,7 +339,7 @@ progress::-webkit-progress-value {
   background-color: #E8DBAC;
   border-radius: 12%;
 }
-.textlu h2, .carousel button{
+.textlu h2{
   margin: 1em;
   background-color: #bdb9b78f;
   border-radius: 12%;
@@ -476,8 +474,3 @@ iframe{
   padding-bottom: 40em;
 }
 
-.image-container h3{
-  color: #bdb9b7;
-  font-family: 'anavio';
-  font-size: 1.4em;
-}
