@@ -389,6 +389,8 @@ progress::-webkit-progress-value {
 }
 iframe{
   padding-top: 2em;
+  padding-bottom:2em;
+  border-radius: 10%;
 }
 #TEI{
   color: #E5AD4A;
@@ -464,4 +466,16 @@ carousel-text {
   color: #bdb9b7;
   font-family: 'anavio';
   font-size: 1.4em;
+}
+
+
+table {
+display:inline-table;
+padding:1em;
+font-size:0.9em;}
+
+td{
+  padding-left:1em;
+  padding-right:1em;
+
 }

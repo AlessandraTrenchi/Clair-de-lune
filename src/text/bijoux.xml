@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -35,40 +34,6 @@
          </sourceDesc>
       </fileDesc>
 
-    <profileDesc>
-
-      <particDesc>
-          <listPerson xml:id="les-bijoux-characters">
-
-            <!-- is there a way to differentiate people lists for each story? or do we need different xml pages? -->
-              <person xml:id="M-Lantin">
-                  <persName type="main-character">Monsieur Lantin</persName>
-              </person>
-              <person xml:id="Madame-Lantin">
-                  <persName type="main-character">Madame Lantin</persName>
-              </person>
-        </listPerson>
-        <!-- <listPerson xml:id="clair-de-lune-characters">
-              <person>
-                  <persName xml:id="id"> Name</persName>
-              </person>
-              <person xml:id="id">
-                  <persName>Name</persName>
-              </person>
-              <person xml:id="id">
-                  <persName>Name</persName>
-              </person>
-              <person xml:id="id">
-                  <persName>Name</persName>
-              </person>
-              <person xml:id="id">
-                  <persName>Name</persName>
-              </person>
-        </listPerson> -->
-
-
-      </particDesc>
-  </profileDesc>
   <xenoData>
     <rdf:RDF>
       <rdf:Description tei:ref="#joy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Joy">
@@ -106,13 +71,13 @@
       </rdf:Description>
       <rdf:Description tei:ref="#admiration" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Admiration">
         <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
-      </rdf:Description>      
+      </rdf:Description>
       <rdf:Description tei:ref="#shame" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Shame">
         <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
-      </rdf:Description>      
+      </rdf:Description>
       <rdf:Description tei:ref="#ecstasy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Ecstasy">
         <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
-      </rdf:Description>      
+      </rdf:Description>
       <rdf:Description tei:ref="#distraction" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Distraction">
         <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
       </rdf:Description>
@@ -591,7 +556,7 @@
 <p>Et la femme du forgeron dormit quarante heures de suite, puis se réveilla sans aucun souvenir de la possession ni de la délivrance.</p>
 <p>Voilà, Mesdames, le miracle que j’ai vu. Le docteur Bonenfant se tut, puis ajouta d’une voix contrariée:—Je n’ai pu refuser de l’attester par écrit.</p>
 
-</div> 
+</div>
 
 <div type="story" xml:id="reine-hortense">
 
@@ -1051,7 +1016,7 @@
         <interp xml:id="contempt" type="negative">Contempt</interp>
         <interp xml:id="ecstasy" type="positive">Ecstasy</interp>
         <interp xml:id="remorse" type="negative">Remorse</interp>
-        <interp xml:id="shame" type="negative">Shame</interp>        
+        <interp xml:id="shame" type="negative">Shame</interp>
         <interp xml:id="pride" type="positive">Pride</interp>
         <interp xml:id="hope" type="positive">Hope</interp>
 
