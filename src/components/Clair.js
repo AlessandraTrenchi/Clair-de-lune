@@ -14,9 +14,6 @@ const titlesWithIds = [
   { title: "Une veuve", xmlId: "une-veuve" }, 
   { title: "Mademoiselle Cocotte", xmlId: "mlle-cocotte" }, 
   { title: "Apparition", xmlId: "apparition" }, 
-
-
-
 ];
 
 const Clair = () => {
@@ -25,16 +22,50 @@ const Clair = () => {
 
   const handleNext = () => {
     setCurrentTitleIndex((prevIndex) => (prevIndex + 1) % titlesWithIds.length);
+
+    // Get the xmlId of the next title
+    const nextXmlId = titlesWithIds[(currentTitleIndex + 1) % titlesWithIds.length].xmlId;
+    
+    // Load the XML content for the next title
+    handleXmlContentChange(nextXmlId);
   };
 
   const handlePrev = () => {
     setCurrentTitleIndex((prevIndex) => (prevIndex - 1 + titlesWithIds.length) % titlesWithIds.length);
+
+    // Get the xmlId of the previous title
+    const prevXmlId = titlesWithIds[(currentTitleIndex - 1 + titlesWithIds.length) % titlesWithIds.length].xmlId;
+    
+    // Load the XML content for the previous title
+    handleXmlContentChange(prevXmlId);
   };
 
   const currentTitleWithId = titlesWithIds[currentTitleIndex];
 
-  const handleXmlContentChange = (xmlContent) => {
-    setCurrentXmlContent(xmlContent);
+  const handleXmlContentChange = async (xmlId) => {
+    try {
+      const response = await fetch('/api/extract-xml-fragment', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ xmlId, element_type: 'story' }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Failed to fetch XML fragment: ${response.statusText}`);
+      }
+
+      const xmlContent = await response.text();
+
+      // Set the XML content in your component state
+      setCurrentXmlContent(xmlContent);
+    } catch (error) {
+      console.error('Error loading XML content:', error);
+
+      // Handle the error here, e.g., display an error message to the user
+      setCurrentXmlContent(`<p>Error loading XML content: ${error.message}</p>`);
+    }
   };
 
   return (
@@ -47,12 +78,12 @@ const Clair = () => {
           <div className="carousel">
             <h2>{currentTitleWithId.title}</h2>
             <p>xml:id: {currentTitleWithId.xmlId}</p>
-            <button onClick={handlePrev}>Previous</button>
-            <button onClick={handleNext}>Next</button>
+            <button onClick={handlePrev} className='pp'>Previous</button>
+            <button onClick={handleNext} className='pp'>Next</button>
           </div>
-          <XmlComponent xmlId={currentTitleWithId.xmlId} onXmlContentChange={handleXmlContentChange} />
+          <XmlComponent xmlId={currentTitleWithId.xmlId} />
           <div className="xml-content">
-            <p>{currentXmlContent}</p>
+            <p dangerouslySetInnerHTML={{ __html: currentXmlContent }} />
           </div>
         </div>
       </div>
