@@ -221,7 +221,7 @@ progress::-webkit-progress-value {
   padding-bottom: 12em;
   background-position: center center;
 }
-.fluid-text {
+.fluid-text{
   font-size: 6rem;
   font-weight: bold;
   font-family: 'play';
@@ -234,9 +234,13 @@ progress::-webkit-progress-value {
   padding-top: 3em;
 }
 .carr h1{
-  font-size: 6em;
+  font-size: 4.5em;
   font-family: 'play';
   color:#bdb9b7;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
   text-align: center;
   justify-content: center;
   @media (max-width: 600px) {
@@ -244,11 +248,11 @@ progress::-webkit-progress-value {
   }
 }
 .carr h2{
-  color: #DB7754;
-  padding-bottom: 1em;
+  padding-bottom: 0.3em;
+  background-size: cover;
 }
 .fluid-text:before,
-.fluid-text:after, h2:before, h2:after {
+.fluid-text:after, h2:before, h2:after, .carr h1:before, .carr h2:after{
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -259,12 +263,12 @@ progress::-webkit-progress-value {
 }
 
 .fluid-text:hover:before,
-.fluid-text:hover:after, h2:hover:before, h2:hover:after {
+.fluid-text:hover:after, h2:hover:before, h2:hover:after, .carr h1:hover:before, .carr h1:hover:after {
   transform: translateX(-5px) translateY(-5px);
 }
 
 .fluid-text.hovered:before,
-.fluid-text.hovered:after, h2:hovered:before, h2:hovered:after {
+.fluid-text.hovered:after, h2.hovered:before, h2.hovered:after, .carr h1.hovered:before, .carr h1.hovered:after {
   transform: translateX(5px) translateY(5px);
 }
 .centered-container {
@@ -483,4 +487,13 @@ iframe{
   background-image: url(../src/images/terra.jpg);
   color:#bdb9b7;
   font-family: 'anavio' ;
+  text-shadow: 1px 1px white, 1px 2px #e8dbac;
+
+}
+.carousel h2{
+  border-radius: 12%;
+  color:#222466;
+  background-color: #bdb9b78f;
+  text-shadow: 0px 2px white, 1px 2px #e8dbac;
+  margin-top: 2em;
 }
