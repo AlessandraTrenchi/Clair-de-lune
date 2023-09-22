@@ -1,0 +1,160 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ArsEmotica-core="http://130.192.212.225/fuseki/ArsEmotica-core#">
+
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Clair de Lune</title>
+            <author>Guy de Maupassant</author>
+         </titleStmt>
+         <editionStmt>
+            <edition>Editions Gallimard, 1998</edition>
+            <respStmt>
+               <resp>Encoding</resp>
+               <persName>Chloe Papadopoulou</persName>
+               <persName>Alessandra Trenchi</persName>
+               <orgName>Alma Mater Studiorum - University of Bologna</orgName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Our project name</authority>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Guy De Maupassant</author>, <title>Clair de lune et autres nouvelles</title>.
+               <publisher>Editions Gallimard</publisher>
+               <date>1998</date>.
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+
+  <xenoData>
+    <rdf:RDF>
+      <rdf:Description tei:ref="#joy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Joy">
+          <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#trust" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Trust">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#anger" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Anger">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#sadness" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Sadness">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#fear"  rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Fear">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#disgust" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Disgust">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#surprise" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Surprise">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#anticipation" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Anticipation">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#love" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Love">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#grief" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Grief">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#envy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Envy">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#admiration" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Admiration">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#shame" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Shame">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#ecstasy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Ecstasy">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#distraction" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Distraction">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#despair" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Despair">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+
+      <rdf:Description tei:ref="#despair" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Despair">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+    </rdf:RDF>
+  </xenoData>
+
+</teiHeader>
+
+<text>
+  <body>
+
+
+    <div type="story" xml:id="une-veuve">
+
+    <head>UNE VEUVE</head>
+    <p>C’était pendant la saison des chasses, dans le château de Banneville. L’automne était pluvieux et <interp ana="#sad">triste</interp>. Les feuilles rouges, au lieu de craquer sous les pieds, pourrissaient dans les ornières, sous les lourdes averses.</p>
+    <p>La forêt, presque dépouillée, était humide comme une salle de bains. Quand on entrait dedans, sous les grands arbres fouettés par les grains, une odeur moisie, une buée d’eau tombée, d’herbes trempées, de terre mouillée, vous enveloppait ; et les tireurs, courbés sous cette inondation continue, et les chiens <interp ana="#grief">mornes</interp>, la queue basse et le poil collé sur les côtes, et les jeunes chasseresses en leur taille de drap collante et traversée de pluie, rentraient chaque soir las de corps et d’esprit.</p>
+    <p>Dans le grand salon, après dîner, on jouait au loto, <interp ana="#pensiveness">sans plaisir</interp>, tandis que le vent faisait sur les volets des poussées bruyantes et lançait les vieilles girouettes en des tournoiements de toupie. On voulut alors conter des histoires, comme il est dit en des livres ; mais personne n’inventait <interp ana="#pensiveness">rien d’amusant</interp>. Les chasseurs narraient des aventures à coups de fusil, des boucheries de lapins ; et les femmes se creusaient la tête sans y découvrir jamais l’imagination de Schéhérazade.</p>
+    <p>On allait renoncer à ce divertissement, quand une jeune femme, en  jouant, sans y penser, avec la main d’une vieille tante restée fille, remarqua une petite bague faite avec des cheveux blonds, qu’elle avait vue souvent sans y réfléchir.</p>
+    <p>Alors, en la faisant rouler doucement autour du doigt, elle demanda : « Dis donc, tante, qu’est-ce que c’est que cette bague ? On dirait des cheveux d’enfant... » La vieille demoiselle rougit, puis pâlit ; puis, d’une voix tremblante : « C’est si <interp ana="#sadness #cause-event">triste</interp>, si triste, que je n’en veux jamais parler. Tout le ana=#sadness #cause-event>malheur de ma vie vient de là. J’étais toute jeune alors, et le souvenir m’est resté si ana=#sadness #cause-event>douloureux que je ana=#grief #cause-event>pleure chaque fois en y pensant. »</p>
+    <p>On voulut aussitôt connaître l’histoire ; mais la tante refusait de la dire ; on finit enfin par la prier tant qu’elle se décida.</p>
+    <p>Vous m’avez souvent entendu parler de la famille de Santèze, éteinte aujourd’hui. J’ai connu les trois derniers hommes de cette maison. Ils sont morts tous les trois de la même façon ; voici les cheveux du dernier. Il avait treize ans, quand il s’est tué pour moi. Cela vous paraît étrange, n’est-ce pas ?</p>
+    <p>Oh ! c’était une race singulière, des fous, si l’on veut, mais des fous charmants, des fous par amour. Tous, de père en fils, avaient des passions violentes, de grands élans de tout leur être qui les poussaient aux choses les plus exaltées, aux dévouements fanatiques, même aux crimes. C’était en eux, cela, ainsi que la dévotion ardente est dans certaines âmes. Ceux qui se font trappistes n’ont pas la même nature que les coureurs de salon. On disait dans la parenté : « Amoureux comme un Santèze. » Rien qu’à les voir, on le devinait. Ils avaient tous les cheveux bouclés, bas sur le front, la barbe frisée, et des yeux larges, larges, dont le rayon entrait dans vous, et vous <interp ana="#pensiveness #surprise #cause-character">troublait</interp> sans qu’on sût pourquoi.</p>
+    <p>Le grand-père de celui-ci dont voici le seul souvenir, après beaucoup d’aventures, et des duels et des enlèvements de femmes, devint <interp ana="#ecstasy #love #cause-character">passionnément épris</interp>, vers soixante-cinq ans, de la fille de son fermier. Je les ai connus tous les deux. Elle était blonde, pâle, distinguée, avec un parler lent, une voix molle et un regard si doux, si doux qu’on l’aurait dit d’une madone. Le vieux seigneur la prit chez lui, et il fut bientôt si <interp ana="#admiration #love #cause-character">captivé</interp> qu’il ne pouvait se passer d’elle une minute. Sa fille et sa belle-fille, qui habitaient le château, trouvaient cela naturel, tant l’amour était de tradition dans la maison. Quand il s’agissait de passion, rien ne les étonnait, et, si l’on parlait devant elles de penchants contrariés, d’amants désunis, même de vengeance après des trahisons, elles disaient toutes les deux, du même ton désolé : « Oh ! comme il (ou elle) a dû souffrir pour en arriver là ! » Rien de plus. Elles s’apitoyaient sur les drames du cœur et ne s’en indignaient jamais, même quand ils étaient criminels.</p>
+    <p>Or, un automne, un jeune homme, M. de Gradelle, invité pour la chasse, <interp ana="#event #betrayal">enleva la jeune fille</interp>.</p>
+    <p>M. de Santèze resta <interp ana="#serenity">calme</interp>, comme s’il ne s’était rien passé ; mais, un matin, on le trouva <interp ana="#event #suicide #event">pendu dans le chenil</interp>, au milieu des chiens.</p>
+    <p>Son fils mourut de la même façon, dans un hôtel, à Paris, pendant un voyage qu’il fit en 1841, après avoir été trompé par une chanteuse de l’Opéra.</p>
+    <p>Il laissait un enfant âgé de douze ans, et une veuve, la sœur de ma mère. Elle vint avec le petit habiter chez mon père, dans notre terre de Bertillon. J’avais alors dix-sept ans.</p>
+    <p>Vous ne pouvez vous figurer quel étonnant et précoce enfant était ce petit Santèze. On eût dit que toutes les facultés de tendresse, que toutes les exaltations de sa race étaient retombées sur celui-là, le dernier. Il rêvait toujours et se promenait seul, pendant des heures, dans une grande allée d’ormes allant du château jusqu’au bois. Je regardais de ma fenêtre ce gamin sentimental, qui marchait à pas graves, les mains derrière le dos, le front penché, et, parfois, s’arrêtait pour lever les yeux comme s’il voyait et comprenait, et ressentait des choses qui n’étaient point de son âge.</p>
+    <p>Souvent, après le dîner, par les nuits claires, il me disait : « Allons rêver, cousine... » Et nous partions ensemble dans le parc. Il s’arrêtait brusquement devant les clairières où flottait cette vapeur blanche, cette ouate dont la lune garnit les éclaircies des bois ; et il me disait, en me serrant la main : « Regarde ça, regarde ça. Mais tu ne me comprends pas, je le sens. Si tu me comprenais, nous serions heureux. Il faut aimer pour savoir. » Je riais et je <interp ana="#love #cause-character">l’embrassais</interp>, ce gamin, qui <interp ana="#love #admiration #cause-character">m’adorait à en mourir</interp>.</p>
+    <p>Souvent aussi, après le dîner, il allait s’asseoir sur les genoux de ma mère : « Allons, tante, lui disait-il, raconte-nous des histoires d’amour. » Et ma mère, par plaisanterie, lui disait toutes les légendes de sa famille, toutes les aventures passionnées de ses pères ; car on en citait des mille et des mille, de vraies et de fausses. C’est leur réputation qui les a tous perdus, ces hommes ; ils se montaient la tête et se faisaient gloire ensuite de ne point laisser mentir la renommée de leur maison.</p>
+    <p>Il <interp ana="#ecstasy #cause-character">s’exaltait</interp>, le petit, à ces récits tendres ou terribles, et parfois il tapait des mains en répétant : « Moi aussi, moi aussi, je sais aimer mieux qu’eux tous ! »</p>
+    <p>Alors il me fit la cour, une cour timide et profondément tendre dont on riait, tant c’était <interp ana="#joy #cause-character">drôle</interp>. Chaque matin, j’avais des fleurs cueillies par lui, et chaque soir, avant de remonter dans sa chambre, il me baisait la main en murmurant : « <interp ana="#love #admiration #cause-character">Je t’aime ! »</interp></p>
+    <p>Je fus <interp ana="#guilt #cause-character"> coupable</interp>, bien coupable, et j’en <interp ana="#sadness #cause-character">pleure</interp> encore sans cesse, et j’en ai fait <interp ana="#remorse #cause-character">pénitence</interp> toute ma vie, et je suis restée vieille fille, — ou plutôt non, je suis restée comme fiancée-veuve, veuve de lui. Je <interp ana="#joy #cause-character">m’amusai</interp> de cette tendresse puérile, je l’excitais même ; je fus coquette, séduisante, comme auprès d’un homme, caressante et perfide. J’affolai cet enfant. C’était un jeu pour moi, et un divertissement joyeux pour sa mère et la mienne. Il avait douze ans ! Songez ! qui donc aurait pris au sérieux cette passion d’atome ! Je l’embrassais tant qu’il voulait ; je lui écrivis même des billets doux que lisaient nos mères ; et il me répondait des lettres, des lettres de feu, que j’ai gardées. Il croyait secrète notre intimité d’amour, se jugeant un homme. Nous avions oublié qu’il était un Santèze !</p>
+    <p>Cela dura près d’un an. Un soir, dans le parc, il s’abattit à mes genoux et, baisant le bas de ma robe avec un élan furieux, il répétait : « <interp ana="#love #admiration #cause-character">Je t’aime</interp>, je t’aime, je t’aime à en mourir. Si tu me trompes jamais, entends-tu ; si tu m’abandonnes pour un autre, je ferai comme mon père... » Et il ajouta d’une voix profonde à donner un <interp ana="#fear #surprise #cause-character">frisson</interp> : « Tu sais ce qu’il a fait ! »</p>
+    <p>Puis, comme je restais <interp ana="#fear #surprise #cause-character">interdite</interp>, il se releva, et se dressant sur la pointe des pieds pour arriver à mon oreille, car j’étais plus grande que lui, il modula mon nom, mon petit nom : « Geneviève ! » d’un ton si doux, si joli, si tendre, que j’en frissonnai jusqu’aux pieds.</p>
+    <p>Je balbutiais : « Rentrons, rentrons ! » Il ne dit plus rien et me suivit ; mais, comme nous allions gravir les marches du perron, il m’arrêta : « Tu sais, si tu m’abandonnes, je me tue. »</p>
+    <p>Je compris, cette fois, que j’avais été trop loin, et je devins réservée. Comme il m’en faisait, un jour, des reproches, je répondis : « Tu es maintenant trop grand pour plaisanter, et trop jeune pour un amour sérieux. J’attends. »</p>
+    <p>Je m’en croyais quitte ainsi.</p>
+    <p>On le mit en pension à l’automne. Quand il revint l’été suivant, j’avais un fiancé. Il comprit tout de suite, et garda pendant huit jours un air <interp ana="#pensiveness #cause-character">si réfléchi</interp> que je demeurais très <interp ana="#fear #cause-character">inquiète</interp>.</p>
+    <p>Le neuvième jour, au matin, j’aperçus, en me levant, un petit papier glissé sous ma porte. Je le saisis, je l’ouvris, je lus : « Tu m’as abandonné, et tu sais ce que je t’ai dit. C’est ma mort que tu as ordonnée. Comme je ne veux pas être trouvé par un autre que par toi, viens dans le parc, juste à la place où je t’ai dit, l’an dernier, que je t’aimais, et regarde en l’air. »</p>
+    <p>Je me sentais devenir <interp ana="#amazement #terror #cause-character">folle</interp>. Je m’habillai vite et vite, et je courus, je courus à tomber épuisée, jusqu’à l’endroit désigné. Sa petite casquette de pension était par terre, dans la boue. Il avait plu toute la nuit. Je levai les yeux et j’aperçus <interp ana="cause-event #suicide">quelque chose qui se berçait dans les feuilles</interp>, car il faisait du vent, beaucoup de vent.</p>
+    <p>Je ne sais plus, après ça, ce que j’ai fait. J’ai dû <interp ana="#amazement #terror #cause-event">hurler</interp> d’abord, m’évanouir peut-être, et tomber, puis courir au château. Je repris ma raison dans mon lit, avec ma mère à mon chevet.</p>
+    <p>Je crus que j’avais rêvé tout cela dans un affreux délire. Je balbutiai : « Et lui, lui, Gontran ?... » On ne me répondit pas. C’était vrai.</p>
+    <p>Je n’osai pas le revoir ; mais je demandai une longue mèche de ses cheveux blonds. La... la... voici...</p>
+    <p>Et la vieille demoiselle tendait sa main <interp ana="#sadness #cause-character">tremblante</interp> dans un geste <interp ana="#despair #cause-character">désespéré</interp>.</p>
+    <p>Puis elle se moucha plusieurs fois, s’essuya les yeux et reprit : « J’ai rompu mon mariage... sans dire pourquoi... Et je... je suis restée toujours... la... la veuve de cet enfant de treize ans. » Puis sa tête tomba sur sa poitrine et elle pleura longtemps des larmes pensives.</p>
+    <p>Et, comme on gagnait les chambres pour dormir, un gros chasseur dont elle avait troublé la quiétude souffla dans l’oreille de son voisin :</p>
+    <p>— <interp ana="#cynism">N’est-ce pas malheureux d’être sentimental</interp> à ce point-là !</p>
+    <p><date>1er septembre 1882</date></p>
+
+    </div>
+
+  </body>
+  <back>
+
+</interpGrp>
+
+<interpGrp type="emotion-causes">
+  <desc>Causes linked to emotions encoded in the text</desc>
+  <interp xml:id="cause-character">A character that can affect the emotional state of another character.</interp>
+  <interp xml:id="cause-event">Event, that can influence a character's state (e.g. someone's death) </interp>
+</interpGrp>
+
+<interpGrp type="emotion-effect">
+  <desc>Effects linked to emotions encoded in the text</desc>
+  <interp xml:id="positive-effect" type="positive">A positive effect to a character </interp>
+  <interp xml:id="negative-effect" type="negative">A negative effect to a character</interp>
+
+</interpGrp>
+</back>
+</text>
+</TEI>

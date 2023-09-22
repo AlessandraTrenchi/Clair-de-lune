@@ -1,0 +1,196 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ArsEmotica-core="http://130.192.212.225/fuseki/ArsEmotica-core#">
+
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Clair de Lune</title>
+            <author>Guy de Maupassant</author>
+         </titleStmt>
+         <editionStmt>
+            <edition>Editions Gallimard, 1998</edition>
+            <respStmt>
+               <resp>Encoding</resp>
+               <persName>Chloe Papadopoulou</persName>
+               <persName>Alessandra Trenchi</persName>
+               <orgName>Alma Mater Studiorum - University of Bologna</orgName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Our project name</authority>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Guy De Maupassant</author>, <title>Clair de lune et autres nouvelles</title>.
+               <publisher>Editions Gallimard</publisher>
+               <date>1998</date>.
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+
+  <xenoData>
+    <rdf:RDF>
+      <rdf:Description tei:ref="#joy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Joy">
+          <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#trust" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Trust">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#anger" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Anger">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#sadness" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Sadness">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#fear"  rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Fear">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#disgust" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Disgust">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#surprise" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Surprise">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#anticipation" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Anticipation">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#love" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Love">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#grief" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Grief">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#envy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Envy">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#admiration" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Admiration">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#shame" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Shame">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#ecstasy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Ecstasy">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#distraction" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Distraction">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#despair" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Despair">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+
+      <rdf:Description tei:ref="#despair" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Despair">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+    </rdf:RDF>
+  </xenoData>
+
+</teiHeader>
+
+<text>
+  <body>
+
+
+
+
+    <div type="story" xml:id="conte-de-noel">
+    <head>CONTE DE NOËL</head>
+
+    <p>Le docteur Bonenfant cherchait dans sa mémoire, répétant à mi-voix: «Un souvenir de Noël?… Un souvenir de Noël?…»</p>
+    <p>Et tout à coup, il s’écria:</p>
+    <p>—Mais si, j’en ai un, et un bien étrange encore; c’est une histoire fantastique. J’ai vu un miracle! Oui, Mesdames, un miracle, la nuit de Noël.</p>
+    <p>Cela vous étonne de m’entendre parler ainsi, moi qui ne crois guère à rien. Et pourtant, j’ai vu un miracle! Je l’ai vu, dis-je, vu, de mes propres yeux vu, ce qui s’appelle vu.</p>
+    <p>En ai-je été fort surpris? non pas; car si je ne crois point à vos croyances, je crois à la foi, et je sais qu’elle transporte les montagnes. Je pourrais citer bien des exemples; mais je vous indignerais et je m’exposerais aussi à amoindrir l’effet de mon histoire.</p>
+    <p>Je vous avouerai d’abord que si je n’ai pas été convaincu et converti par ce que j’ai vu, j’ai été du moins fort ému, et je vais tâcher de vous dire la chose naïvement, comme si j’avais une crédulité d’Auvergnat.</p>
+    <p>J’étais alors médecin de campagne, habitant le bourg de Rolleville, en pleine Normandie.</p>
+    <p>L’hiver, cette année-là, fut terrible. Dès la fin de novembre, les neiges arrivèrent après une semaine de gelées. On voyait de loin les gros nuages venir du nord; et la blanche descente des flocons commença.</p>
+    <p>En une nuit, toute la pleine fut ensevelie.</p>
+    <p>Les fermes, isolées dans leurs cours carrées, derrière leurs rideaux de grands arbres poudrés de frimas, semblaient s’endormir sous l’accumulation de cette mousse épaisse et légère.</p>
+    <p>Aucun bruit ne traversait plus la campagne immobile. Seuls les corbeaux, par bandes, décrivaient de longs festons dans le ciel, cherchant leur vie inutilement, s’abattant tous ensemble sur les champs livides et piquant la neige de leurs grands becs.</p>
+    <p>On n’entendait rien que le glissement vague et continu de cette poussière gelée tombant toujours.</p>
+    <p>Cela dura huit jours pleins, puis l’avalanche s’arrêta. La terre avait sur le dos un manteau épais de cinq pieds.</p>
+    <p>Et, pendant trois semaines ensuite, un ciel, clair comme un cristal bleu le jour, et, la nuit, tout semé d’étoiles qu’on aurait crues de givre, tant le vaste espace était rigoureux, s’étendit sur la nappe unie, dure et luisante des neiges.</p>
+    <p>La plaine, les haies, les ormes des clôtures, tout semblait mort, tué par le froid. Ni hommes ni bêtes ne sortaient plus; seules les cheminées des chaumières en chemise blanche révélaient la vie cachée, par les minces filets de fumée qui montaient droit dans l’air glacial.</p>
+    <p>De temps en temps on entendait craquer les arbres, comme si leurs membres de bois se fussent brisés sous l’écorce; et, parfois, une grosse branche se détachait et tombait, l’invincible gelée pétrifiant la sève et cassant les fibres.</p>
+    <p>Les habitations semées ça et là par les champs semblaient éloignées de cent lieues les unes des autres. On vivait comme on pouvait. Seul, j’essayais d’aller voir mes clients les plus proches, m’exposant sans cesse à rester enseveli dans quelque creux.</p>
+    <p>Je m’aperçus bientôt qu’une <interp ana="#terror">terreur</interp> mystérieuse planait sur le pays. Un tel fléau, pensait-on, n’était point naturel. On prétendit qu’on entendait des voix la nuit, des sifflements aigus, des cris qui passaient.</p>
+    <p>Ces cris et ces sifflements venaient sans aucun doute des oiseaux émigrants qui voyagent au crépuscule, et qui fuyaient en masse vers le sud. Mais allez donc faire entendre raison à des gens <interp ana="terror">affolés</interp>. Une <interp ana="terror">épouvante</interp> envahissait les esprits et on <interp ana="anticipation">s’attendait</interp> à un événement extraordinaire.</p>
+    <p>La forge du père Vatinel était située au bout du hameau d’Épivent, sur la grande route, maintenant invisible et déserte. Or, comme les gens manquaient de pain, le forgeron résolut d’aller jusqu’au village. Il resta quelques heures à causer dans les six maisons qui forment le centre du pays, prit son pain et des nouvelles, et un peu de cette peur épandue sur la campagne.</p>
+    <p>Et il se remit en route avant la nuit.</p>
+    <p>Tout à coup, en longeant une haie, il crut voir un oeuf sur la neige; oui, un oeuf, déposé là, tout blanc comme le reste du monde. Il se pencha, c’était un oeuf en effet. D’où venait-il? Quelle poule avait pu sortir du poulailler et venir pondre en cet endroit? Le forgeron <interp ana="#surprise">s’étonna</interp>, ne comprit pas; mais il ramassa l’oeuf et le porta à sa femme.</p>
+    <p>—Tiens, la maîtresse, v’là un oeuf que j’ai trouvé sur la route!</p>
+    <p>La femme hocha la tête:—Un oeuf sur la route? Par ce temps-ci, t’es soûl, bien sûr?</p>
+    <p>—Mais non, la maîtresse, même qu’il était au pied d’une haie, et encore chaud, pas gelé. Le v’là, j’me l’ai mis sur l’estomac pour qui n’refroidisse pas. Tu le mangeras pour ton dîner.</p>
+    <p>L’oeuf fut glissé dans la marmite où mijotait la soupe, et le forgeron se mit à raconter ce qu’on disait par la contrée. La femme écoutait, toute pâle.</p>
+    <p>—Pour sûr, que j’en ai entendu, des sifflets, l’autre nuit, même qu’ils semblaient v’nir de la cheminée.</p>
+    <p>On se mit à table, on mangea la soupe d’abord, puis, pendant que le mari étendait du beurre sur son pain, la femme prit l’oeuf et l’examina d’un oeil méfiant.</p>
+    <p>—Si y avait qué que chose dans c’t’oeuf?</p>
+    <p>—Que que tu veux qu’y ait?</p>
+    <p>—J’sais ti, mé?</p>
+    <p>—Allons, mange-le, et fais pas la bête.</p>
+    <p>Elle ouvrit l’oeuf. Il était comme tous les oeufs, et bien frais. Elle se mit à le manger en <interp ana="apprehension">hésitant</interp>, le goûtant, le laissant, le reprenant. Le mari disait:</p>
+    <p>—Eh bien! qué goût qu’il a, c’t’oeuf?</p>
+    <p>Elle ne répondait pas, et elle acheva de l’avaler; puis, soudain elle planta sur son homme des yeux fixes, hagards, <interp ana="#fear">affolés</interp>; leva les bras, les tordit et, convulsée de la tête aux pieds, roula par terre en poussant des <interp ana="#terror #disgust">cris horribles</interp>.</p>
+    <p>Toute la nuit elle se débattit en des spasmes épouvantables, secouée de tremblements effrayants, déformée par de hideuses convulsions. Le forgeron, impuissant à la tenir, fut obligé de la lier.</p>
+    <p>Et elle hurlait sans repos, d’une voix infatigable:</p>
+    <p>—J’l’ai dans l’corps! J’l’ai dans l’corps!</p>
+    <p>Je fus appelé le lendemain. J’ordonnai tous les calmants connus sans obtenir le moindre résultat. Elle était folle.</p>
+    <p>Alors, avec une incroyable rapidité, malgré l’obstacle des hautes neiges, la nouvelle, une nouvelle étrange, courut de ferme en ferme: «La femme au forgeron qu’est possédée!» Et on venait de partout, sans oser pénétrer dans la maison; on écoutait de loin ses cris affreux poussés d’une voix si forte qu’on ne les aurait pas crus d’une créature humaine.</p>
+    <p>Le curé du village fut prévenu. C’était un vieux prêtre naïf. Il accourut en surplis comme pour administrer un mourant et il prononça, en étendant les mains, les formules d’exorcisme, pendant que quatre hommes maintenaient sur un lit la femme écumante et tordue.</p>
+    <p>Mais l’esprit ne fut point chassé.</p>
+    <p>Et la Noël arriva sans que le temps eût changé.</p>
+    <p>La veille au matin, le prêtre vint me trouver:</p>
+    <p>—J’ai envie, dit-il, de faire assister à l’office de cette nuit cette malheureuse. Peut-être Dieu fera-t-il un miracle en sa faveur, à l’heure même où il naquit d’une femme.</p>
+    <p>Je répondis au curé:</p>
+    <p>—Je vous approuve absolument, Monsieur l’abbé. Si elle a l’esprit frappé par la cérémonie sacrée (et rien n’est plus propice à l’émouvoir), elle peut être sauvée sans autre remède.</p>
+    <p>Le vieux prêtre murmura:</p>
+    <p>—Vous n’êtes pas croyant, docteur, mais aidez-moi, n’est-ce pas? Vous vous chargez de l’amener?</p>
+    <p>Et je lui promis mon aide.</p>
+    <p>Le soir vint, puis la nuit; et la cloche de l’église se mit à sonner, jetant sa voix plaintive à travers l’espace morne, sur l’étendue blanche et glacée des neiges.</p>
+    <p>Des êtres noirs s’en venaient lentement, par groupes, dociles au cri d’airain du clocher. La pleine lune éclairait d’une lueur vive et blafarde tout l’horizon, rendait plus visible la pâle désolation des champs.</p>
+    <p>J’avais pris quatre hommes robustes et je me rendis à la forge.</p>
+    <p>La Possédée hurlait toujours, attachée à sa couche. On la vêtit proprement malgré sa résistance éperdue, et on l’emporta.</p>
+    <p>L’église était maintenant pleine de monde, illuminée et froide; les chantres poussaient leurs notes monotones; le serpent ronflait; la petite sonnette de l’enfant de choeur tintait, réglant les mouvements des fidèles.</p>
+    <p>J’enfermai la femme et ses gardiens dans la cuisine du presbytère, et j’attendis le moment que je croyais favorable. Je choisis l’instant qui suit la communion. Tous les paysans, hommes et femmes, avaient reçu leur Dieu pour fléchir sa rigueur. Un grand silence planait pendant que le prêtre achevait le mystère divin.</p>
+    <p>Sur mon ordre, la porte fut ouverte et mes quatre aides apportèrent la folle.</p>
+    <p>Dès qu’elle aperçut les lumières, la foule à genoux, le choeur en feu et le tabernacle doré, elle se débattit d’une telle vigueur qu’elle faillit nous échapper, et elle poussa des clameurs si aiguës qu’un frisson d’<interp ana="#terror">épouvante</interp> passa dans l’église; toutes les têtes se relevèrent; des gens s’enfuirent.</p>
+    <p>Elle n’avait plus la forme d’une femme, crispée et tordue en nos mains, le visage contourné, les yeux fous.</p>
+    <p>On la traîna jusqu’aux marches du choeur et puis on la tint fortement accroupie à terre.</p>
+    <p>Le prêtre s’était levé; il <interp ana="#anticipation #cause-character">attendait</interp>. Dès qu’il la vit arrêtée, il prit en ses mains l’ostensoir ceint de rayons d’or, avec l’hostie blanche au milieu, et, s’avançant de quelques pas, il l’éleva de ses deux bras tendus au-dessus de sa tête, le présentant aux regards égarés de la Démoniaque.</p>
+    <p>Elle <interp ana="#fear #anger #disgust">hurlait</interp> toujours, l’oeil fixé, tendu sur cet objet rayonnant. Et le prêtre demeurait tellement immobile qu’on l’aurait pris pour une statue.</p>
+    <p>Et cela dura longtemps, longtemps.</p>
+    <p>La femme semblait saisie de <interp ana="#fear">peur</interp>, <interp ana="#surprise">fascinée</interp>; elle contemplait fixement l’ostensoir, secouée encore de tremblements terribles, mais passagers, et <interp ana="#fear #anger #disgust"> criant</interp> toujours, mais d’une voix moins déchirante.</p>
+    <p>Et cela dura encore longtemps.</p>
+    <p>On eût dit qu’elle ne pouvait plus baisser les yeux, qu’ils étaient rivés sur l’hostie; et elle ne faisait plus que gémir; et son corps roidi s’amollissait, s’affaissait. Toute la foule était prosternée le front par terre. La Possédée maintenant baissait rapidement les paupières, puis les relevait aussitôt, comme impuissante à supporter la vue de son Dieu. Elle s’était tue. Et puis soudain, je m’aperçus que ses yeux demeuraient clos. Elle <interp ana="#serenity">dormait</interp> du sommeil des somnambules, hypnotisée, pardon, vaincue par la contemplation persistante de l’ostensoir aux rayons d’or, terrassée par le Christ victorieux.</p>
+    <p>On l’emporta, inerte, pendant que le prêtre remontait vers l’autel.</p>
+    <p>L’assistance bouleversée entonna un Te Deum d’actions de grâces.</p>
+    <p>Et la femme du forgeron dormit quarante heures de suite, puis se réveilla sans aucun souvenir de la possession ni de la délivrance.</p>
+    <p>Voilà, Mesdames, le miracle que j’ai vu. Le docteur Bonenfant se tut, puis ajouta d’une voix contrariée:—Je n’ai pu refuser de l’attester par écrit.</p>
+
+    </div>
+  </body>
+  <back>
+
+</interpGrp>
+
+<interpGrp type="emotion-causes">
+  <desc>Causes linked to emotions encoded in the text</desc>
+  <interp xml:id="cause-character">A character that can affect the emotional state of another character.</interp>
+  <interp xml:id="cause-event">Event, that can influence a character's state (e.g. someone's death) </interp>
+</interpGrp>
+
+<interpGrp type="emotion-effect">
+  <desc>Effects linked to emotions encoded in the text</desc>
+  <interp xml:id="positive-effect" type="positive">A positive effect to a character </interp>
+  <interp xml:id="negative-effect" type="negative">A negative effect to a character</interp>
+
+</interpGrp>
+</back>
+</text>
+</TEI>

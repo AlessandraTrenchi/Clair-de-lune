@@ -1,0 +1,201 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ArsEmotica-core="http://130.192.212.225/fuseki/ArsEmotica-core#">
+
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Clair de Lune</title>
+            <author>Guy de Maupassant</author>
+         </titleStmt>
+         <editionStmt>
+            <edition>Editions Gallimard, 1998</edition>
+            <respStmt>
+               <resp>Encoding</resp>
+               <persName>Chloe Papadopoulou</persName>
+               <persName>Alessandra Trenchi</persName>
+               <orgName>Alma Mater Studiorum - University of Bologna</orgName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Our project name</authority>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Guy De Maupassant</author>, <title>Clair de lune et autres nouvelles</title>.
+               <publisher>Editions Gallimard</publisher>
+               <date>1998</date>.
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+
+  <xenoData>
+    <rdf:RDF>
+      <rdf:Description tei:ref="#joy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Joy">
+          <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#trust" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Trust">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#anger" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Anger">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#sadness" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Sadness">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#fear"  rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Fear">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#disgust" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Disgust">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#surprise" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Surprise">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#anticipation" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Anticipation">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#love" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Love">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#grief" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Grief">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#envy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Envy">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#admiration" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Admiration">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#BasicEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#shame" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Shame">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#ecstasy" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Ecstasy">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#distraction" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Distraction">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+      <rdf:Description tei:ref="#despair" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Despair">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+
+      <rdf:Description tei:ref="#despair" rdf:about="http://130.192.212.225/fuseki/ArsEmotica-core#Despair">
+        <rdfs:subClassOf rdf:resource="http://130.192.212.225/fuseki/ArsEmotica-core#ComplexEmotion"/>
+      </rdf:Description>
+    </rdf:RDF>
+  </xenoData>
+
+</teiHeader>
+
+<text>
+  <body>
+
+
+
+
+    <div type="story" xml:id="le-perdon">
+
+
+    <head>LE PARDON</head>
+    <p>Elle avait été élevée dans une de ces familles qui vivent enfermées en elles-mêmes, et qui semblent toujours loin de tout. Elles ignorent les événements politiques, bien qu’on en cause à table ; mais les changements de gouvernement se passent si loin, si loin, qu’on parle de cela comme d’un fait historique, comme de la mort de Louis XVI ou du débarquement de Napoléon.</p>
+    <p>Les mœurs se modifient, les modes se succèdent. On ne s’en aperçoit guère dans la famille calme où l’on suit toujours les coutumes traditionnelles. Et si quelque histoire scabreuse se passe dans les environs, le scandale vient mourir au seuil de la maison. Seuls, le père et la mère, un soir, échangent quelques mots là-dessus, mais à mi-voix, à cause des murs qui ont partout des oreilles. Et, discrètement, le père dit :</p>
+    <p>— Tu as su cette terrible affaire dans la famille des Rivoil ?</p>
+    <p>Et la mère répond :</p>
+    <p>— Qui aurait jamais cru cela ? C’est affreux.</p>
+    <p>Les enfants ne se doutent de rien, et ils arrivent à l’âge de vivre à leur tour, avec un bandeau sur les yeux et sur l’esprit, sans soupçonner les dessous de l’existence, sans savoir qu’on ne pense pas comme on parle, et qu’on ne parle point comme on agit ; sans savoir qu’il faut vivre en guerre avec tout le monde, ou du moins en paix armée, sans deviner qu’on est sans cesse trompé quand on est naïf, joué quand on est sincère, maltraité quand on est bon.</p>
+    <p>Les uns vont jusqu’à la mort dans cet aveuglement de probité, de loyauté, d’honneur ; tellement intègres que rien ne leur ouvre les yeux.</p>
+    <p>Les autres, désabusés sans bien comprendre, trébuchent éperdus, désespérés, et meurent en se croyant les jouets d’une fatalité exceptionnelle, les victimes misérables d’événements funestes et d’hommes particulièrement criminels.</p>
+    <p>Les Savignol marièrent leur fille Berthe à dix-huit ans. Elle épousa un jeune homme de Paris, Georges Baron, qui faisait des affaires à la Bourse. Il était beau garçon, parlait bien, avec tous les dehors probes qu’il fallait ; mais, au fond du cœur, il se <interp ana="#disgust">moquait</interp> un peu de ses beaux-parents attardés, qu’il appelait entre amis : « Mes chers fossiles. »</p>
+    <p>Il appartenait à une bonne famille ; et la jeune fille était riche. Il l’emmena vivre à Paris.</p>
+    <p>Elle devint une de ces provinciales de Paris dont la race est nombreuse. Elle demeura ignorante de la grande ville, de son monde élégant, de ses plaisirs, de ses costumes, comme elle était demeurée ignorante de la vie, de ses perfidies et de ses mystères.</p>
+    <p>Enfermée en son ménage, elle ne connaissait guère que sa rue, et quand elle s’aventurait dans un autre quartier, il lui semblait accomplir un voyage lointain en une ville inconnue et étrangère. Elle disait le soir :</p>
+    <p>— J’ai traversé les boulevards, aujourd’hui.</p>
+    <p>Deux ou trois fois par an, son mari l’emmenait au théâtre. C’étaient des fêtes dont le souvenir ne s’éteignait plus et dont on reparlait sans cesse.</p>
+    <p>Quelquefois, à table, trois mois après, elle se mettait brusquement à rire, et s’écriait :</p>
+    <p>— Te rappelles-tu cet acteur habillé en général et qui imitait le chant du coq ?</p>
+    <p>Toutes ses relations se bornaient à deux familles alliées qui, pour elle, représentaient l’humanité. Elle les désignait en faisant précéder leur nom de l’article « les » — les Martinet et les Michelint.</p>
+    <p>Son mari vivait à sa guise, rentrant quand il voulait, parfois au jour levant, prétextant des affaires, ne se gênant point, sûr que jamais un soupçon n’effleurerait cette âme candide.</p>
+    <p>Mais un matin elle reçut une lettre anonyme.</p>
+    <p>Elle demeura <interp ana="#surprise cause-character">éperdue</interp>, ayant le cœur trop droit pour comprendre l’infamie des dénonciations, pour mépriser cette lettre dont l’auteur se disait inspiré par l’intérêt de son bonheur, et la haine du mal, et l’amour de la vérité.</p>
+    <p>On lui révélait que son mari avait, depuis deux ans, une maîtresse, une jeune veuve, Mme Rosset, chez qui il passait toutes ses soirées.</p>
+    <p>Elle ne sut ni feindre, ni dissimuler, ni épier, ni ruser. Quand il revint pour déjeuner, elle lui jeta cette lettre, en <interp ana="#sadness #cause-character">sanglotant</interp>, et s’enfuit dans sa chambre.</p>
+    <p>Il eut le temps de comprendre, de préparer sa réponse et il alla frapper à la porte de sa femme. Elle ouvrit aussitôt, n’osant pas le regarder. Il <interp ana="#joy">souriait</interp> ; il s’assit, l’attira sur ses genoux ; et d’une voix douce, un peu moqueuse :</p>
+    <p>— Ma chère petite, j’ai en effet pour amie Mme Rosset, que je connais depuis dix ans et que j’aime beaucoup ; j’ajouterai que je connais vingt autres familles dont je ne t’ai jamais parlé, sachant que tu ne recherches pas le monde, les fêtes et les relations nouvelles. Mais, pour en finir une fois pour toutes avec ces dénonciations infâmes, je te prierai de t’habiller après le déjeuner et nous irons faire une visite à cette jeune femme qui deviendra ton amie, je n’en doute pas.</p>
+    <p>Elle embrassa à pleins bras son mari ; et, par une de ces <interp ana="#anticipation #surprise">curiosités</interp> féminines qui ne s’endorment plus une fois éveillées, elle ne refusa point d’aller voir cette inconnue qui lui demeurait, malgré tout, un peu <interp ana="#anticipation #apprehension #cause-character"> suspecte</interp>. Elle sentait, par instinct, qu’un danger connu est presque évité.</p>
+    <p>Elle entra dans un petit appartement coquet, plein de bibelots, orné avec art, au quatrième étage d’une belle maison. Au bout de cinq minutes d’attente dans un salon assombri par des tentures, des portières, des rideaux drapés gracieusement, une porte s’ouvrit et une jeune femme apparut, très brune, petite, un peu grasse, <interp ana="#surprise #cause-character">étonnée</interp> et <interp ana="#joy #cause-character">souriante</interp>.</p>
+    <p>Georges fit les présentations.</p>
+    <p>— Ma femme, Mme Julie Rosset.</p>
+    <p>La jeune veuve poussa un léger cri (sound) d’<interp ana="#surprise #cause-character">étonnement</interp> et de <interp ana="#joy #cause-character">joie</interp>, et s’élança, les deux mains ouvertes. Elle n’espérait point, disait-elle, avoir ce bonheur, sachant que Mme Baron ne voyait personne ; mais elle était si <interp ana="#joy #cause-character">heureuse</interp>, si heureuse ! Elle aimait tant Georges (elle disait Georges tout court avec une fraternelle familiarité) ! qu’elle avait une <interp ana="#anticipation #cause-character">envie folle</interp> de connaître sa jeune femme et de l’aimer aussi.</p>
+    <p>Au bout d’un mois, les deux nouvelles amies ne se quittaient plus. Elles se voyaient chaque jour, souvent deux fois, et dînaient tous les soirs ensemble, tantôt chez l’une, tantôt chez l’autre. Georges maintenant ne sortait plus guère, ne prétextait plus d’affaires, <interp ana="#love #cause-character">adorant</interp>, disait-il, son coin du feu.</p>
+    <p>Enfin, un appartement s’étant trouvé libre dans la maison habitée par Mme Rosset, Mme Baron s’empressa de le prendre pour se rapprocher et se réunir encore davantage.</p>
+    <p>Et pendant deux années entières, ce fut une <interp ana="#trust #cause-character">amitié</interp> sans un nuage, une amitié de cœur et d’âme, absolue, <interp ana="#love #cause-character">tendre</interp>, <interp ana="#trust #cause-character">dévouée</interp>, délicieuse. Berthe ne pouvait plus parler sans prononcer le nom de Julie, qui représentait pour elle la perfection.</p>
+    <p>Elle était <interp ana="#joy #cause-character">heureuse</interp>, d’un bonheur parfait, <interp ana="#serenity">calme et doux</interp>.</p>
+    <p>Mais voici que Mme Rosset tomba malade. Berthe ne la quitta plus. Elle passait les nuits, <interp ana="#grief @cause-event">se désolait</interp> ; son mari lui-même était <interp ana="#despair #cause-event">désespéré</interp>.</p>
+    <p>Or, un matin, le médecin, en sortant de sa visite, prit à part Georges et sa femme, et leur annonça qu’il trouvait fort grave l’état de leur amie.</p>
+    <p>Dès qu’il fut parti, les jeunes gens, <interp ana="#grief #cause-event">atterrés</interp>, s’assirent l’un en face de l’autre ; puis, brusquement, se mirent à <interp ana="#sadness #cause-event">pleurer</interp>. Ils veillèrent, la nuit, tous les deux ensemble auprès du lit ; et Berthe, à tout instant, <interp ana="#love #cause-character">embrassait tendrement</interp> la malade, tandis que Georges, debout devant les pieds de sa couche, la contemplait silencieusement avec une persistance acharnée.</p>
+    <p>Le lendemain, elle allait plus mal encore. </p>
+    <p>Enfin, vers le soir, elle déclara qu’elle se trouvait mieux, et contraignit ses amis à redescendre chez eux pour dîner.</p>
+    <p>Ils étaient <interp ana="#sadness #cause-event">tristement</interp> assis dans leur salle, sans guère manger, quand la bonne remit à Georges une enveloppe. Il l’ouvrit, lut, devint livide et, se levant, il dit à sa femme, d’un air étrange : « Attends-moi, il faut que je m’absente un instant, je serai de retour dans dix minutes. Surtout ne sors pas. »</p>
+    <p>Et il courut dans sa chambre prendre son chapeau.</p>
+    <p>Berthe l’attendit, torturée par une <interp ana="#fear">inquiétude</interp> nouvelle. Mais, docile en tout, elle ne voulait point remonter chez son amie avant qu’il fût revenu.</p>
+    <p>Comme il ne reparaissait pas, la pensée lui vint d’aller voir en sa chambre s’il avait pris ses gants, ce qui eût indiqué qu’il devait entrer quelque part.</p>
+    <p>Elle les aperçut du premier coup d’œil. Près d’eux un papier froissé gisait, jeté là.</p>
+    <p>Elle le reconnut aussitôt, c’était celui qu’on venait de remettre à Georges.</p>
+    <p>Et une <interp ana="#vigilance #cause-character">tentation</interp> brûlante, la première de sa vie, lui vint de lire, de savoir. Sa conscience révoltée luttait, mais la démangeaison d’une <interp ana="#anticipation #fear #cause-character">curiosité</interp> fouettée et douloureuse poussait sa main. Elle saisit le papier, l’ouvrit, reconnut aussitôt l’écriture, celle de Julie, une écriture tremblée, au crayon. Elle lut : « Viens seul m’embrasser, mon pauvre ami, je vais mourir. »</p>
+    <p>Elle ne comprit pas d’abord, et restait là <interp ana ="#amazement #cause-character">stupide</interp>, frappée surtout par l’idée de mort. Puis, soudain, le tutoiement saisit sa pensée ; et ce fut comme un grand éclair illuminant son existence, lui montrant toute l’infâme vérité, toute leur trahison, toute leur perfidie. Elle comprit leur longue astuce, leurs regards, sa bonne foi jouée, sa confiance trompée. Elle les revit l’un en face de l’autre, le soir sous l’abat-jour de sa lampe, lisant le même livre, se consultant de l’œil à la fin des pages.</p>
+    <p>Et son cœur soulevé d’<interp ana="#anger #disgust #cause-character">indignation</interp>, meurtri de <interp ana="#sadness #cause-character">souffrance</interp>, s’abîma dans un <interp ana="#despair #cause-character">désespoir</interp> sans bornes.</p>
+    <p>Des pas retentirent ; elle s’enfuit et s’enferma chez elle.</p>
+    <p>Son mari, bientôt, l’appela.</p>
+    <p>— Viens vite, Mme Rosset va mourir.</p>
+    <p>Berthe parut sur sa porte et, <interp ana="#fear">la lèvre tremblante</interp> :</p>
+    <p>— Retournez seul auprès d’elle, elle n’a pas besoin de moi.</p>
+    <p>Il la regarda <interp ana="#surprise #sadness">follement</interp>, abruti de <interp ana="#surprise #sadness">chagrin</interp>, et il reprit :</p>
+    <p>— Vite, vite, elle meurt.</p>
+    <p>Berthe répondit :</p>
+    <p>— Vous aimeriez mieux que ce fût moi.</p>
+    <p>Alors il comprit peut-être, et s’en alla, remontant près de l’agonisante.</p>
+    <p>Il la pleura sans dissimulation, sans pudeur, <interp ana="#contempt #cause-character">indifférent</interp> à la douleur de sa femme qui ne lui parlait plus, ne le regardait plus, vivait seule murée dans le <interp ana="#disgust #cause-character">dégoût</interp>, dans une <interp ana="#anger">colère</interp> révoltée, et priait Dieu matin et soir.</p>
+    <p>Ils habitaient ensemble pourtant, mangeaient face à face, muets et <interp ana="#despair">désespérés</interp>.</p>
+    <p>Puis il s’apaisa peu à peu ; mais elle ne lui pardonnait point.</p>
+    <p>Et la vie continua, dure pour tous les deux.</p>
+    <p>Pendant un an, ils demeurèrent aussi étrangers l’un à l’autre que s’ils ne se fussent pas connus. Berthe faillit devenir folle.</p>
+    <p>Puis un matin étant partie dès l’aurore, elle rentra vers huit heures portant en ses deux mains un énorme bouquet de roses, de roses blanches, toutes blanches.</p>
+    <p>Et elle fit dire à son mari qu’elle désirait lui parler.</p>
+    <p>Il vint <interp ana="#fear #cause-character">inquiet</interp>, <interp ana="#fear #cause-character">troublé</interp>.</p>
+    <p>— Nous allons sortir ensemble, lui dit-elle ; prenez ces fleurs, elles sont trop lourdes pour moi.</p>
+    <p>Il prit le bouquet et suivit sa femme. Une voiture les attendait qui partit dès qu’ils furent montés.</p>
+    <p>Elle s’arrêta devant la grille du cimetière. Alors Berthe, dont <interp ana="#sadness">les yeux s’emplissaient</interp> de larmes, dit à Georges :</p>
+    <p>— Conduisez-moi à sa tombe.</p>
+    <p>Il tremblait <interp ana="#surprise">sans comprendre</interp>, et il se mit à marcher devant, tenant toujours les fleurs en ses bras. Il s’arrêta enfin devant un marbre blanc et le désigna sans rien dire.</p>
+    <p>Alors elle lui reprit le grand bouquet et, s’agenouillant, le déposa sur les pieds du tombeau. Puis elle s’isola en une prière inconnue et suppliante !</p>
+    <p>Debout derrière elle, son mari, hanté de souvenirs, pleurait.</p>
+    <p>Elle se releva et lui tendit les mains.</p>
+    <p>— Si vous voulez, <interp ana="#trust #cause-character">nous serons amis</interp>, dit-elle.</p>
+    <p>16 octobre 1882</p>
+    </div>
+  </body>
+  <back>
+
+</interpGrp>
+
+<interpGrp type="emotion-causes">
+  <desc>Causes linked to emotions encoded in the text</desc>
+  <interp xml:id="cause-character">A character that can affect the emotional state of another character.</interp>
+  <interp xml:id="cause-event">Event, that can influence a character's state (e.g. someone's death) </interp>
+</interpGrp>
+
+<interpGrp type="emotion-effect">
+  <desc>Effects linked to emotions encoded in the text</desc>
+  <interp xml:id="positive-effect" type="positive">A positive effect to a character </interp>
+  <interp xml:id="negative-effect" type="negative">A negative effect to a character</interp>
+
+</interpGrp>
+</back>
+</text>
+</TEI>
