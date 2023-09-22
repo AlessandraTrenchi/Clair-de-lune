@@ -125,15 +125,11 @@ footer {
   font-size: 1.5em;
   z-index: 1;
 }
-<<<<<<< Updated upstream
-.para, .disco{
-=======
 
 footer p{
   text-align: center;
 }
 .para, .disco, .carousel button{
->>>>>>> Stashed changes
   font-family: 'anavio';
   font-size: 1.2em;
   color: #222466;
@@ -311,11 +307,7 @@ progress::-webkit-progress-value {
   text-align: justify;
   opacity: 1;
   backdrop-filter: blur(5px);
-<<<<<<< Updated upstream
   width: 80%;
-=======
-  width: 60rem;
->>>>>>> Stashed changes
   display: flex;
   flex-direction: row;
   border-radius: 12%;
@@ -381,7 +373,6 @@ progress::-webkit-progress-value {
   /* border-radius: 12%; */
   background-color: #ccc6c2bf;
   /* backdrop-filter: blur(2px); */
-<<<<<<< Updated upstream
   padding-bottom: 6em;
   @media (max-width: 768px) {
     font-size: 1em; /* Decrease font size for smaller screens */
@@ -391,9 +382,7 @@ progress::-webkit-progress-value {
   @media (max-width: 600px) {
     font-size: 0.7em; /* Further decrease font size for even smaller screens */
   }
-=======
   padding: 2em;
->>>>>>> Stashed changes
 }
 .journal {
   display: flex;
@@ -436,13 +425,10 @@ progress::-webkit-progress-value {
 }
 iframe{
   padding-top: 2em;
-<<<<<<< Updated upstream
   height: 40em;
   width: 80%;
-=======
   padding-bottom:2em;
   border-radius: 10%;
->>>>>>> Stashed changes
 }
 #TEI{
   color: #E5AD4A;
