@@ -7,7 +7,6 @@ import Documentation from './components/Documentation';
 import Disclaimer from './components/Disclaimer';
 import Network from './components/Network';
 import Clair from './components/Clair';
-
 const App = () => {
   return (
     <Router>

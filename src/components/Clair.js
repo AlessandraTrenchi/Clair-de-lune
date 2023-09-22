@@ -43,8 +43,8 @@ const Clair = () => {
   const currentTitleWithId = titlesWithIds[currentTitleIndex];
 
   const handleXmlContentChange = async (xmlId) => {
-    try {
-      const response = await fetch('/api/extract-xml-fragment', {
+    try { //client side code: where i make the fetch request
+      const response = await fetch('http://localhost:3000/api/extract-xml-fragment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -66,6 +66,11 @@ const Clair = () => {
       // Handle the error here, e.g., display an error message to the user
       setCurrentXmlContent(`<p>Error loading XML content: ${error.message}</p>`);
     }
+    console.log('Fetching from URL:', 'http://localhost:3000/api/extract-xml-fragment');
+const response = await fetch('http://localhost:3000/api/extract-xml-fragment', {
+  // Rest of the fetch request configuration
+});
+
   };
 
   return (
