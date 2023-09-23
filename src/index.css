@@ -294,7 +294,8 @@ progress::-webkit-progress-value {
   background-image: url('../src/images/textlu.avif');
   opacity: 1;
   backdrop-filter: blur(5px);
-  width: 50rem;
+  width: 60rem;
+  padding:2em;
   display: flex;
   flex-direction: row;
   border-radius: 12%;
@@ -302,7 +303,7 @@ progress::-webkit-progress-value {
   justify-content: center;
   background-size: cover;
   background-position: center center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .mom, .textlu{
   position: relative;
@@ -353,7 +354,7 @@ progress::-webkit-progress-value {
   /* border-radius: 12%; */
   background-color: #bdb9b78f;
   /* backdrop-filter: blur(2px); */
-  padding-bottom: 6em;
+  padding-bottom: 1em;
 }
 .journal {
   display: flex;
