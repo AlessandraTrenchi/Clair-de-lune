@@ -1,4 +1,3 @@
-import Carousel from './Carousel';
 import Footer from './Footer';
 import React, { useState, useEffect } from 'react';
 import XmlComponent from './XmlComponent';
@@ -31,14 +30,7 @@ const Clair = () => {
         <div className='carr'>
           <div className='clair-container'>
           <h1>Clair de Lune Digital Edition</h1>
-          <h2>Select the text</h2>
-          <div className='centered-carousel'>
-            <Carousel images={images} onImageClick={handleImageClick} />
-          </div>
-        </div>
-        <div className='main-content'>
-          {/* Render the XML content for the selected image */}
-          {currentXmlId && <XmlComponent xmlId={currentXmlId} />}
+          
         </div>
       </div></div>
       <Footer/>

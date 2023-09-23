@@ -18,9 +18,9 @@ const Fluid = () => {
         className={`fluid-text ${isHovered ? 'hovered' : ''}`}
         onMouseEnter={handleHover}
         onMouseLeave={handleUnhover}
-        data-text="Claire de Lune"
+        data-text="Clair de Lune"
       >
-        Claire de Lune
+        Clair de Lune
       </h1>
     </div>
   );

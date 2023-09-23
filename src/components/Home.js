@@ -20,9 +20,9 @@ const Home = () => {
 
             </div>
             <div className='mom'>
-              <h2>Claire de Lune</h2>
+              <h2>Clair de Lune</h2>
               <div className='para'>
-              &quot;Claire de Lune et autres nouvelles&quot; is a collection of short stories by Guy de Maupassant, first published in 1883.
+              &quot;Clair de Lune et autres nouvelles&quot; is a collection of short stories by Guy de Maupassant, first published in 1883.
                 His stories often explore the darker aspects of human nature, delving into themes of morality, psychology, and social satire.
                 They are characterized by their concise prose, vivid descriptions, and precise narrative techniques, and Maupassant&apos;s writing style greatly influenced the development of the modern short story genre.
 
