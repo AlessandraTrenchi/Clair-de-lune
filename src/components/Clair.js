@@ -93,7 +93,7 @@ const Clair = () => {
               <div className="pagination">
                 <button className="pp" onClick={handlePrev} disabled={currentTitleIndex === 0}>
                   Precedente
-                </button>
+                </button><div className="separator"></div>
                 <button className='pp' onClick={handleNext} disabled={currentTitleIndex === textTitles.length - 1}>
                   Successivo
                 </button>

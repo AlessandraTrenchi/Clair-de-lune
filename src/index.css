@@ -505,7 +505,6 @@ td{
   justify-content: center;
   text-align: center;
   width: 10%;
-  justify-content: space-between;
   margin-left: 30%;
   background-image: url(../src/images/terra.jpg);
   color:#bdb9b7;
@@ -514,7 +513,10 @@ td{
 
 }
  
-
+.separator {
+  /* Stili per il separatore */
+  width: 2%; /* Puoi regolare la larghezza del separatore */
+}
 /* Aggiungi questi stili CSS nel tuo file CSS o in linea */
 .xml-content {
   align-items: center; /* Allinea verticalmente al centro */
@@ -529,9 +531,9 @@ td{
   justify-content: space-between;
 }
 .pagination{
-  justify-content: space-between;
   text-align: center;
-  
+  display: flex;
+  justify-content: center;
 }
 .menu-emozioni{
   width:30em;
