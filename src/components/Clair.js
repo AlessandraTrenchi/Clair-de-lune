@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import XmlComponent from './XmlComponent';
 import '../index.css';
 
-const Claire = () => {
+const Clair = () => {
   const images = [
     { src: 'https://tse2.mm.bing.net/th?id=OIP.hlxUa6fXKdaqVuBLuNq4vQHaHa&pid=Api&P=0&h=180', xmlId: 'bijoux', className:'bijoux', title: 'Les Bijoux' },
     { src: 'https://tse2.explicit.bing.net/th?id=OIP.DYpK6ZOo9s5VcwyaGg_mGAHaKh&pid=Api&P=0&h=180', xmlId: 'clair-de-lune', className:'bijoux', title: 'Clair de Lune' },
@@ -21,60 +21,38 @@ const Claire = () => {
   ];
 
   const [currentXmlId, setCurrentXmlId] = useState(null);
-  const [currentTextUrl, setCurrentTextUrl] = useState(null); // Define currentTextUrl
+  const [currentTextUrl, setCurrentTextUrl] = useState(null);
 
   const handleImageClick = (xmlId) => {
-    console.log('Selected XML ID:', xmlId);
-    const repo = 'https://raw.githubusercontent.com/AlessandraTrenchi/Clair-de-lune/main/src/text/';
     setCurrentXmlId(xmlId);
 
     // Determine the corresponding texturl based on the selected xmlId
-    let texturl = '';
+    const repo = 'https://raw.githubusercontent.com/AlessandraTrenchi/Clair-de-lune/main/src/text/';
+    const texturl = repo + xmlId + '.xml';
 
-    // Add logic to map xmlId to the corresponding texturl
-    // switch (xmlId) {
-    //   case 'les-bijoux':
-    //     texturl = 'https://raw.githubusercontent.com/AlessandraTrenchi/Clair-de-lune/main/src/text/bijoux.xml'; // Replace with the actual URL
-    //     break;
-    //
-    //   case 'clair-de-lune':
-    //     texturl = 'https://raw.githubusercontent.com/AlessandraTrenchi/Clair-de-lune/main/src/text/clair-de-lune.xml'; // Replace with the actual URL
-    //     break;
-    //
-    //   case 'le-loup':
-    //     texturl = 'https://raw.githubusercontent.com/AlessandraTrenchi/Clair-de-lune/main/src/text/le-loup.xml'; // Replace with the actual URL
-    //     break;
-    //   // Add more cases for other xmlIds as needed
-    //
-    //   default:
-    //     texturl = 'bijoux.xml'; // Set a default or handle the case where no URL is found
-    // }
-
-    setCurrentXmlId(xmlId);
-    setCurrentTextUrl(repo+xmlId+'.xml'); // Set the texturl state variable
+    setCurrentTextUrl(texturl);
   };
-
 
   return (
     <>
       <div className='nett'>
         <div className='carr'>
           <div className='clair-container'>
-          <h1>Clair de Lune Digital Edition</h1>
-          <h2>Select the text</h2>
-          <div className='centered-carousel'>
-            <Carousel images={images} onImageClick={handleImageClick} />
+            <h1>Clair de Lune Digital Edition</h1>
+            <h2>Select the text</h2>
+            <div className='centered-carousel'>
+              <Carousel images={images} onImageClick={handleImageClick} />
+            </div>
+          </div>
+          <div className='main-content'>
+            {/* Render the XML content for the selected image */}
+            {currentXmlId && <XmlComponent texturl={currentTextUrl} />}
           </div>
         </div>
-        <div className='main-content'>
-          {/* Render the XML content for the selected image */}
-
-          {currentXmlId && <XmlComponent texturl={currentTextUrl} />} {/* Pass the texturl prop */}
-        </div>
-      </div></div>
-      <Footer/>
+      </div>
+      <Footer />
     </>
   );
 };
 
-export default Claire;
+export default Clair;
