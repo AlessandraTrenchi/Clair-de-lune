@@ -16,7 +16,7 @@ const Clair = () => {
     { src: 'https://tse2.mm.bing.net/th?id=OIP.K66ExGCP31eHF6fLttISDwHaFj&pid=Api&P=0&h=180', xmlId: "le-perdon", className:'bijoux', title: 'Le pardon' },
     { src: 'https://tse2.mm.bing.net/th?id=OIP.t2edsMn7aFTIVav8TsZWBwHaEK&pid=Api&P=0&h=180', xmlId: "legende-mont-st-michel", className:'bijoux', title: 'La Legende du Mont Saint-Michel' },
     { src: 'https://tse3.explicit.bing.net/th?id=OIP.6MNYlEeLqrv60hn445EPOQHaKy&pid=Api&P=0&h=180', xmlId: "une-veuve", className:'bijoux', title: 'Une veuve' },
-    { src: 'https://tse3.mm.bing.net/th?id=OIP.gX8fs1mLVA0BMnkQpCBm-QHaIr&pid=Api&P=0&h=180', xmlId: "mlle-cocotte", className:'bijoux', title: 'Mademoiselle Cocotte' },
+    { src: 'https://tse3.mm.bing.net/th?id=OIP.gX8fs1mLVA0BMnkQpCBm-QHaIr&pid=Api&P=0&h=180', xmlId: "mlle-coccote", className:'bijoux', title: 'Mademoiselle Cocotte' },
     { src: ' https://tse2.mm.bing.net/th?id=OIP.D9VmXZhVZ-gJ4DH6TWcPKwHaEK&pid=Api&P=0&h=180', xmlId: "apparition", className:'bijoux', title:'Apparition'}
   ];
 
@@ -39,7 +39,6 @@ const Clair = () => {
         <div className='carr'>
           <div className='clair-container'>
             <h1>Clair de Lune Digital Edition</h1>
-            <h2>Select the text</h2>
             <div className='centered-carousel'>
               <Carousel images={images} onImageClick={handleImageClick} />
             </div>

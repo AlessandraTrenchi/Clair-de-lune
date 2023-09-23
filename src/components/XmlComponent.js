@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import CETEI from 'CETEIcean';
-
+import { css } from 'styled-components';
 const XmlComponent = ({ texturl }) => {
   const xmlContainerRef = useRef(null);
 

@@ -260,9 +260,10 @@ progress::-webkit-progress-value {
   text-shadow: 1px 1px #222466, 1px 2px #222466;
   padding-bottom: 2em;
 }
-.carr h2{
+.carr h2, .image-container h3{
   color: #222466;
   padding-bottom: 1em;
+  padding-top: 1em;
   font-family: 'sml';
   font-size:3em;
   text-shadow: 1px 1px white, 1px 2px #e8dbac;
@@ -415,6 +416,8 @@ iframe{
 #TEI{
   font-family: 'play';
   font-size: 2em;
+  text-align: center;
+  line-height: 1.4;
 }
 .sidebar-links .section-list {
   display: flex;
@@ -483,11 +486,6 @@ carousel-text {
   padding: 10px;
   color:#bdb9b7;
 }
-.image-container h3{
-  color: #bdb9b7;
-  font-family: 'anavio';
-  font-size: 1.4em;
-}
 
 
 table {
@@ -544,4 +542,12 @@ td{
 .menu-emozioni{
   width:30em;
   height:30em;
+}
+#TEI head{
+  display: none;
+}
+div[type="story"][xml:id="les-bijoux"] {
+  border: 1px solid #999; /* Aggiungi un bordo */
+  padding: 15px; /* Aggiungi spaziatura interna */
+  /* Aggiungi altre regole di stile a tuo piacimento */
 }
