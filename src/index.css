@@ -305,7 +305,6 @@ progress::-webkit-progress-value {
   backdrop-filter: blur(5px);
   width: 90%;
   padding:2em;
-  display: flex;
   flex-direction: row;
   border-radius: 12%;
   margin: auto;

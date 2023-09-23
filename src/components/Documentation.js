@@ -222,8 +222,7 @@ and trust might result in feelings like optimism or love, while combining fear a
 
     <li>Baldoni, Matteo et al. &quot;From Tags to Emotions: Ontology-driven Sentiment Analysis in the Social Semantic Web.&quot; Semantics, Web, and Mining. 1 Jan. 2012, pp. 41-54.</li>
 
-    <li> Poe, Edgar Allan. The Philosophy
-of Composition, 1846, p.3, retrieved at {'<https://pdcrodas.webs.ull.es/fundamentos/PoeThePhilosophyOfComposition.pdf>'}.</li>
+    <li> Poe, Edgar Allan. The Philosophy of Composition, 1846, p.3, retrieved <Link to={'https://pdcrodas.webs.ull.es/fundamentos/PoeThePhilosophyOfComposition.pdf'}> here</Link>.</li>
      </ul>
      </p> </div>
      </div>
