@@ -258,7 +258,7 @@ progress::-webkit-progress-value {
   text-align: center;
   padding-top: 1em;
   text-shadow: 1px 1px #222466, 1px 2px #222466;
-
+  padding-bottom: 2em;
 }
 .carr h2{
   color: #222466;
