@@ -11,6 +11,7 @@ const Clair = () => {
 
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [currentXml, setCurrentXml] = useState('');
+  const [emozioni, setEmozioni] = useState([]);
 
   useEffect(() => {
     const currentTitle = textTitles[currentTitleIndex];
@@ -19,8 +20,47 @@ const Clair = () => {
     const cetiOceanInstance = new CETEI();
     cetiOceanInstance.getHTML5(`/text/${currentTitle}.xml`, function(data) {
       setCurrentXml(data);
+
+      // Estrai emozioni dal file XML e aggiungile a uno stato
+      const emozioniXML = extractEmozioniFromXML(data);
+      setEmozioni(emozioniXML);
+
+      // Evidenzia le emozioni nell'XML
+      highlightEmotionsInXML(emozioniXML);
     });
   }, [currentTitleIndex]);
+
+  // Funzione per estrarre emozioni da un file XML
+  const extractEmozioniFromXML = (xmlString) => {
+    // Crea un oggetto parser XML
+    const parser = new DOMParser();
+    
+    // Analizza il testo XML in un documento XML
+    const xmlDoc = parser.parseFromString(xmlString, 'text/xml');
+    
+    // Trova tutti gli elementi 'interp' con attributo 'ana' (analogia)
+    const interpElements = xmlDoc.querySelectorAll('interp[ana]');
+    
+    // Estrai le emozioni dall'attributo 'ana' degli elementi 'interp'
+    const emozioni = Array.from(interpElements).map((element) => {
+      // Estrai il valore dell'attributo 'ana' (es. '#anger')
+      const anaValue = element.getAttribute('ana');
+      
+      // Rimuovi il carattere '#' se presente
+      return anaValue.replace('#', '');
+    });
+    
+    return emozioni;
+  };
+  
+  // Funzione per evidenziare le emozioni nell'XML
+  const highlightEmotionsInXML = (emozioniXML) => {
+    // ... Implementa la logica per evidenziare le emozioni nell'XML ...
+  };
+
+  const getCurrentEmotionIndex = () => {
+    // Implementa la logica per ottenere l'indice dell'emozione corrente
+  };
 
   const handleTitleChange = (titleIndex) => {
     setCurrentTitleIndex(titleIndex);
@@ -47,20 +87,27 @@ const Clair = () => {
           </div>
           <div className='main-content'>
             <div className="xml-content">
-  <h2>{textTitles[currentTitleIndex]}</h2>
-  <div dangerouslySetInnerHTML={{ __html: currentXml }} />
-  <div className="pagination">
-    <button className="pp" onClick={handlePrev} disabled={currentTitleIndex === 0}>
-      Precedente
-    </button>
-    <button className='pp'
-      onClick={handleNext}
-      disabled={currentTitleIndex === textTitles.length - 1}
-    >
-      Successivo
-    </button>
-  </div>
-</div>
+              <h2>{textTitles[currentTitleIndex]}</h2>
+              <div dangerouslySetInnerHTML={{ __html: currentXml }} />
+              <div className="menu-emozioni">
+                {emozioni.map((emozione, index) => (
+                  <button
+                    key={index}
+                    className={index === getCurrentEmotionIndex() ? 'selected' : ''}
+                  >
+                    {emozione}
+                  </button>
+                ))}
+              </div>
+              <div className="pagination">
+                <button className="pp" onClick={handlePrev} disabled={currentTitleIndex === 0}>
+                  Precedente
+                </button>
+                <button className='pp' onClick={handleNext} disabled={currentTitleIndex === textTitles.length - 1}>
+                  Successivo
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

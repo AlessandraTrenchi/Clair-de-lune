@@ -253,10 +253,17 @@ progress::-webkit-progress-value {
   font-family: 'sml';
   color:#bdb9b7;
   text-align: center;
+  padding-top: 1em;
+  text-shadow: 1px 1px #222466, 1px 2px #222466;
+
 }
 .carr h2{
-  color: #DB7754;
+  color: #222466;
   padding-bottom: 1em;
+  font-family: 'sml';
+  font-size:3em;
+  text-shadow: 1px 1px white, 1px 2px #e8dbac;
+
 }
 .fluid-text:before,
 .fluid-text:after, h2:before, h2:after {
@@ -375,7 +382,7 @@ progress::-webkit-progress-value {
   align-items: stretch;
   margin-bottom: 4em;
 }
-.cielo{
+.cielo, .xml-content{
   background-image: url(../src/images/terra.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -392,7 +399,6 @@ progress::-webkit-progress-value {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 28em;
   padding-top: 5em;
   background-image: url(../src/images/cielo.gif);
   justify-content: center;
@@ -492,7 +498,7 @@ td{
   padding-right:1em;
 
 }
-.pp{
+.pp, .ppx{
   justify-content: center;
   text-align: center;
   width: 10%;
@@ -508,11 +514,22 @@ td{
 
 /* Aggiungi questi stili CSS nel tuo file CSS o in linea */
 .xml-content {
-  display: flex;
   align-items: center; /* Allinea verticalmente al centro */
   justify-content: space-between; /* Spazio tra i due bottoni */
 }
-
+.main-content{
+  margin-top: 10em;
+  background-color: #bdb9b78f;
+}
 .pagination button {
   margin: 0; /* Rimuovi il margine predefinito dai pulsanti */
+  justify-content: space-between;
+}
+.pagination{
+  justify-content: space-between;
+  text-align: center;
+  
+}
+.menu-emozioni{
+  background-image: url(https://i.pinimg.com/564x/f3/c0/bd/f3c0bdf84fbc80c87e7d47968f1f15b0.jpg);
 }
