@@ -24,6 +24,7 @@
     "react-moveable": "^0.52.1",
     "react-router-dom": "^6.14.0",
     "react-scripts": "5.0.1",
+    "react-sticky-box": "^2.0.4",
     "react-syntax-highlighter": "^15.5.0",
     "react-teirouter": "^3.0.0",
     "scrolltrigger": "^1.0.1",

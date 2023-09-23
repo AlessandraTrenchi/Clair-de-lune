@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import StickyBox from "react-sticky-box";
 import Network from './Network';
 import Footer from './Footer';
 import EncodingSchema from './EncodingSchema';
@@ -9,7 +10,12 @@ import App from '../App';
 const Documentation = () => {
   return (
     <>
-    <div className='cielo1'>
+    <div className="row-sidebar">
+   <StickyBox offsetTop={20} offsetBottom={20}>
+     <div>Sidebar</div>
+   </StickyBox>
+    </div>
+                <div className='cielo1'>
     <div className='textlu'>
       <h2>Introduction</h2>
       <p className='disco'>
@@ -182,14 +188,14 @@ and trust might result in feelings like optimism or love, while combining fear a
       <div className='code-cont'><div className='code'>
     <EncodingSchema/>
     </div>
-    
+
 
 </div>
 
 
 
 
-    
+
       <div className='textlu'>
       <h2>Publication</h2>
       </div>
@@ -229,7 +235,7 @@ and trust might result in feelings like optimism or love, while combining fear a
       </div>
 
 
-      
+
 
       <Footer />
     </>
