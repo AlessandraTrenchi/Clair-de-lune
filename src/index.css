@@ -161,6 +161,9 @@ a:hover{
   .textlu h2{
     font-size: 2em;
   }
+  .carr h1{
+    font-size: 1em;
+  }
 }
 progress {
   position: fixed;
@@ -531,5 +534,6 @@ td{
   
 }
 .menu-emozioni{
-  background-image: url(https://i.pinimg.com/564x/f3/c0/bd/f3c0bdf84fbc80c87e7d47968f1f15b0.jpg);
+  width:30em;
+  height:30em;
 }

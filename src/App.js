@@ -7,6 +7,8 @@ import Documentation from './components/Documentation';
 import Disclaimer from './components/Disclaimer';
 import Network from './components/Network';
 import Clair from './components/Clair';
+import { CodeBlock } from 'react-code-blocks';
+
 const App = () => {
   return (
     <Router>
