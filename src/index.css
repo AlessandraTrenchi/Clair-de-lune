@@ -63,14 +63,14 @@ ul.brackets a:before, h2:before
     content: '(';
     left: -15px;
     transform: translateX(-15px);
-    color: #E5AD4A;
+    color: #E8BE0E;
 }
 ul.brackets a:after, h2:after
 {
     content: ')';
     right: -20px;
     transform: translateX(-20px);
-    color: #E5AD4A;
+    color: #E8BE0E;
 }
 ul.brackets a:hover:before, ul.brackets a:hover:after, h2:hover:after, h2:hover:before
 {
@@ -128,7 +128,7 @@ footer {
   font-size: 1.2em;
   color: #222466;
   position: relative;
-  background-color: #E8DBAC;
+  background-color: #E8BE0E;
   border-radius: 12%;
 }
 .centered-carousel{
@@ -180,7 +180,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: #E5AD4A;
+  background-color: #E8BE0E;
 }
 
 .scro {
@@ -196,7 +196,7 @@ progress::-webkit-progress-value {
 }
 
 .scro.scrolled {
-  background-color: #E5AD4A;
+  background-color: #E8BE0E;
 }
 
 
@@ -249,9 +249,10 @@ progress::-webkit-progress-value {
   padding-top: 3em;
 }
 .carr h1{
-  font-size: 6em;
-  font-family: 'play';
+  font-size: 5em;
+  font-family: 'sml';
   color:#bdb9b7;
+  text-align: center;
 }
 .carr h2{
   color: #DB7754;
@@ -403,7 +404,7 @@ iframe{
   border-radius: 10%;
 }
 #TEI{
-  color: #E5AD4A;
+  color: #E8BE0E;
   font-family: 'play';
   font-size: 2em;
 }
@@ -491,8 +492,27 @@ td{
   padding-right:1em;
 
 }
+.pp{
+  justify-content: center;
+  text-align: center;
+  width: 10%;
+  justify-content: space-between;
+  margin-left: 30%;
+  background-image: url(../src/images/terra.jpg);
+  color:#bdb9b7;
+  font-family: 'anavio' ;
+  text-shadow: 1px 1px white, 1px 2px #e8dbac;
+
+}
  
-#bibliography li {
-  list-style-type: square;
-  padding: 1%;
+
+/* Aggiungi questi stili CSS nel tuo file CSS o in linea */
+.xml-content {
+  display: flex;
+  align-items: center; /* Allinea verticalmente al centro */
+  justify-content: space-between; /* Spazio tra i due bottoni */
+}
+
+.pagination button {
+  margin: 0; /* Rimuovi il margine predefinito dai pulsanti */
 }
