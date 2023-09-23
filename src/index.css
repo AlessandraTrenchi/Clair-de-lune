@@ -546,8 +546,14 @@ td{
 #TEI head{
   display: none;
 }
-div[type="story"][xml:id="les-bijoux"] {
-  border: 1px solid #999; /* Aggiungi un bordo */
-  padding: 15px; /* Aggiungi spaziatura interna */
-  /* Aggiungi altre regole di stile a tuo piacimento */
+
+
+.emotions{
+  background-image: url(https://i.pinimg.com/564x/7b/dd/7a/7bdd7a11c2c6b7377b91e4e5fac2cd12.jpg);
+  height: 20em;
+  width: 30em;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  border-radius: 2%;
 }

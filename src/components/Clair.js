@@ -3,6 +3,15 @@ import Footer from './Footer';
 import React, { useState, useEffect } from 'react';
 import XmlComponent from './XmlComponent';
 import '../index.css';
+import Emotions from './Emotions';
+
+const emotionData = [
+  {
+    rdfAbout: 'http://130.192.212.225/fuseki/ArsEmotica-core#Joy',
+    label: 'Joy',
+  },
+  // Aggiungi altri dati delle emozioni qui
+];
 
 const Clair = () => {
   const images = [
@@ -43,6 +52,8 @@ const Clair = () => {
               <Carousel images={images} onImageClick={handleImageClick} />
             </div>
           </div>
+          <div className='emotions'> <h3>Emotions</h3>
+      <Emotions emotionData={emotionData} /></div>
           <div className='main-content'>
             {/* Render the XML content for the selected image */}
             {currentXmlId && <XmlComponent texturl={currentTextUrl} />}
