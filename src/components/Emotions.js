@@ -1,6 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+const emotionData = [
+    {
+      rdfAbout: 'http://130.192.212.225/fuseki/ArsEmotica-core#Joy',
+      label: 'Joy',
+    },
+    // Add other emotions here
+  ];
+
 const Emotions = ({ emotionData }) => {
   // Mappatura tra rdf:about e ana per le emozioni
   const emotionColorMapping = {
