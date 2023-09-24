@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import StickyBox from "react-sticky-box";
-import Network from './Network';
 import Footer from './Footer';
 import EncodingSchema from './EncodingSchema';
 import GraphCode from './GraphCode';
-import { CodeBlock } from "react-code-blocks";
-import App from '../App';
 
 
 const Documentation = () => {
