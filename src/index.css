@@ -165,6 +165,7 @@ a:hover{
     font-size: 1em;
   }
 }
+
 progress {
   position: fixed;
   z-index: 1;
@@ -418,7 +419,7 @@ iframe{
   font-family: 'play';
   text-align: center;
   line-height: 1.4;
-
+  font-size: 1.4em;
 }
 .sidebar-links .section-list {
   display: flex;
@@ -923,6 +924,7 @@ tei-div.textpart {
 tei-div > tei-head {
   font-size: 170%;
   text-indent: -0.5em;
+  color: #0b0b86;
 }
 tei-div > tei-div > tei-head {
   font-size: 155%;
@@ -1508,7 +1510,6 @@ html > body {
   margin:1em;
   padding:2em;
   top: 0;
-  overflow-y: auto; /* Enable vertical scrolling if the content exceeds the sidebar's height */
 }
 .sidebar {
   /* background-image: url(https://i.pinimg.com/564x/7b/dd/7a/7bdd7a11c2c6b7377b91e4e5fac2cd12.jpg); */
