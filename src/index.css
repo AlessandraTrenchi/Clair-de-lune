@@ -1556,18 +1556,27 @@ html > body {
   background-image: url(/src/images/old.jpg);
   text-align: center;
   font-family: 'anavio';
-  height: 9em;
-  width:100%;
+  width:40%;
   padding-top: 1em;
   padding-bottom: 2em;
+  position: fixed;
+z-index: 999;
+justify-content: center;
+border-radius: 12%;
+
+
 }
 .side{
   font-family: 'sml';
   color: #222466;
+  font-size: 1.3em;
 }
 .side li a{
   color: #222466;
   font-family: 'avio';
   font-weight: bold;
-
+  background-color: #E8DBAC;
+}
+.active{
+  font-weight: bold;
 }
