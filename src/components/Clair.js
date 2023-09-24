@@ -5,7 +5,6 @@ import XmlComponent from './XmlComponent';
 import Sidebar from './Sidebar';
 import '../index.css';
 import Emotions from './Emotions';
-import XSLTFilePath from '../text/stile.xslt'; // Import the XSLT file
 
 
 
@@ -140,18 +139,6 @@ const Clair = () => {
               </div>
             </div>
           </div>
-<<<<<<< Updated upstream
-
-          <div className="cont-tei">
-          <div className='main-content'>
-            {/* Render the XML content for the selected image */}
-            {currentXmlId && <XmlComponent texturl={currentTextUrl} xslturl={XSLTFilePath} />}
-          {isSidebarVisible && <Sidebar />} {/* Render the sidebar when isSidebarVisible is true */}
-
-            {currentXmlId && <XmlComponent texturl={currentTextUrl} />}
-          </div>
-=======
->>>>>>> Stashed changes
         </div>
         <Footer />
       </>

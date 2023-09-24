@@ -299,7 +299,7 @@ progress::-webkit-progress-value {
   padding-bottom: 2em;
 }
 .mom{
-  background-image: url('../src/images/old.jpg'); 
+  background-image: url('../src/images/old.jpg');
   opacity: 0.8;
   filter: blur(1px);
   width: 50rem;
@@ -370,7 +370,7 @@ progress::-webkit-progress-value {
 .disco {
   z-index: -1;
   max-width: 1000px; /* Adjust the maximum width as needed */
-  
+
   filter:saturate(100%);
   /* border-radius: 12%; */
   background-color: #bdb9b78f;
@@ -1547,6 +1547,55 @@ html > body {
   margin-top: 10px; /* Add some top margin for spacing */
   margin-bottom: 5px; /* Add some bottom margin for spacing */
   color: black; /* Change the color as desired */
+}
+
+
+
+.anger.highlighted{
+  color:#5f0000;
+  font-weight: bold;
+  text-shadow:  1px 1px black, 1px 1px black;
+}
+.joy.highlighted{
+  color:#52eb52;
+  font-weight: bold;
+}
+.love.highlighted{
+  color:#dea9ff;
+  font-weight: bold;
+}
+.fear.highlighted{
+  color:blue;
+  font-weight: bold;
+}
+.sadness.highlighted{
+  color:#0b0b86;
+  font-weight: bold;
+}
+.disgust.highlighted{
+  color:black;
+  text-shadow:1px 1px #bd4040, 1px 1px #bd4040;
+  font-weight:bold;
+}
+.surprise.highlighted{
+  color:#555;
+  font-weight: bold;
+}
+.disgust.highlighted{
+  color:black;
+  text-shadow:1px 1px #bd4040, 1px 1px #bd4040;
+  font-weight:bold;
+
+}
+.grief.highlighted{
+  color:black;
+  text-shadow:1px 1px #bd4040, 1px 1px #bd4040;
+  font-weight:bold;
+
+}
+
+.hide-checkbox{
+  display: none;
 }
 
 
