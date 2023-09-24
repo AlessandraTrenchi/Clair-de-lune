@@ -12,19 +12,34 @@ const Documentation = () => {
     <>
     <div className="row-sidebar">
    <StickyBox offsetTop={20} offsetBottom={20}>
-     <div>Sidebar</div>
+     <div className='side'>Sidebar
+      <ul>
+        <li><Link to="/Documentation#introduction">Introduction</Link></li>
+        <li><Link to="/Documentation#the-author">The Author</Link></li>
+        <li><Link to="/Documentation#short-stories">Short Stories</Link></li>
+        <li><Link to="/Documentation#project-aims">Project Aims</Link></li>
+        <li><Link to="/Documentation#encoding-model">Encoding Model - Critical Choices</Link></li>
+        <li><Link to="/Documentation#emotional-framework">Emotional Framework</Link></li>
+        <li><Link to="/Documentation#ontology">Ontology</Link></li>
+        <li><Link to="/Documentation#text-encoding">Text Encoding</Link></li>
+        <li><Link to="/Documentation#publication">Publication</Link></li>
+        <li><Link to="/Documentation#network-analysis">Network Analysis</Link></li>
+        <li><Link to="/Documentation#bibliography">Bibliography</Link></li>
+
+
+        </ul></div>
    </StickyBox>
     </div>
                 <div className='cielo1'>
-    <div className='textlu'>
+                <div id='introduction'><div className='textlu'>
       <h2>Introduction</h2>
       <p className='disco'>
         “Project name” is a digital edition of the short stories collection
         “Clair de Lune” by Guy de Maupassant, which incorporates digital
         scholarly editions tools in order to shine light on the use of emotions
         in his work.
-      </p></div>
-      <div className='textlu'>
+      </p></div></div>
+      <div className='the-autor'><div className='textlu'>
       <h2>The Author</h2>
       <p className='disco'>
         Guy de Maupassant was a 19th-century French author, famous for his short
@@ -33,8 +48,8 @@ const Documentation = () => {
         influences around them, from a disillusioned and often pessimistic point
         of view.
         <div className="link"><Link to="/">Read more</Link></div>
-      </p></div>
-      <div className='textlu'>
+      </p></div></div>
+      <div id='short-stories'><div className='textlu'>
       <h2>Short stories</h2>
       <p className='disco'>
         Short stories are designed to be read in one sitting and most often
@@ -51,8 +66,8 @@ const Documentation = () => {
         response in the reader. Poe believed that every aspect of a short
         story, whether literal or symbolic, should work together to create and
         maintain this desired effect.
-      </p></div>
-      <div className='textlu'><h2>Project aims</h2>
+      </p></div></div>
+      <div id='project-aims'><div className='textlu'><h2>Project aims</h2>
       <p className='disco'>
         Our project aims to provide an alternative close reading to Maupassant&apos;s
         collection by focusing on how the author delivers the emotional states
@@ -67,8 +82,8 @@ const Documentation = () => {
         <p className='disco'>
           To what extent do they manifest between the characters and external
           events?
-        </p></div>
-        <div className='textlu'>
+        </p></div></div>
+        <div id='encoding-model'><div className='textlu'>
       <h2>Encoding model - Critical choices</h2>
       <p className='disco'>
         To achieve the goals of our project and create an edition that follows the paradigm of digital scholarly editing practices, we first
@@ -82,7 +97,7 @@ const Documentation = () => {
         In the DH domain, however, subjectivity is a natural component in the process of modeling ambiguous data in an unambiguous way, as a model’s design requires choices that must have some level of arbitrariness.
         This paradox should not be discouraging, but as Elena Pierazzo points out in the book <i>The Shape of Data in Digital Humanities</i>, “the recognition of the social component in the building of consensus and ultimately of what we can consider to fulfil scientific expectations, seems to offer a more interesting approach in the evaluation of digital methodology.”<br /><br />
 
-        To create an unambiguous model that entails the necessary subjectivity and scholarly nature, the following choices were made:<br /><br /></p></div>
+        To create an unambiguous model that entails the necessary subjectivity and scholarly nature, the following choices were made:<br /><br /></p></div></div>
 <div className='textlu'>
         <p className='disco'>Regarding the nature of emotions to be included in the annotation, we opted to implement to the widely accepted model by Robert Plutchik, whose emotion taxonomy
         has been adopted to the existing ontology of OntoEmotion and the ArsEmotica software.
@@ -106,7 +121,7 @@ const Documentation = () => {
 </div>
 
 
-      <div className='cielo1'><div className='textlu'>
+      <div className='cielo1'><div id='emotional-framework'><div className='textlu'>
       <h2>Emotional framework</h2>
 
       <p className='disco'>
@@ -130,7 +145,7 @@ Wheel diagram demonstrates the relationships between primary and secondary emoti
 Furthermore, each primary emotion can be intensified or weakened, leading to a total of 24 secondary emotions. For example, combining joy
 and trust might result in feelings like optimism or love, while combining fear and surprise could lead to awe or anxiety.
 
-        The model has been widely used in the field of psychology, but also sentiment analysis in text.</p>
+        The model has been widely used in the field of psychology, but also sentiment analysis in text.</p></div>
         </div>
         <div>
 
@@ -138,7 +153,7 @@ and trust might result in feelings like optimism or love, while combining fear a
       </div>
 
 
-      <div className='textlu'>
+      <div id='ontology'><div className='textlu'>
       <h2>Ontology</h2>
       <p className='disco'>
       The OntoEmotion ontology was developed at Universidad Complutense de Madrid for categorizing emotion-denoting words in text, implementing well founded psychological models - namely the emotional
@@ -156,9 +171,9 @@ and trust might result in feelings like optimism or love, while combining fear a
 
       For the requirements of our project, we implemented ArsEmotica&apos;s extended version of the OntoEmotion ontology, and embedded all basic and a selection of complex emotions within the {'<xenoData>'} tags for
       RDF in order link our schema within the Semantic Web.</p>
-      </div>
+      </div></div>
 
-      <div className='textlu'>
+      <div id='text-encoding'><div className='textlu'>
       <h2>Text encoding</h2>
       <p className='disco'>
         Our project follows the digital paradigm of digital scholarly editing
@@ -184,8 +199,8 @@ and trust might result in feelings like optimism or love, while combining fear a
       The second interpretative group contains information that we deemed very relevant in the context of short stories, which is the
       provenience of sentiments, namely whether they are caused by an event, another character&apos;s actions or whether it is completely
       generated by the character&apos;s mental state. </p>
-      </div>
-      <div className='code-cont'><div className='code'>
+      </div></div>
+      <div className='code'><div className='code-cont'><div className='code'></div>
     <EncodingSchema/>
     </div>
 
@@ -196,11 +211,11 @@ and trust might result in feelings like optimism or love, while combining fear a
 
 
 
-      <div className='textlu'>
+      <div id='publication'><div className='textlu'>
       <h2>Publication</h2>
-      </div>
+      </div> </div>
 
-      <div className='textlu'>
+      <div id='network-analysis'><div className='textlu'>
       <h2>Network Analysis</h2>
       <p className='disco'>
 
@@ -211,12 +226,12 @@ and trust might result in feelings like optimism or love, while combining fear a
       are displayed in the dedicated section of our project. For creating the graph and applying the centrality measures, we used the Python package NetworkX.
       </p>
 
-      </div>
+      </div> </div>
 
      <div className='cielo1'><div className='code-cont'><div className='code'>
       <GraphCode/>
       </div></div>
-      <div className='textlu'>
+      <div id='bibliography'><div className='textlu'>
       <h2>Bibliography</h2>
       <p className='disco' id="bibliography">
       <ul>
@@ -230,7 +245,7 @@ and trust might result in feelings like optimism or love, while combining fear a
 
     <li> Poe, Edgar Allan. The Philosophy of Composition, 1846, p.3, retrieved <Link to={'https://pdcrodas.webs.ull.es/fundamentos/PoeThePhilosophyOfComposition.pdf'}> here</Link>.</li>
      </ul>
-     </p> </div>
+     </p> </div></div>
      </div>
       </div>
 
