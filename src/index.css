@@ -355,7 +355,7 @@ progress::-webkit-progress-value {
   background-color:#bdb9b7;
   margin: 1em;
 }
-.mom h2{
+.mom h2, .noi{
   margin: 1em;
   background-color: #E8DBAC;
   border-radius: 12%;
@@ -415,7 +415,7 @@ iframe{
   padding-bottom:2em;
   border-radius: 10%;
 }
-#TEI{
+#TEI, .noi{
   font-family: 'play';
   text-align: center;
   line-height: 1.4;
