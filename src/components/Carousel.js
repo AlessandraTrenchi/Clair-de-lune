@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 const Carousel = ({ images, onImageClick }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false); // Add this state
+
 
   const handleNextClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
