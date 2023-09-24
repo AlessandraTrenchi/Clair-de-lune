@@ -57,7 +57,7 @@ const Documentation = () => {
      <div className='side'>Sidebar
       <ul>
         <li><Link to="/Documentation#introduction" className={activeFragment === 'introduction' ? 'active' : ''}>Introduction</Link></li>
-        <li><Link to="/Documentation#the-author" className={activeFragment === 'introduction' ? 'active' : ''}>The Author</Link></li>
+        <li><Link to="/Documentation#the-autor" className={activeFragment === 'introduction' ? 'active' : ''}>The Author</Link></li>
         <li><Link to="/Documentation#short-stories" className={activeFragment === 'introduction' ? 'active' : ''}>Short Stories</Link></li>
         <li><Link to="/Documentation#project-aims" className={activeFragment === 'introduction' ? 'active' : ''}>Project Aims</Link></li>
         <li><Link to="/Documentation#encoding-model" className={activeFragment === 'introduction' ? 'active' : ''}>Encoding Model - Critical Choices</Link></li>
