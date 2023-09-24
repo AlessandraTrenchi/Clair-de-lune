@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://AlessandraTrenchi.github.io/clair-des-sentiments",
+  "homepage": "https://clair-des-sentiments.github.io",
   "name": "clair-des-sentiments",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,7 @@
     "buffer": "^6.0.3",
     "CETEIcean": "^1.8.0",
     "d3": "^7.8.5",
+    "gh-pages": "^6.0.0",
     "gsap": "^3.12.2",
     "hammerjs": "^2.0.8",
     "moveable": "^0.49.1",
