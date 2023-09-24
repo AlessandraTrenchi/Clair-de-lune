@@ -262,6 +262,14 @@ and trust might result in feelings like optimism or love, while combining fear a
       <p className='disco'><b className='bold'>src</b> the &quot;src&quot; (short for source) folder is where the majority of our project&lsquo; s source code resides. It is the heart of our React application.</p>
       <h2>Inside the src Folder</h2>
       <p className='disco'><b className='bold'>analysis_script</b>: this folder contains scripts and code related to data analysis or processing. These scripts are responsible for analyzing data and generating reports.</p>
+      <h2>Analysis_scripts</h2><p className='disco'> Inside <b className='bold'>analysis_script</b>there is <b className='bold'>parser.py</b> which loads the XML file and stores it into the variable &quot;xml_data.&quot; The script looks for div elements with the attribute &quot;type&quot; set to &quot;story&quot; and stores them in the &quot;story_divs&quot; variable. <b className='bold'>net.gexf</b> has the purpose of creating a network Graph of emotions, then rendered <Link to="/Network">here</Link>. The script initializes a NetworkX graph object called &quot;G.&quot;
+It iterates over each &quot;story&quot; div in the XML file.
+Within each story, it looks for &quot;interp&quot; elements to extract emotions and other attributes.
+For each emotion found, it adds nodes to the graph with attributes such as &quot;div_id,&quot; &quot;type,&quot; and &quot;name&quot; to represent emotions and their relationships.
+Depending on whether certain conditions are met (e.g., if &quot;#cause-character&quot; or &quot;#cause-event&quot; is present in the &quot;ana&quot; attribute), specific types of nodes are created and connected to the emotions.
+Edges are created between all pairs of emotions within each story.
+After processing all stories, the script plots the network graph using matplotlib and saves it as a GEXF file (a format for representing graph data) named &quot;net.gexf.&quot;
+In summary, the purpose of the script is to analyze a TEI XML file containing stories and emotions and construct a network graph that represents relationships between emotions within those stories. It distinguishes between different types of emotions and their causes, and it associates story-specific attributes with nodes in the graph. </p>
       </div> </div>
 
       <div id='network-analysis'><div className='textlu'>
