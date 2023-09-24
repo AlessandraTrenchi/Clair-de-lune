@@ -1,7 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+<<<<<<< Updated upstream
 
 const XmlComponent = ({ texturl, xslturl }) => {
+=======
+import CETEI from 'CETEIcean';
+
+const XmlComponent = ({ texturl, applyHighlighting }) => {
+>>>>>>> Stashed changes
   const xmlContainerRef = useRef(null);
 
   useEffect(() => {
@@ -9,6 +15,7 @@ const XmlComponent = ({ texturl, xslturl }) => {
       try {
         const response = await fetch(texturl);
         if (response.ok) {
+<<<<<<< Updated upstream
           const xmlData = await response.text();
 
           // Create a new DOMParser instance
@@ -36,6 +43,17 @@ const XmlComponent = ({ texturl, xslturl }) => {
             // If no XSLT is provided, simply display the XML
             xmlContainerRef.current.textContent = xmlData;
           }
+=======
+          const CETEIceanInstance = new CETEI();
+          CETEIceanInstance.getHTML5(texturl, (data) => {
+            xmlContainerRef.current.innerHTML = '';
+            xmlContainerRef.current.appendChild(data);
+            console.log('text',data);
+
+            // After loading the XML content, call the applyHighlighting callback
+            applyHighlighting();
+          });
+>>>>>>> Stashed changes
         } else {
           throw new Error('XML fragment not found');
         }
@@ -45,7 +63,11 @@ const XmlComponent = ({ texturl, xslturl }) => {
     };
 
     loadXmlContent();
+<<<<<<< Updated upstream
   }, [texturl, xslturl]);
+=======
+  }, [texturl, applyHighlighting]);
+>>>>>>> Stashed changes
 
   return (
     <div className="xml-component">
@@ -55,8 +77,13 @@ const XmlComponent = ({ texturl, xslturl }) => {
 };
 
 XmlComponent.propTypes = {
+<<<<<<< Updated upstream
   texturl: PropTypes.string.isRequired, // Accepts the URL of the XML file
   xslturl: PropTypes.string, // Optional XSLT URL
+=======
+  texturl: PropTypes.string.isRequired,
+  applyHighlighting: PropTypes.func.isRequired, // Pass the applyHighlighting callback
+>>>>>>> Stashed changes
 };
 
 export default XmlComponent;

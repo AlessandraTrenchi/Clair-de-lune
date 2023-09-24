@@ -707,7 +707,7 @@ tei-publicationstmt > tei-availability[data-tei-status]:before {
 }
 /* B */
 tei-back {
-  display: block;
+  display: none;
 }
 tei-bibl[data-tei-rend~="block"], bibl[data-tei-rendition~="#block"] {
   display: block;
@@ -1154,22 +1154,7 @@ tei-date{
 
 
 
-#anger {
-  color: red; /* Set the color to red for "anger" */
-}
 
-
-#love {
-  color: magenta; /* Set the color to red for "anger" */
-}
-
-tei-interp#joy {
-  color: yellow; /* Set the color to red for "anger" */
-}
-
-tei-interp#sadness {
-  color: blue; /* Set the color to red for "anger" */
-}
 
 *[data-tei-rendition~="#center"] p {
   text-align: center;
@@ -1513,19 +1498,31 @@ html > body {
 }
 
 /* Sidebar.css */
-.sidebar {
+
+.sidebar-container {
   background-image: url(https://i.pinimg.com/564x/7b/dd/7a/7bdd7a11c2c6b7377b91e4e5fac2cd12.jpg);
+  position: sticky;
   border-radius: 2%;
-  font-family: 'anavio';  width: 60%; /* Set the width of your sidebar */
+  width:60%;
   height: 100%;
-  background-color: white; /* Background color for the sidebar */
-  position: sticky; /* Fixed position to stay on the side */
   margin:1em;
   padding:2em;
-  overflow-x: hidden; /* Hide horizontal scrollbar if content overflows */
-  padding-top: 20px; /* Add some padding at the top */
+  top: 0;
+  overflow-y: auto; /* Enable vertical scrolling if the content exceeds the sidebar's height */
 }
+.sidebar {
+  /* background-image: url(https://i.pinimg.com/564x/7b/dd/7a/7bdd7a11c2c6b7377b91e4e5fac2cd12.jpg); */
+  border-radius: 2%;
+  font-family: 'anavio';
+  overflow-x: hidden;
+  cursor:pointer;/* Hide horizontal scrollbar if content overflows */
+}
+.sidebar label:hover{
+  cursor:pointer;/* Hide horizontal scrollbar if content overflows */
+  font-weight: bold;
+  text-shadow:1px 1px #e1d949a1, 1px 1px #e1d949a1;
 
+}
 /* Style the sidebar menu items */
 .sidebar ul {
   list-style: none;
@@ -1545,11 +1542,60 @@ html > body {
 }
 
 .emotype-heading {
-  font-size: 1em; /* Adjust the font size as needed */
+  font-size: 1.2em; /* Adjust the font size as needed */
   font-weight: bold; /* Make the headings bold */
   margin-top: 10px; /* Add some top margin for spacing */
   margin-bottom: 5px; /* Add some bottom margin for spacing */
-  color: #333; /* Change the color as desired */
+  color: black; /* Change the color as desired */
+}
+
+
+
+.anger.highlighted{
+  color:#5f0000;
+  font-weight: bold;
+  text-shadow:  1px 1px black, 1px 1px black;
+}
+.joy.highlighted{
+  color:#52eb52;
+  font-weight: bold;
+}
+.love.highlighted{
+  color:#dea9ff;
+  font-weight: bold;
+}
+.fear.highlighted{
+  color:blue;
+  font-weight: bold;
+}
+.sadness.highlighted{
+  color:#0b0b86;
+  font-weight: bold;
+}
+.disgust.highlighted{
+  color:black;
+  text-shadow:1px 1px #bd4040, 1px 1px #bd4040;
+  font-weight:bold;
+}
+.surprise.highlighted{
+  color:#555;
+  font-weight: bold;
+}
+.disgust.highlighted{
+  color:black;
+  text-shadow:1px 1px #bd4040, 1px 1px #bd4040;
+  font-weight:bold;
+
+}
+.grief.highlighted{
+  color:black;
+  text-shadow:1px 1px #bd4040, 1px 1px #bd4040;
+  font-weight:bold;
+
+}
+
+.hide-checkbox{
+  display: none;
 }
 
 .row-sidebar {
