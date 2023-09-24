@@ -21,6 +21,7 @@ const Documentation = () => {
         'project-aims',
         'encoding-model',
         'emotional-framework',
+        'declaration',
         'ontology',
         'text-encoding',
         'publication',
@@ -61,7 +62,8 @@ const Documentation = () => {
         <li><Link to="/Documentation#short-stories" className={activeFragment === 'short-stories' ? 'active' : ''}>Short Stories</Link></li>
         <li><Link to="/Documentation#project-aims" className={activeFragment === 'project-aims' ? 'active' : ''}>Project Aims</Link></li>
         <li><Link to="/Documentation#encoding-model" className={activeFragment === 'encoding-model' ? 'active' : ''}>Encoding Model - Critical Choices</Link></li>
-        <li><Link to="/Documentation#emotional-framework" className={activeFragment === 'emotional-framwork' ? 'active' : ''}>Emotional Framework</Link></li>
+        <li><Link to="/Documentation#emotional-framework" className={activeFragment === 'emotional-framework' ? 'active' : ''}>Emotional Framework</Link></li>
+        <li><Link to="/Documentation#declaration" className={activeFragment === 'declaration' ? 'active' : ''}>Declaration of Intent</Link></li>
         <li><Link to="/Documentation#ontology" className={activeFragment === 'ontology' ? 'active' : ''}>Ontology</Link></li>
         <li><Link to="/Documentation#text-encoding" className={activeFragment === 'text-encoding' ? 'active' : ''}>Text Encoding</Link></li>
         <li><Link to="/Documentation#publication" className={activeFragment === 'publication' ? 'active' : ''}>Publication</Link></li>
@@ -188,7 +190,18 @@ Furthermore, each primary emotion can be intensified or weakened, leading to a t
 and trust might result in feelings like optimism or love, while combining fear and surprise could lead to awe or anxiety.
 
         The model has been widely used in the field of psychology, but also sentiment analysis in text.</p></div>
+
         </div>
+        <div className='cielo1'><div id='declaration'><div className='textlu'>
+      <h2>Declaration of Intent</h2>
+
+      <p className='disco'> In the course of this edition, our primary objective has been to delve into the intricate tapestry of emotions that intertwine with the narrative presented within the text. Emotions are a fundamental aspect of the human experience, and within the pages of this work, we have sought to uncover, analyze, and illuminate the various emotional states that play a pivotal role in shaping the narrative&lsquo;s essence.
+
+Our exploration has led us to discern the nuances of joy, sadness, anticipation, love, anger, surprise, disgust, amazement, envy, and acceptance, each serving as a brushstroke on the canvas of human sentiment. Through meticulous analysis, we have strived to uncover not only the emotions themselves but also the underlying causes and effects that bind them, creating a rich and complex emotional landscape.
+
+Emotions, as depicted in this text, are not mere abstractions; they are the lifeblood of the characters and events that unfold within its pages. They provide depth, resonance, and a profound connection between the reader and the narrative. In our pursuit, we have aimed to shed light on the emotional undercurrents that breathe life into the story, unveiling the intricate interplay between characters, events, and the emotions that drive them.
+
+This edition stands as a testament to the significance of emotions in storytelling, as well as their capacity to resonate with readers on a profound level. Through our analysis, we have endeavored to provide insights into the emotional tapestry of the text, enriching our understanding of the human experience as it unfolds within these pages. </p></div>
         <div>
 
       <img src="https://public-media.interaction-design.org/images/uploads/70cb81fe1b87d2703d5c2f127841efad.jpg" alt="Plutchik wheel of emotions" className='imm'/>
@@ -262,6 +275,14 @@ and trust might result in feelings like optimism or love, while combining fear a
       <p className='disco'><b className='bold'>src</b> the &quot;src&quot; (short for source) folder is where the majority of our project&lsquo; s source code resides. It is the heart of our React application.</p>
       <h2>Inside the src Folder</h2>
       <p className='disco'><b className='bold'>analysis_script</b>: this folder contains scripts and code related to data analysis or processing. These scripts are responsible for analyzing data and generating reports.</p>
+      <p className='disco'>The <b className='bold'>App</b> component inside src sets up the routing for our React application using the react-router-dom library. </p>
+      <p className='disco'>The <b className='bold'>index.js</b> file is the entry point of every React application and is responsible for rendering the main application component into the DOM.</p>
+      <p className='disco'>The <b className='bold'>index.css</b> file is the stylesheet where we defined the layout of our digital edition.</p>
+     <p className='disco'>The <b className='bold'>fonts</b> folder is where we downloaded our chosen font-families.</p>
+      <p className='disco'>The <b className='bold'>images</b> folder is where we put some reference images used throughout our edition to render it more appealing.</p>
+      <p className='disco'>The <b className='bold'>text</b> folder is where we annotated the XML of the Clair De Lune stories, using the TEI standard. For ease of use we annotated each file separately in order to display them using the CETEIcean library for xml conversion. <Link to="/Clair">Read</Link> and discover the emotions in the text.</p>
+
+      
       <h2>Analysis_scripts</h2><p className='disco'> Inside <b className='bold'>analysis_script</b>there is <b className='bold'>parser.py</b> which loads the XML file and stores it into the variable &quot;xml_data.&quot; The script looks for div elements with the attribute &quot;type&quot; set to &quot;story&quot; and stores them in the &quot;story_divs&quot; variable. <b className='bold'>net.gexf</b> has the purpose of creating a network Graph of emotions, then rendered <Link to="/Network">here</Link>. The script initializes a NetworkX graph object called &quot;G.&quot;
 It iterates over each &quot;story&quot; div in the XML file.
 Within each story, it looks for &quot;interp&quot; elements to extract emotions and other attributes.
@@ -270,6 +291,9 @@ Depending on whether certain conditions are met (e.g., if &quot;#cause-character
 Edges are created between all pairs of emotions within each story.
 After processing all stories, the script plots the network graph using matplotlib and saves it as a GEXF file (a format for representing graph data) named &quot;net.gexf.&quot;
 In summary, the purpose of the script is to analyze a TEI XML file containing stories and emotions and construct a network graph that represents relationships between emotions within those stories. It distinguishes between different types of emotions and their causes, and it associates story-specific attributes with nodes in the graph. </p>
+<h2>Inside the Components&lsquo; folder</h2> 
+<p className='disco'>The <b className='bold'>components</b> folder in a web application is a common organizational structure used to group and manage the different pieces of the user interface (UI). It is a best practice in web development to modularize and separate the UI into reusable components, making the codebase more maintainable and easier to understand.  contains a collection of reusable UI components. These components are self-contained, meaning they encapsulate a specific piece of functionality or UI element and can be easily reused throughout the application.</p>
+<p></p>
       </div> </div>
 
       <div id='network-analysis'><div className='textlu'>
@@ -304,9 +328,7 @@ In summary, the purpose of the script is to analyze a TEI XML file containing st
      </ul>
      </p> </div></div>
      </div>
-      </div>
-
-
+      </div> </div></div>
 
 
       <Footer />
