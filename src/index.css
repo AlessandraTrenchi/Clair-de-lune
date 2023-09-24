@@ -164,6 +164,8 @@ a:hover{
   .carr h1{
     font-size: 1em;
   }
+
+
 }
 
 progress {
@@ -333,7 +335,7 @@ progress::-webkit-progress-value {
   justify-content: center;
   align-items: center;
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 4em;
 }
 .tit{
   background-image: url('../src/images/textlu.avif');
@@ -370,8 +372,6 @@ progress::-webkit-progress-value {
 
 .disco {
   z-index: -1;
-  max-width: 1000px; /* Adjust the maximum width as needed */
-
   filter:saturate(100%);
   /* border-radius: 12%; */
   background-color: #bdb9b78f;
@@ -1683,4 +1683,11 @@ border-radius: 12%;
 
 .bold{
   font-size: larger;
+}
+.spaxio{
+  padding-bottom: 5em;
+  margin-bottom: 2em;
+}
+#sei, #sono{
+  width: 70%;
 }

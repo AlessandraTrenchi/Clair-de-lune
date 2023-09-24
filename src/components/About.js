@@ -7,7 +7,7 @@ const About = () => {
       <div className='cielo'>
         <div className='textlu'>
           <h2>About us</h2></div>
-          <div className='mom'><div>
+          <div className='mom' id='sei'><div>
             <h2>Chloe Papadopoulou</h2><img src='https://media.licdn.com/dms/image/C4D03AQHRBfLRR53i0w/profile-displayphoto-shrink_800_800/0/1602861296568?e=1701302400&v=beta&t=72nqaZmVT5vegI1IUorGxAAxuS1PuhHeQr0rIMZKeXs' className='imm'></img>
             <p className='noi'>I&lsquo;m Chloe Papadopoulou, a passionate web developer and a dedicated student pursuing my Master&lsquo;s in Digital Humanities and Digital Knowledge at the University of Bologna. My journey into the world of web development began with a profound curiosity about how the internet works and a desire to create meaningful digital experiences.
 
@@ -19,7 +19,7 @@ When I&lsquo;m not coding or immersed in my studies, you&lsquo;ll often find me 
          
 
         </div>
-        <div className='mom'><div>
+        <div className='mom' id='sono'><div>
             <h2>Alessandra Trenchi</h2><img src='https://ahsanv101.github.io/WebDev/images/AboutUs/ale.jpg' className='imm'></img>
 
             <p className='noi'>Hello there! I&lsquo;m Alessandra Trenchi, a web developer and an enthusiast for all things digital. Currently, I&lsquo;m pursuing my Master&lsquo;s degree in Digital Humanities and Digital Knowledge at the esteemed University of Bologna. My journey into the world of web development began with a simple curiosity that has since grown into a deep passion.
