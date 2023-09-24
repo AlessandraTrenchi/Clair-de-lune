@@ -57,16 +57,16 @@ const Documentation = () => {
      <div className='side'>Sidebar
       <ul>
         <li><Link to="/Documentation#introduction" className={activeFragment === 'introduction' ? 'active' : ''}>Introduction</Link></li>
-        <li><Link to="/Documentation#the-autor" className={activeFragment === 'introduction' ? 'active' : ''}>The Author</Link></li>
-        <li><Link to="/Documentation#short-stories" className={activeFragment === 'introduction' ? 'active' : ''}>Short Stories</Link></li>
-        <li><Link to="/Documentation#project-aims" className={activeFragment === 'introduction' ? 'active' : ''}>Project Aims</Link></li>
-        <li><Link to="/Documentation#encoding-model" className={activeFragment === 'introduction' ? 'active' : ''}>Encoding Model - Critical Choices</Link></li>
-        <li><Link to="/Documentation#emotional-framework" className={activeFragment === 'introduction' ? 'active' : ''}>Emotional Framework</Link></li>
-        <li><Link to="/Documentation#ontology" className={activeFragment === 'introduction' ? 'active' : ''}>Ontology</Link></li>
-        <li><Link to="/Documentation#text-encoding" className={activeFragment === 'introduction' ? 'active' : ''}>Text Encoding</Link></li>
-        <li><Link to="/Documentation#publication" className={activeFragment === 'introduction' ? 'active' : ''}>Publication</Link></li>
-        <li><Link to="/Documentation#network-analysis" className={activeFragment === 'introduction' ? 'active' : ''}>Network Analysis</Link></li>
-        <li><Link to="/Documentation#bibliography" className={activeFragment === 'introduction' ? 'active' : ''}>Bibliography</Link></li>
+        <li><Link to="/Documentation#the-autor" className={activeFragment === 'the-autor' ? 'active' : ''}>The Author</Link></li>
+        <li><Link to="/Documentation#short-stories" className={activeFragment === 'short-stories' ? 'active' : ''}>Short Stories</Link></li>
+        <li><Link to="/Documentation#project-aims" className={activeFragment === 'project-aims' ? 'active' : ''}>Project Aims</Link></li>
+        <li><Link to="/Documentation#encoding-model" className={activeFragment === 'encoding-model' ? 'active' : ''}>Encoding Model - Critical Choices</Link></li>
+        <li><Link to="/Documentation#emotional-framework" className={activeFragment === 'emotional-framwork' ? 'active' : ''}>Emotional Framework</Link></li>
+        <li><Link to="/Documentation#ontology" className={activeFragment === 'ontology' ? 'active' : ''}>Ontology</Link></li>
+        <li><Link to="/Documentation#text-encoding" className={activeFragment === 'text-encoding' ? 'active' : ''}>Text Encoding</Link></li>
+        <li><Link to="/Documentation#publication" className={activeFragment === 'publication' ? 'active' : ''}>Publication</Link></li>
+        <li><Link to="/Documentation#network-analysis" className={activeFragment === 'network-analysis' ? 'active' : ''}>Network Analysis</Link></li>
+        <li><Link to="/Documentation#bibliography" className={activeFragment === 'bibliography' ? 'active' : ''}>Bibliography</Link></li>
 
 
         </ul></div>
