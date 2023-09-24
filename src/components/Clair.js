@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import XmlComponent from './XmlComponent';
 import '../index.css';
 import Emotions from './Emotions';
+import XSLTFilePath from '../text/stile.xslt'; // Import the XSLT file
 
 const emotionData = [
   {
@@ -56,7 +57,7 @@ const Clair = () => {
       <Emotions emotionData={emotionData} /></div>
           <div className='main-content'>
             {/* Render the XML content for the selected image */}
-            {currentXmlId && <XmlComponent texturl={currentTextUrl} />}
+            {currentXmlId && <XmlComponent texturl={currentTextUrl} xslturl={XSLTFilePath} />}
           </div>
         </div>
       </div>

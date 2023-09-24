@@ -1,23 +1,41 @@
-// XmlComponent.js
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import CETEI from 'CETEIcean';
-import { css } from 'styled-components';
-const XmlComponent = ({ texturl }) => {
+
+const XmlComponent = ({ texturl, xslturl }) => {
   const xmlContainerRef = useRef(null);
 
   useEffect(() => {
     const loadXmlContent = async () => {
       try {
         const response = await fetch(texturl);
-        console.log('Fetching XML data from:', texturl);
-
         if (response.ok) {
-          const CETEIceanInstance = new CETEI();
-          CETEIceanInstance.getHTML5(texturl, (data) => {
-            xmlContainerRef.current.innerHTML = '';
-            xmlContainerRef.current.appendChild(data);
-          });
+          const xmlData = await response.text();
+
+          // Create a new DOMParser instance
+          const parser = new DOMParser();
+          const xmlDoc = parser.parseFromString(xmlData, 'text/xml');
+
+          // Check if an XSLT file is provided
+          if (xslturl) {
+            const xsltResponse = await fetch(xslturl);
+            if (xsltResponse.ok) {
+              const xsltData = await xsltResponse.text();
+              const xsltProcessor = new XSLTProcessor();
+              const xsltDoc = parser.parseFromString(xsltData, 'text/xml');
+              xsltProcessor.importStylesheet(xsltDoc);
+
+              // Apply the XSLT transformation
+              const result = xsltProcessor.transformToDocument(xmlDoc);
+
+              xmlContainerRef.current.innerHTML = '';
+              xmlContainerRef.current.appendChild(result.documentElement);
+            } else {
+              console.error('XSLT file not found');
+            }
+          } else {
+            // If no XSLT is provided, simply display the XML
+            xmlContainerRef.current.textContent = xmlData;
+          }
         } else {
           throw new Error('XML fragment not found');
         }
@@ -27,7 +45,7 @@ const XmlComponent = ({ texturl }) => {
     };
 
     loadXmlContent();
-  }, [texturl]);
+  }, [texturl, xslturl]);
 
   return (
     <div className="xml-component">
@@ -38,6 +56,7 @@ const XmlComponent = ({ texturl }) => {
 
 XmlComponent.propTypes = {
   texturl: PropTypes.string.isRequired, // Accepts the URL of the XML file
+  xslturl: PropTypes.string, // Optional XSLT URL
 };
 
 export default XmlComponent;
