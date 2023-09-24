@@ -1556,7 +1556,7 @@ html > body {
   background-image: url(/src/images/old.jpg);
   text-align: center;
   font-family: 'anavio';
-  width:40%;
+  width:100%;
   padding-top: 1em;
   padding-bottom: 2em;
   position: fixed;
@@ -1579,4 +1579,8 @@ border-radius: 12%;
 }
 .active{
   font-weight: bold;
+}
+
+#introduction{
+  margin-top: 18em;
 }
