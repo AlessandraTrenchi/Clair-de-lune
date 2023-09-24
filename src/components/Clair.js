@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import XmlComponent from './XmlComponent';
 import Sidebar from './Sidebar';
 import '../index.css';
-import Emotions from './Emotions';
 
 
 

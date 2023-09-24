@@ -26,6 +26,11 @@ const Home = () => {
                 His stories often explore the darker aspects of human nature, delving into themes of morality, psychology, and social satire.
                 They are characterized by their concise prose, vivid descriptions, and precise narrative techniques, and Maupassant&apos;s writing style greatly influenced the development of the modern short story genre.
 
+              </div></div>
+              <div className='mom'>
+              <h2>The digital edition</h2>
+              <div className='para'>
+              The digital edition of &quot;Clair de Lune&quot; by Guy de Maupassant involves transforming the original story into a digital format while enhancing the reading experience through interactive elements which allow an emotional analysis, and implemented accessibility features. The goal is to make this classic work more accessible and engaging for a modern, digital-savvy audience while preserving its literary value.
               </div>
             </div>
           </div>

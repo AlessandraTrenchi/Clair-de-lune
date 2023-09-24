@@ -1680,3 +1680,7 @@ border-radius: 12%;
 #introduction{
   margin-top: 18em;
 }
+
+.bold{
+  font-size: larger;
+}

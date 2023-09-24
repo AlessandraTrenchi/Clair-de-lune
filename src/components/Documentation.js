@@ -255,6 +255,11 @@ and trust might result in feelings like optimism or love, while combining fear a
 
       <div id='publication'><div className='textlu'>
       <h2>Publication</h2>
+      <h2>Project Structure</h2>
+      <p className='disco'>Inside the project root there are some main folders. </p>
+      <p className='disco'><b className='bold'>Build</b>: contains the output of our production-ready build. It includes minified and optimized versions of our JavaScript, CSS, and assets. These files are directly generated when you build your React application for deployment.</p>
+      <p className='disco'><b className='bold'>node_modules</b>: this folder stores all the third-party dependencies and libraries that our project relies on. It&aposs managed by a package manager like npm, so we have not modified files in this folder directly.</p>
+      <p className='disco'><b className='bold'>public</b>: the &quot;public&quot; folder contains static assets that are publicly accessible, such as HTML files, images. Here the main &quot;index.html&quot; file, which serves as the entry point for our React application. </p>
       </div> </div>
 
       <div id='network-analysis'><div className='textlu'>
