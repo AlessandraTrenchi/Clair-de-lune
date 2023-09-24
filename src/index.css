@@ -299,7 +299,7 @@ progress::-webkit-progress-value {
   padding-bottom: 2em;
 }
 .mom{
-  background-image: url('../src/images/old.jpg'); /* Replace with the path to your background image */
+  background-image: url('../src/images/old.jpg'); 
   opacity: 0.8;
   filter: blur(1px);
   width: 50rem;
@@ -1553,14 +1553,21 @@ html > body {
 }
 
 .row-sidebar {
-  background-image: url(https://i.pinimg.com/564x/7b/dd/7a/7bdd7a11c2c6b7377b91e4e5fac2cd12.jpg);
+  background-image: url(/src/images/old.jpg);
   text-align: center;
   font-family: 'anavio';
-  font-size: 1.8em;
-  height: 5em;
+  height: 9em;
   width:100%;
   padding-top: 1em;
+  padding-bottom: 2em;
 }
 .side{
   font-family: 'sml';
+  color: #222466;
+}
+.side li a{
+  color: #222466;
+  font-family: 'avio';
+  font-weight: bold;
+
 }

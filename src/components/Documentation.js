@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import StickyBox from "react-sticky-box";
 import Network from './Network';
@@ -7,24 +7,66 @@ import EncodingSchema from './EncodingSchema';
 import GraphCode from './GraphCode';
 import { CodeBlock } from "react-code-blocks";
 import App from '../App';
+
+
 const Documentation = () => {
+  const [activeFragment, setActiveFragment] = useState('');
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const sectionIds = [
+        'introduction',
+        'the-author',
+        'short-stories',
+        'project-aims',
+        'encoding-model',
+        'emotional-framework',
+        'ontology',
+        'text-encoding',
+        'publication',
+        'network-analysis',
+        'bibliography',
+      ];
+  
+      // Find the section that is currently in view
+      let currentSection = '';
+      for (const sectionId of sectionIds) {
+        const section = document.getElementById(sectionId);
+        if (section && section.offsetTop <= scrollY + 10) {
+          currentSection = sectionId;
+        }
+      }
+  
+      setActiveFragment(currentSection);
+    };
+  
+    // Listen for scroll events and initial URL fragment
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+  
+    // Cleanup the event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
   return (
     <>
     <div className="row-sidebar">
    <StickyBox offsetTop={20} offsetBottom={20}>
      <div className='side'>Sidebar
       <ul>
-        <li><Link to="/Documentation#introduction">Introduction</Link></li>
-        <li><Link to="/Documentation#the-author">The Author</Link></li>
-        <li><Link to="/Documentation#short-stories">Short Stories</Link></li>
-        <li><Link to="/Documentation#project-aims">Project Aims</Link></li>
-        <li><Link to="/Documentation#encoding-model">Encoding Model - Critical Choices</Link></li>
-        <li><Link to="/Documentation#emotional-framework">Emotional Framework</Link></li>
-        <li><Link to="/Documentation#ontology">Ontology</Link></li>
-        <li><Link to="/Documentation#text-encoding">Text Encoding</Link></li>
-        <li><Link to="/Documentation#publication">Publication</Link></li>
-        <li><Link to="/Documentation#network-analysis">Network Analysis</Link></li>
-        <li><Link to="/Documentation#bibliography">Bibliography</Link></li>
+        <li><Link to="/Documentation#introduction" className={activeFragment === 'introduction' ? 'active' : ''}>Introduction</Link></li>
+        <li><Link to="/Documentation#the-author" className={activeFragment === 'introduction' ? 'active' : ''}>The Author</Link></li>
+        <li><Link to="/Documentation#short-stories" className={activeFragment === 'introduction' ? 'active' : ''}>Short Stories</Link></li>
+        <li><Link to="/Documentation#project-aims" className={activeFragment === 'introduction' ? 'active' : ''}>Project Aims</Link></li>
+        <li><Link to="/Documentation#encoding-model" className={activeFragment === 'introduction' ? 'active' : ''}>Encoding Model - Critical Choices</Link></li>
+        <li><Link to="/Documentation#emotional-framework" className={activeFragment === 'introduction' ? 'active' : ''}>Emotional Framework</Link></li>
+        <li><Link to="/Documentation#ontology" className={activeFragment === 'introduction' ? 'active' : ''}>Ontology</Link></li>
+        <li><Link to="/Documentation#text-encoding" className={activeFragment === 'introduction' ? 'active' : ''}>Text Encoding</Link></li>
+        <li><Link to="/Documentation#publication" className={activeFragment === 'introduction' ? 'active' : ''}>Publication</Link></li>
+        <li><Link to="/Documentation#network-analysis" className={activeFragment === 'introduction' ? 'active' : ''}>Network Analysis</Link></li>
+        <li><Link to="/Documentation#bibliography" className={activeFragment === 'introduction' ? 'active' : ''}>Bibliography</Link></li>
 
 
         </ul></div>
