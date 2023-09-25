@@ -29,7 +29,7 @@ const Documentation = () => {
         'declaration',
         'ontology',
         'text-encoding',
-        'publication',
+        'project-structure',
         'network-analysis',
         'bibliography',
       ];
@@ -74,7 +74,7 @@ const Documentation = () => {
         <li onClick={() => scrollToFragment('declaration')}><Link to="/Documentation#declaration" className={activeFragment === 'declaration' ? 'active' : ''}>Declaration of Intent</Link></li>
         <li onClick={() => scrollToFragment('ontology')}><Link to="/Documentation#ontology" className={activeFragment === 'ontology' ? 'active' : ''}>Ontology</Link></li>
         <li onClick={() => scrollToFragment('text-encoding')}><Link to="/Documentation#text-encoding" className={activeFragment === 'text-encoding' ? 'active' : ''}>Text Encoding</Link></li>
-        <li onClick={() => scrollToFragment('publication')}><Link to="/Documentation#publication" className={activeFragment === 'publication' ? 'active' : ''}>Publication</Link></li>
+        <li onClick={() => scrollToFragment('project-structure')}><Link to="/Documentation#project-structure" className={activeFragment === 'project-structure' ? 'active' : ''}>Project Structure</Link></li>
         <li onClick={() => scrollToFragment('network-analysis')}><Link to="/Documentation#network-analysis" className={activeFragment === 'network-analysis' ? 'active' : ''}>Network Analysis</Link></li>
         <li onClick={() => scrollToFragment('bibliography')}><Link to="/Documentation#bibliography" className={activeFragment === 'bibliography' ? 'active' : ''}>Bibliography</Link></li>
 
@@ -274,7 +274,7 @@ This edition stands as a testament to the significance of emotions in storytelli
 
 
 
-      <div id='publication'><div className='textlu'>
+      <div id='project-structure'><div className='textlu'>
       <h2>Project Structure</h2>
       <p className='disco'>Inside the project root there are some main folders. </p>
       <p className='disco'><b className='bold'>Build</b>: contains the output of our production-ready build. It includes minified and optimized versions of our JavaScript, CSS, and assets. These files are directly generated when you build your React application for deployment.</p>
