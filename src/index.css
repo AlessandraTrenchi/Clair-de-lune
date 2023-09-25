@@ -146,6 +146,7 @@ Link, a{
 a:hover{
   color:#DB7754;
 }
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -166,6 +167,9 @@ a:hover{
   }
   .row-sidebar{
     font-size: 0.8em;
+  }
+  .fluid-text{
+    font-size: 4em!important;
   }
 
 }
@@ -246,7 +250,7 @@ progress::-webkit-progress-value {
   background-position: center center;
 }
 .fluid-text {
-  font-size: 8rem;
+  font-size: 7em;
   font-weight: bold;
   font-family: 'play';
   text-transform: uppercase;
@@ -255,6 +259,8 @@ progress::-webkit-progress-value {
   cursor: pointer;
   align-items: center;
   padding-top: 3em;
+  text-align: center;
+  padding-bottom: 1em;
 }
 .carr h1{
   font-size: 5em;
@@ -401,7 +407,7 @@ progress::-webkit-progress-value {
 .cielo1{
   background-image: url(../src/images/cielo.gif);
   padding-top: 3em;
-  padding-bottom: 18em;
+  padding-bottom: 3.5em;
 }
 .nett{
   display: flex;
@@ -1679,11 +1685,6 @@ line-height: 1.4;
 .active{
   font-weight: bold;
 }
-
-#introduction{
-  margin-top: 18em;
-}
-
 .bold{
   font-size: larger;
 }
