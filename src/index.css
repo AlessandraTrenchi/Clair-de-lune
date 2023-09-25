@@ -164,7 +164,9 @@ a:hover{
   .carr h1{
     font-size: 1em;
   }
-
+  .row-sidebar{
+    font-size: 0.8em;
+  }
 
 }
 
@@ -1502,7 +1504,7 @@ html > body {
 /* Sidebar.css */
 
 .sidebar-container {
-  background-image: url(https://i.pinimg.com/564x/7b/dd/7a/7bdd7a11c2c6b7377b91e4e5fac2cd12.jpg);
+  background-image: url(../src/images/cielo.gif);
   position: sticky;
   border-radius: 2%;
   width:60%;
@@ -1649,16 +1651,16 @@ html > body {
 }
 
 .row-sidebar {
-  background-image: url(/src/images/old.jpg);
-  text-align: center;
   font-family: 'anavio';
-  width:100%;
+  width:80%;
   padding-top: 1em;
   padding-bottom: 2em;
   position: fixed;
 z-index: 999;
 justify-content: center;
 border-radius: 12%;
+margin-left: 1em;
+line-height: 1.4;
 
 
 }
@@ -1666,6 +1668,7 @@ border-radius: 12%;
   font-family: 'sml';
   color: #222466;
   font-size: 1.3em;
+  text-shadow: 1px 1px white, 1px 2px #e8dbac;
 }
 .side li a{
   color: #222466;

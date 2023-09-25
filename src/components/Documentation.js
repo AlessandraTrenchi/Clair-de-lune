@@ -83,16 +83,16 @@ const Documentation = () => {
    </StickyBox>
     </div>
                 <div className='cielo1'>
-                <div id='introduction'><div className='textlu'>
-      <h2>Introduction</h2>
+               <div className='textlu'>
+      <h2 id='introduction'>Introduction</h2>
       <p className='disco'>
         “Clair de sentiments” is a digital edition of the short stories collection
         “Clair de Lune” by Guy de Maupassant, which incorporates digital
         scholarly editions tools in order to shine light on the use of emotions
         in his work.
-      </p></div></div>
+      </p></div>
       <div className='the-autor'><div className='textlu'>
-      <h2>The Author</h2>
+      <h2 id='the-autor'>The Author</h2>
       <p className='disco'>
         Guy de Maupassant was a 19th-century French author, famous for his short
         stories. As a representative of the Naturalist school, he used the short
