@@ -8,6 +8,14 @@ import GraphCode from './GraphCode';
 
 const Documentation = () => {
   const [activeFragment, setActiveFragment] = useState('');
+
+  const scrollToFragment = (fragmentId) => {
+    const element = document.getElementById(fragmentId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -25,7 +33,7 @@ const Documentation = () => {
         'network-analysis',
         'bibliography',
       ];
-  
+
       // Find the section that is currently in view
       let currentSection = '';
       for (const sectionId of sectionIds) {
@@ -34,38 +42,41 @@ const Documentation = () => {
           currentSection = sectionId;
         }
       }
-  
+
       setActiveFragment(currentSection);
     };
-  
+
     // Listen for scroll events and initial URL fragment
     window.addEventListener('scroll', handleScroll);
     handleScroll();
-  
+
     // Cleanup the event listener
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  
+
   return (
     <>
-    <div className="row-sidebar">
-   <StickyBox offsetTop={20} offsetBottom={20}>
-     <div className='side'>Sidebar
-      <ul>
-        <li><Link to="/Documentation#introduction" className={activeFragment === 'introduction' ? 'active' : ''}>Introduction</Link></li>
-        <li><Link to="/Documentation#the-autor" className={activeFragment === 'the-autor' ? 'active' : ''}>The Author</Link></li>
-        <li><Link to="/Documentation#short-stories" className={activeFragment === 'short-stories' ? 'active' : ''}>Short Stories</Link></li>
-        <li><Link to="/Documentation#project-aims" className={activeFragment === 'project-aims' ? 'active' : ''}>Project Aims</Link></li>
-        <li><Link to="/Documentation#encoding-model" className={activeFragment === 'encoding-model' ? 'active' : ''}>Encoding Model - Critical Choices</Link></li>
-        <li><Link to="/Documentation#emotional-framework" className={activeFragment === 'emotional-framework' ? 'active' : ''}>Emotional Framework</Link></li>
-        <li><Link to="/Documentation#declaration" className={activeFragment === 'declaration' ? 'active' : ''}>Declaration of Intent</Link></li>
-        <li><Link to="/Documentation#ontology" className={activeFragment === 'ontology' ? 'active' : ''}>Ontology</Link></li>
-        <li><Link to="/Documentation#text-encoding" className={activeFragment === 'text-encoding' ? 'active' : ''}>Text Encoding</Link></li>
-        <li><Link to="/Documentation#publication" className={activeFragment === 'publication' ? 'active' : ''}>Publication</Link></li>
-        <li><Link to="/Documentation#network-analysis" className={activeFragment === 'network-analysis' ? 'active' : ''}>Network Analysis</Link></li>
-        <li><Link to="/Documentation#bibliography" className={activeFragment === 'bibliography' ? 'active' : ''}>Bibliography</Link></li>
+      <div className="row-sidebar">
+        <StickyBox offsetTop={20} offsetBottom={20}>
+          <div className='side'>Sidebar
+            <ul>
+              <li onClick={() => scrollToFragment('introduction')}>
+                <Link to="/Documentation#introduction" className={activeFragment === 'introduction' ? 'active' : ''}>Introduction</Link>
+              </li>
+              <li onClick={() => scrollToFragment('the-author')}>
+                <Link to="/Documentation#the-autor" className={activeFragment === 'the-autor' ? 'active' : ''}>The Author</Link></li>
+        <li onClick={() => scrollToFragment('short-stories')}><Link to="/Documentation#short-stories" className={activeFragment === 'short-stories' ? 'active' : ''}>Short Stories</Link></li>
+        <li onClick={() => scrollToFragment('project-aims')}><Link to="/Documentation#project-aims" className={activeFragment === 'project-aims' ? 'active' : ''}>Project Aims</Link></li>
+        <li onClick={() => scrollToFragment('encoding-model')}> <Link to="/Documentation#encoding-model" className={activeFragment === 'encoding-model' ? 'active' : ''}>Encoding Model - Critical Choices</Link></li>
+        <li onClick={() => scrollToFragment('emotional-framework')}><Link to="/Documentation#emotional-framework" className={activeFragment === 'emotional-framework' ? 'active' : ''}>Emotional Framework</Link></li>
+        <li onClick={() => scrollToFragment('declaration')}><Link to="/Documentation#declaration" className={activeFragment === 'declaration' ? 'active' : ''}>Declaration of Intent</Link></li>
+        <li onClick={() => scrollToFragment('ontology')}><Link to="/Documentation#ontology" className={activeFragment === 'ontology' ? 'active' : ''}>Ontology</Link></li>
+        <li onClick={() => scrollToFragment('text-encoding')}><Link to="/Documentation#text-encoding" className={activeFragment === 'text-encoding' ? 'active' : ''}>Text Encoding</Link></li>
+        <li onClick={() => scrollToFragment('publication')}><Link to="/Documentation#publication" className={activeFragment === 'publication' ? 'active' : ''}>Publication</Link></li>
+        <li onClick={() => scrollToFragment('network-analysis')}><Link to="/Documentation#network-analysis" className={activeFragment === 'network-analysis' ? 'active' : ''}>Network Analysis</Link></li>
+        <li onClick={() => scrollToFragment('bibliography')}><Link to="/Documentation#bibliography" className={activeFragment === 'bibliography' ? 'active' : ''}>Bibliography</Link></li>
 
 
         </ul></div>
