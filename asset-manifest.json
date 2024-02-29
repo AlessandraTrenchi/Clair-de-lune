@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Clair-des-sentiments/static/css/main.a93451dc.css",
+    "main.js": "/Clair-des-sentiments/static/js/main.6f9eb2b1.js",
+    "static/js/787.e6022a12.chunk.js": "/Clair-des-sentiments/static/js/787.e6022a12.chunk.js",
+    "static/media/luno.gif": "/Clair-des-sentiments/static/media/luno.7cceb7f572ae03aac059.gif",
+    "static/media/cielo.gif": "/Clair-des-sentiments/static/media/cielo.0954897bcb64671e4900.gif",
+    "static/media/old.jpg": "/Clair-des-sentiments/static/media/old.a38edb524d50aa0143b1.jpg",
+    "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/Clair-des-sentiments/static/media/PlayfairDisplay-VariableFont_wght.3f7c141215e6d22d0f1e.ttf",
+    "static/media/terra.jpg": "/Clair-des-sentiments/static/media/terra.5766a27bc0ad3cb8146c.jpg",
+    "static/media/anavio.ttf": "/Clair-des-sentiments/static/media/anavio.0bdcb241fe7c810c0fc3.ttf",
+    "static/media/textlu.avif": "/Clair-des-sentiments/static/media/textlu.11135503b633c3911c2b.avif",
+    "static/media/sml.otf": "/Clair-des-sentiments/static/media/sml.b35c692488883f52bd38.otf",
+    "index.html": "/Clair-des-sentiments/index.html",
+    "main.a93451dc.css.map": "/Clair-des-sentiments/static/css/main.a93451dc.css.map",
+    "main.6f9eb2b1.js.map": "/Clair-des-sentiments/static/js/main.6f9eb2b1.js.map",
+    "787.e6022a12.chunk.js.map": "/Clair-des-sentiments/static/js/787.e6022a12.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a93451dc.css",
+    "static/js/main.6f9eb2b1.js"
+  ]
+}
